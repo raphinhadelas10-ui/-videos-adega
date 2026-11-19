@@ -1,0 +1,91 @@
+{
+  "id": "01-pedido-perdido",
+  "number": 1,
+  "series": "As contas que a adega não faz",
+  "title": "A mensagem que ficou sem resposta",
+  "output": "out/01-pedido-perdido.mp4",
+  "durationSec": 32,
+  "voice": {
+    "model": "pt_BR-faber-medium",
+    "lengthScale": 0.95
+  },
+  "scenes": [
+    {
+      "id": "balcao",
+      "from": 0,
+      "to": 3
+    },
+    {
+      "id": "conversa",
+      "from": 3,
+      "to": 10
+    },
+    {
+      "id": "calendario",
+      "from": 10,
+      "to": 22
+    },
+    {
+      "id": "catalogo",
+      "from": 22,
+      "to": 32
+    }
+  ],
+  "captionReplace": {
+    "sessenta reais": "R$ 60",
+    "trinta dias": "30 dias",
+    "mil e oitocentos reais": "R$ 1.800"
+  },
+  "lines": [
+    {
+      "id": "hook",
+      "at": 0.2,
+      "text": "Quantos pedidos tua adega perde enquanto tu tá no balcão?"
+    },
+    {
+      "id": "msg1",
+      "at": 3.25,
+      "text": "Tem gelada?"
+    },
+    {
+      "id": "msg2",
+      "at": 4.6,
+      "text": "Quanto fica a entrega?"
+    },
+    {
+      "id": "perdido",
+      "at": 6.5,
+      "text": "Ninguém responde. E o cliente compra em outro lugar."
+    },
+    {
+      "id": "conta1",
+      "at": 10.3,
+      "text": "Se escapar um pedido de sessenta reais por dia,"
+    },
+    {
+      "id": "conta2",
+      "at": 12.75,
+      "text": "em trinta dias..."
+    },
+    {
+      "id": "conta3",
+      "at": 15.3,
+      "text": "são mil e oitocentos reais"
+    },
+    {
+      "id": "conta4",
+      "at": 17.3,
+      "text": "em vendas que poderiam ter entrado."
+    },
+    {
+      "id": "catalogo",
+      "at": 22.3,
+      "text": "Com um site de pedidos, o cliente abre o catálogo, vê o preço e manda o pedido sozinho."
+    },
+    {
+      "id": "cta",
+      "at": 28.3,
+      "text": "Quer ver como ficaria o site da tua adega? Me chama."
+    }
+  ]
+}

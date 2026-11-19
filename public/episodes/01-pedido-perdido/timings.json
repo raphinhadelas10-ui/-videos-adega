@@ -1,0 +1,472 @@
+{
+ "episode": "01-pedido-perdido",
+ "source": "piper:pt_BR-faber-medium",
+ "duration": 32.0,
+ "lines": [
+  {
+   "id": "hook",
+   "text": "Quantos pedidos tua adega perde enquanto tu tá no balcão?",
+   "start": 0.2,
+   "end": 3.01,
+   "words": [
+    {
+     "w": "Quantos",
+     "start": 0.235,
+     "end": 0.502
+    },
+    {
+     "w": "pedidos",
+     "start": 0.56,
+     "end": 0.92
+    },
+    {
+     "w": "tua",
+     "start": 0.966,
+     "end": 1.071
+    },
+    {
+     "w": "adega",
+     "start": 1.094,
+     "end": 1.361
+    },
+    {
+     "w": "perde",
+     "start": 1.489,
+     "end": 1.686
+    },
+    {
+     "w": "enquanto",
+     "start": 1.709,
+     "end": 2.058
+    },
+    {
+     "w": "tu",
+     "start": 2.116,
+     "end": 2.209
+    },
+    {
+     "w": "tá",
+     "start": 2.255,
+     "end": 2.325
+    },
+    {
+     "w": "no",
+     "start": 2.359,
+     "end": 2.418
+    },
+    {
+     "w": "balcão?",
+     "start": 2.441,
+     "end": 2.859
+    }
+   ]
+  },
+  {
+   "id": "msg1",
+   "text": "Tem gelada?",
+   "start": 3.25,
+   "end": 4.051,
+   "words": [
+    {
+     "w": "Tem",
+     "start": 3.296,
+     "end": 3.401
+    },
+    {
+     "w": "gelada?",
+     "start": 3.424,
+     "end": 3.854
+    }
+   ]
+  },
+  {
+   "id": "msg2",
+   "text": "Quanto fica a entrega?",
+   "start": 4.6,
+   "end": 5.796,
+   "words": [
+    {
+     "w": "Quanto",
+     "start": 4.635,
+     "end": 4.844
+    },
+    {
+     "w": "fica",
+     "start": 4.89,
+     "end": 5.088
+    },
+    {
+     "w": "a",
+     "start": 5.111,
+     "end": 5.134
+    },
+    {
+     "w": "entrega?",
+     "start": 5.157,
+     "end": 5.61
+    }
+   ]
+  },
+  {
+   "id": "perdido",
+   "text": "Ninguém responde. E o cliente compra em outro lugar.",
+   "start": 6.5,
+   "end": 9.646,
+   "words": [
+    {
+     "w": "Ninguém",
+     "start": 6.558,
+     "end": 6.906
+    },
+    {
+     "w": "responde.",
+     "start": 6.93,
+     "end": 7.475
+    },
+    {
+     "w": "E",
+     "start": 7.951,
+     "end": 8.009
+    },
+    {
+     "w": "o",
+     "start": 8.055,
+     "end": 8.078
+    },
+    {
+     "w": "cliente",
+     "start": 8.125,
+     "end": 8.485
+    },
+    {
+     "w": "compra",
+     "start": 8.531,
+     "end": 8.763
+    },
+    {
+     "w": "em",
+     "start": 8.787,
+     "end": 8.868
+    },
+    {
+     "w": "outro",
+     "start": 8.914,
+     "end": 9.088
+    },
+    {
+     "w": "lugar.",
+     "start": 9.135,
+     "end": 9.472
+    }
+   ]
+  },
+  {
+   "id": "conta1",
+   "text": "Se escapar um pedido de sessenta reais por dia,",
+   "start": 10.3,
+   "end": 12.819,
+   "words": [
+    {
+     "w": "Se",
+     "start": 10.323,
+     "end": 10.393
+    },
+    {
+     "w": "escapar",
+     "start": 10.428,
+     "end": 10.776
+    },
+    {
+     "w": "um",
+     "start": 10.799,
+     "end": 10.88
+    },
+    {
+     "w": "pedido",
+     "start": 10.915,
+     "end": 11.217
+    },
+    {
+     "w": "de",
+     "start": 11.24,
+     "end": 11.322
+    },
+    {
+     "w": "sessenta",
+     "start": 11.357,
+     "end": 11.763
+    },
+    {
+     "w": "reais",
+     "start": 11.798,
+     "end": 12.088
+    },
+    {
+     "w": "por",
+     "start": 12.146,
+     "end": 12.262
+    },
+    {
+     "w": "dia,",
+     "start": 12.309,
+     "end": 12.622
+    }
+   ]
+  },
+  {
+   "id": "conta2",
+   "text": "em trinta dias...",
+   "start": 12.939,
+   "end": 13.833,
+   "words": [
+    {
+     "w": "em",
+     "start": 12.986,
+     "end": 13.079
+    },
+    {
+     "w": "trinta",
+     "start": 13.114,
+     "end": 13.334
+    },
+    {
+     "w": "dias...",
+     "start": 13.369,
+     "end": 13.74
+    }
+   ]
+  },
+  {
+   "id": "conta3",
+   "text": "são mil e oitocentos reais",
+   "start": 15.3,
+   "end": 17.1,
+   "words": [
+    {
+     "w": "são",
+     "start": 15.335,
+     "end": 15.474
+    },
+    {
+     "w": "mil",
+     "start": 15.509,
+     "end": 15.718
+    },
+    {
+     "w": "e",
+     "start": 15.799,
+     "end": 15.892
+    },
+    {
+     "w": "oitocentos",
+     "start": 15.927,
+     "end": 16.484
+    },
+    {
+     "w": "reais",
+     "start": 16.531,
+     "end": 17.018
+    }
+   ]
+  },
+  {
+   "id": "conta4",
+   "text": "em vendas que poderiam ter entrado.",
+   "start": 17.3,
+   "end": 19.134,
+   "words": [
+    {
+     "w": "em",
+     "start": 17.335,
+     "end": 17.439
+    },
+    {
+     "w": "vendas",
+     "start": 17.463,
+     "end": 17.718
+    },
+    {
+     "w": "que",
+     "start": 17.753,
+     "end": 17.822
+    },
+    {
+     "w": "poderiam",
+     "start": 17.892,
+     "end": 18.333
+    },
+    {
+     "w": "ter",
+     "start": 18.357,
+     "end": 18.484
+    },
+    {
+     "w": "entrado.",
+     "start": 18.507,
+     "end": 18.972
+    }
+   ]
+  },
+  {
+   "id": "catalogo",
+   "text": "Com um site de pedidos, o cliente abre o catálogo, vê o preço e manda o pedido sozinho.",
+   "start": 22.3,
+   "end": 27.13,
+   "words": [
+    {
+     "w": "Com",
+     "start": 22.335,
+     "end": 22.428
+    },
+    {
+     "w": "um",
+     "start": 22.451,
+     "end": 22.521
+    },
+    {
+     "w": "site",
+     "start": 22.544,
+     "end": 22.788
+    },
+    {
+     "w": "de",
+     "start": 22.811,
+     "end": 22.915
+    },
+    {
+     "w": "pedidos,",
+     "start": 22.95,
+     "end": 23.426
+    },
+    {
+     "w": "o",
+     "start": 23.542,
+     "end": 23.6
+    },
+    {
+     "w": "cliente",
+     "start": 23.647,
+     "end": 24.065
+    },
+    {
+     "w": "abre",
+     "start": 24.123,
+     "end": 24.355
+    },
+    {
+     "w": "o",
+     "start": 24.39,
+     "end": 24.413
+    },
+    {
+     "w": "catálogo,",
+     "start": 24.436,
+     "end": 24.994
+    },
+    {
+     "w": "vê",
+     "start": 25.237,
+     "end": 25.319
+    },
+    {
+     "w": "o",
+     "start": 25.365,
+     "end": 25.4
+    },
+    {
+     "w": "preço",
+     "start": 25.446,
+     "end": 25.771
+    },
+    {
+     "w": "e",
+     "start": 25.841,
+     "end": 25.876
+    },
+    {
+     "w": "manda",
+     "start": 25.922,
+     "end": 26.108
+    },
+    {
+     "w": "o",
+     "start": 26.131,
+     "end": 26.155
+    },
+    {
+     "w": "pedido",
+     "start": 26.178,
+     "end": 26.503
+    },
+    {
+     "w": "sozinho.",
+     "start": 26.549,
+     "end": 27.037
+    }
+   ]
+  },
+  {
+   "id": "cta",
+   "text": "Quer ver como ficaria o site da tua adega? Me chama.",
+   "start": 28.3,
+   "end": 31.341,
+   "words": [
+    {
+     "w": "Quer",
+     "start": 28.323,
+     "end": 28.439
+    },
+    {
+     "w": "ver",
+     "start": 28.474,
+     "end": 28.602
+    },
+    {
+     "w": "como",
+     "start": 28.625,
+     "end": 28.799
+    },
+    {
+     "w": "ficaria",
+     "start": 28.822,
+     "end": 29.24
+    },
+    {
+     "w": "o",
+     "start": 29.264,
+     "end": 29.298
+    },
+    {
+     "w": "site",
+     "start": 29.333,
+     "end": 29.6
+    },
+    {
+     "w": "da",
+     "start": 29.624,
+     "end": 29.716
+    },
+    {
+     "w": "tua",
+     "start": 29.774,
+     "end": 29.867
+    },
+    {
+     "w": "adega?",
+     "start": 29.891,
+     "end": 30.274
+    },
+    {
+     "w": "Me",
+     "start": 30.738,
+     "end": 30.819
+    },
+    {
+     "w": "chama.",
+     "start": 30.877,
+     "end": 31.155
+    }
+   ]
+  }
+ ]
+}

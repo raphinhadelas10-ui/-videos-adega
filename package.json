@@ -1,0 +1,27 @@
+{
+  "name": "videos-adega",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Série 'As contas que a adega não faz' — vídeos verticais em Remotion",
+  "scripts": {
+    "studio": "remotion studio",
+    "voice": "python3 scripts/voice.py",
+    "sfx": "python3 scripts/sfx.py",
+    "render": "node scripts/render.mjs",
+    "check": "node scripts/check.mjs",
+    "build": "node scripts/build.mjs"
+  },
+  "dependencies": {
+    "@remotion/bundler": "^4.0.545",
+    "@remotion/cli": "^4.0.545",
+    "@remotion/fonts": "^4.0.545",
+    "@remotion/renderer": "^4.0.545",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "remotion": "^4.0.545"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.12",
+    "typescript": "^5.6.3"
+  }
+}
