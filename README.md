@@ -5,6 +5,7 @@ Vídeos verticais (1080 × 1920, 30 fps) feitos em Remotion para donos de adega,
 | Ep. | Tema | Arquivo |
 |---|---|---|
 | 1 | A mensagem que ficou sem resposta | `out/01-pedido-perdido.mp4` |
+| 2 | Sábado de temporada | `out/02-adega-temporada.mp4` |
 
 ## Como gerar
 
@@ -28,7 +29,8 @@ npm run studio                      # abre o Remotion Studio para ajustar
 episodes/<id>/episode.json   roteiro: cenas (s), falas com horário, substituições de legenda
 src/episodes/<id>.tsx        animação do episódio (sincronizada pelas palavras da narração)
 src/episodes/registry.ts     lista de episódios → composições "ep-<id>"
-src/components/              peças reutilizáveis: Person, Counter, Shelf, MiniPhone,
+src/components/              peças reutilizáveis: Person, Counter, Shelf, MiniPhone, Clock,
+                             ChatList, OrderPanel, PhoneFrame,
                              Bubble, Card, Headline, SeriesTag, Calendar, CatalogPhone,
                              Captions, Scene, Sfx
 src/theme.ts                 cores, fonte (Inter) e zona segura do TikTok

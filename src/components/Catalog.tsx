@@ -56,7 +56,10 @@ export const CatalogPhone: React.FC<{
   priceAt: number; // destaque dos preços
   adds: { index: number; at: number }[]; // toques em "+"
   sendAt: number; // toque em "Enviar pedido"
-}> = ({ now, x, y, w, h, store, products, openAt, priceAt, adds, sendAt }) => {
+  /** iniciais da logo: troca a 1ª tela por uma página com a marca da adega */
+  logo?: string;
+  brandAt?: number; // quando a marca aparece
+}> = ({ now, x, y, w, h, store, products, openAt, priceAt, adds, sendAt, logo, brandAt = 0 }) => {
   const opened = progress(now, openAt + 0.12, openAt + 0.45);
   const sent = progress(now, sendAt + 0.15, sendAt + 0.4);
   const added = adds.filter((a) => now >= a.at + 0.05);
@@ -68,7 +71,7 @@ export const CatalogPhone: React.FC<{
   const screenR = 52;
 
   // posições dos toques (relativas ao celular)
-  const linkTap = { x: w / 2, y: 520 };
+  const linkTap = { x: w / 2, y: logo ? 100 + 170 + 28 + 60 + 8 + 34 + 44 + 50 : 520 };
   const plusPos = (i: number) => ({ x: w - pad - 40, y: listTop + i * rowH + rowH / 2 });
   const sendPos = { x: w / 2, y: h - 92 };
 
@@ -87,7 +90,58 @@ export const CatalogPhone: React.FC<{
         overflow: "hidden",
       }}
     >
-      {/* Tela 1: mensagem com o link do catálogo */}
+      {/* Tela 1 (com marca): página da adega */}
+      {logo && (
+        <div style={{ position: "absolute", inset: 0, opacity: 1 - opened, padding: pad, paddingTop: 100, display: "flex", flexDirection: "column", alignItems: "center" }}>
+          <div
+            style={{
+              width: 170,
+              height: 170,
+              borderRadius: 85,
+              background: "linear-gradient(180deg,#ffffff,#cfcfcf)",
+              color: "#0b0b0b",
+              fontSize: 64,
+              fontWeight: 800,
+              letterSpacing: -2,
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              boxShadow: `0 0 60px rgba(255,255,255,${0.3 * progress(now, brandAt, brandAt + 0.4)})`,
+              transform: `scale(${0.6 + 0.4 * progress(now, brandAt, brandAt + 0.35)})`,
+              opacity: progress(now, brandAt, brandAt + 0.25),
+            }}
+          >
+            {logo}
+          </div>
+          <div style={{ color: C.text, fontSize: 50, fontWeight: 800, marginTop: 28, letterSpacing: -1, opacity: progress(now, brandAt + 0.15, brandAt + 0.45) }}>{store}</div>
+          <div style={{ color: C.muted, fontSize: 28, marginTop: 8, opacity: progress(now, brandAt + 0.3, brandAt + 0.6) }}>Peça pelo link · entrega no bairro</div>
+          <div
+            style={{
+              marginTop: 44,
+              width: w - pad * 2 - 40,
+              height: 100,
+              borderRadius: 50,
+              background: C.text,
+              color: "#0b0b0b",
+              fontSize: 36,
+              fontWeight: 800,
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              opacity: progress(now, brandAt + 0.45, brandAt + 0.75),
+              transform: `scale(${1 - 0.04 * progress(now, openAt - 0.05, openAt + 0.08)})`,
+            }}
+          >
+            Ver catálogo
+          </div>
+          <div style={{ display: "flex", gap: 16, marginTop: 50, opacity: 0.8 * progress(now, brandAt + 0.6, brandAt + 0.9) }}>
+            {(["can", "pack", "ice", "bottle"] as const).map((k) => (
+              <ProductIcon key={k} kind={k} />
+            ))}
+          </div>
+        </div>
+      )}
+      {!logo && (
       <div style={{ position: "absolute", inset: 0, opacity: 1 - opened, padding: pad, paddingTop: 110 }}>
         <div style={{ color: C.muted, fontSize: 28, textAlign: "center", marginBottom: 40 }}>{store}</div>
         <div
@@ -109,6 +163,7 @@ export const CatalogPhone: React.FC<{
           <div style={{ color: C.muted, fontSize: 28, marginTop: 6 }}>Ver produtos e preços</div>
         </div>
       </div>
+      )}
 
       {/* Tela 2: catálogo */}
       <div

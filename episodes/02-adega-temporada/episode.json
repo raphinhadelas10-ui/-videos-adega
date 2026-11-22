@@ -1,0 +1,77 @@
+{
+  "id": "02-adega-temporada",
+  "number": 2,
+  "series": "As contas que a adega não faz",
+  "title": "Sábado de temporada",
+  "output": "out/02-adega-temporada.mp4",
+  "durationSec": 42,
+  "voice": {
+    "model": "pt_BR-faber-medium",
+    "lengthScale": 0.95
+  },
+  "captionReplace": {
+    "adega no dairéct": "ADEGA no direct"
+  },
+  "lines": [
+    {
+      "id": "praia",
+      "at": 0.2,
+      "text": "Tu tem adega na praia?"
+    },
+    {
+      "id": "sabado",
+      "gap": 0.3,
+      "text": "No sábado de temporada, tem gente no balcão e três clientes te chamando ao mesmo tempo."
+    },
+    {
+      "id": "estoque",
+      "gap": 0.45,
+      "text": "Enquanto tu confere o estoque pra um, os outros ficam esperando."
+    },
+    {
+      "id": "volta",
+      "gap": 0.35,
+      "text": "Quando tu volta pra responder, aparece:"
+    },
+    {
+      "id": "valeu",
+      "gap": 0.3,
+      "text": "Valeu, já pedi em outro lugar."
+    },
+    {
+      "id": "caixa",
+      "gap": 0.7,
+      "text": "Aí fecha o caixa. Tem Pix, cartão, entrega. Tu sabe que vendeu bastante."
+    },
+    {
+      "id": "conferir",
+      "gap": 0.35,
+      "text": "No fim da noite, tu ainda tem que voltar nas conversas pra conferir o que vendeu?"
+    },
+    {
+      "id": "monto",
+      "gap": 0.7,
+      "text": "Eu monto um site com a cara da tua adega."
+    },
+    {
+      "id": "cliente",
+      "gap": 0.3,
+      "text": "O cliente vê o que tem, escolhe e faz o pedido pelo link."
+    },
+    {
+      "id": "chega",
+      "gap": 0.3,
+      "text": "O pedido chega na tua tela pra tu confirmar e marcar a entrega."
+    },
+    {
+      "id": "logo",
+      "gap": 0.7,
+      "text": "Quer ver como ficaria com o nome e a logo da tua adega?"
+    },
+    {
+      "id": "direct",
+      "gap": 0.3,
+      "text": "Me manda adega no dairéct que eu te mostro."
+    }
+  ]
+}

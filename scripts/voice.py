@@ -136,7 +136,8 @@ def main():
         cfg = syn if "lengthScale" not in line else SynthesisConfig(
             length_scale=line["lengthScale"], noise_scale=syn.noise_scale, noise_w_scale=syn.noise_w_scale)
         audio, words = synth_line(voice, cfg, line["text"], sr)
-        start = max(float(line["at"]), prev_end + MIN_LINE_GAP)
+        # "at" fixo (s) ou, sem "at", logo após a fala anterior + "gap" (padrão 0.35 s)
+        start = max(float(line["at"]), prev_end + MIN_LINE_GAP) if "at" in line else prev_end + float(line.get("gap", 0.35))
         length = len(audio) / sr
         end = start + length
         s0 = int(start * sr)
@@ -147,7 +148,7 @@ def main():
         words = [{**w, "start": round(w["start"] + start, 3), "end": round(w["end"] + start, 3)} for w in words]
         out_lines.append({"id": line["id"], "text": line["text"], "start": round(start, 3),
                           "end": round(end, 3), "words": words})
-        flag = "" if abs(start - line["at"]) < 0.01 else f"  (empurrada de {line['at']}s)"
+        flag = "" if "at" not in line or abs(start - line["at"]) < 0.01 else f"  (empurrada de {line['at']}s)"
         print(f"  {line['id']:<10} {start:6.2f}s → {end:6.2f}s  ({length:.2f}s){flag}")
         prev_end = end
 

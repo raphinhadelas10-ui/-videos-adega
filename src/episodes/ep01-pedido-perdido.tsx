@@ -306,7 +306,7 @@ const Catalogo: React.FC<{ from: number; cue: Cues; ep: EpisodeProps["episode"] 
 
 export const Ep01PedidoPerdido: React.FC<EpisodeProps> = ({ episode, timings }) => {
   const cue = makeCues(timings);
-  const [s1, s2, s3, s4] = episode.scenes;
+  const [s1, s2, s3, s4] = episode.scenes!;
 
   // calendário: dia 1 acende em "dia", dias 2–30 no ritmo de "em trinta dias…"
   const fills = [cue.word("conta1", "dia"), ...spread(29, cue.word("conta2", "trinta"), cue.start("conta3") - 0.25)];

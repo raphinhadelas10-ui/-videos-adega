@@ -11,9 +11,9 @@ export type EpisodeConfig = {
   title: string;
   output: string;
   durationSec: number;
-  scenes: { id: string; from: number; to: number }[];
+  scenes?: { id: string; from: number; to: number }[];
   captionReplace?: Record<string, string>;
-  lines: { id: string; at: number; text: string }[];
+  lines: { id: string; at?: number; gap?: number; text: string }[];
 };
 
 export type EpisodeProps = { episode: EpisodeConfig; timings: Timings };

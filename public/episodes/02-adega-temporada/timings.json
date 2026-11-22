@@ -1,0 +1,758 @@
+{
+ "episode": "02-adega-temporada",
+ "source": "piper:pt_BR-faber-medium",
+ "duration": 42.0,
+ "lines": [
+  {
+   "id": "praia",
+   "text": "Tu tem adega na praia?",
+   "start": 0.2,
+   "end": 1.558,
+   "words": [
+    {
+     "w": "Tu",
+     "start": 0.223,
+     "end": 0.293
+    },
+    {
+     "w": "tem",
+     "start": 0.339,
+     "end": 0.49
+    },
+    {
+     "w": "adega",
+     "start": 0.513,
+     "end": 0.827
+    },
+    {
+     "w": "na",
+     "start": 0.862,
+     "end": 0.943
+    },
+    {
+     "w": "praia?",
+     "start": 1.013,
+     "end": 1.373
+    }
+   ]
+  },
+  {
+   "id": "sabado",
+   "text": "No sábado de temporada, tem gente no balcão e três clientes te chamando ao mesmo tempo.",
+   "start": 1.858,
+   "end": 6.317,
+   "words": [
+    {
+     "w": "No",
+     "start": 1.882,
+     "end": 1.951
+    },
+    {
+     "w": "sábado",
+     "start": 1.986,
+     "end": 2.253
+    },
+    {
+     "w": "de",
+     "start": 2.276,
+     "end": 2.358
+    },
+    {
+     "w": "temporada,",
+     "start": 2.392,
+     "end": 2.985
+    },
+    {
+     "w": "tem",
+     "start": 3.159,
+     "end": 3.321
+    },
+    {
+     "w": "gente",
+     "start": 3.356,
+     "end": 3.588
+    },
+    {
+     "w": "no",
+     "start": 3.635,
+     "end": 3.693
+    },
+    {
+     "w": "balcão",
+     "start": 3.728,
+     "end": 4.157
+    },
+    {
+     "w": "e",
+     "start": 4.204,
+     "end": 4.25
+    },
+    {
+     "w": "três",
+     "start": 4.296,
+     "end": 4.505
+    },
+    {
+     "w": "clientes",
+     "start": 4.54,
+     "end": 4.923
+    },
+    {
+     "w": "te",
+     "start": 4.958,
+     "end": 5.04
+    },
+    {
+     "w": "chamando",
+     "start": 5.086,
+     "end": 5.376
+    },
+    {
+     "w": "ao",
+     "start": 5.411,
+     "end": 5.469
+    },
+    {
+     "w": "mesmo",
+     "start": 5.492,
+     "end": 5.724
+    },
+    {
+     "w": "tempo.",
+     "start": 5.806,
+     "end": 6.212
+    }
+   ]
+  },
+  {
+   "id": "estoque",
+   "text": "Enquanto tu confere o estoque pra um, os outros ficam esperando.",
+   "start": 6.767,
+   "end": 10.226,
+   "words": [
+    {
+     "w": "Enquanto",
+     "start": 6.813,
+     "end": 7.219
+    },
+    {
+     "w": "tu",
+     "start": 7.266,
+     "end": 7.37
+    },
+    {
+     "w": "confere",
+     "start": 7.417,
+     "end": 7.846
+    },
+    {
+     "w": "o",
+     "start": 7.881,
+     "end": 7.916
+    },
+    {
+     "w": "estoque",
+     "start": 7.951,
+     "end": 8.311
+    },
+    {
+     "w": "pra",
+     "start": 8.38,
+     "end": 8.496
+    },
+    {
+     "w": "um,",
+     "start": 8.531,
+     "end": 8.694
+    },
+    {
+     "w": "os",
+     "start": 8.845,
+     "end": 8.938
+    },
+    {
+     "w": "outros",
+     "start": 8.972,
+     "end": 9.228
+    },
+    {
+     "w": "ficam",
+     "start": 9.263,
+     "end": 9.518
+    },
+    {
+     "w": "esperando.",
+     "start": 9.541,
+     "end": 10.157
+    }
+   ]
+  },
+  {
+   "id": "volta",
+   "text": "Quando tu volta pra responder, aparece:",
+   "start": 10.576,
+   "end": 12.701,
+   "words": [
+    {
+     "w": "Quando",
+     "start": 10.6,
+     "end": 10.832
+    },
+    {
+     "w": "tu",
+     "start": 10.855,
+     "end": 10.96
+    },
+    {
+     "w": "volta",
+     "start": 11.006,
+     "end": 11.192
+    },
+    {
+     "w": "pra",
+     "start": 11.227,
+     "end": 11.308
+    },
+    {
+     "w": "responder,",
+     "start": 11.343,
+     "end": 11.807
+    },
+    {
+     "w": "aparece:",
+     "start": 11.97,
+     "end": 12.562
+    }
+   ]
+  },
+  {
+   "id": "valeu",
+   "text": "Valeu, já pedi em outro lugar.",
+   "start": 13.001,
+   "end": 14.893,
+   "words": [
+    {
+     "w": "Valeu,",
+     "start": 13.047,
+     "end": 13.396
+    },
+    {
+     "w": "já",
+     "start": 13.593,
+     "end": 13.732
+    },
+    {
+     "w": "pedi",
+     "start": 13.767,
+     "end": 13.999
+    },
+    {
+     "w": "em",
+     "start": 14.023,
+     "end": 14.092
+    },
+    {
+     "w": "outro",
+     "start": 14.116,
+     "end": 14.336
+    },
+    {
+     "w": "lugar.",
+     "start": 14.371,
+     "end": 14.731
+    }
+   ]
+  },
+  {
+   "id": "caixa",
+   "text": "Aí fecha o caixa. Tem Pix, cartão, entrega. Tu sabe que vendeu bastante.",
+   "start": 15.593,
+   "end": 20.608,
+   "words": [
+    {
+     "w": "Aí",
+     "start": 15.651,
+     "end": 15.791
+    },
+    {
+     "w": "fecha",
+     "start": 15.814,
+     "end": 16.104
+    },
+    {
+     "w": "o",
+     "start": 16.127,
+     "end": 16.162
+    },
+    {
+     "w": "caixa.",
+     "start": 16.209,
+     "end": 16.569
+    },
+    {
+     "w": "Tem",
+     "start": 17.009,
+     "end": 17.137
+    },
+    {
+     "w": "Pix,",
+     "start": 17.172,
+     "end": 17.439
+    },
+    {
+     "w": "cartão,",
+     "start": 17.52,
+     "end": 17.915
+    },
+    {
+     "w": "entrega.",
+     "start": 18.043,
+     "end": 18.519
+    },
+    {
+     "w": "Tu",
+     "start": 18.982,
+     "end": 19.087
+    },
+    {
+     "w": "sabe",
+     "start": 19.133,
+     "end": 19.365
+    },
+    {
+     "w": "que",
+     "start": 19.412,
+     "end": 19.47
+    },
+    {
+     "w": "vendeu",
+     "start": 19.505,
+     "end": 19.749
+    },
+    {
+     "w": "bastante.",
+     "start": 19.783,
+     "end": 20.445
+    }
+   ]
+  },
+  {
+   "id": "conferir",
+   "text": "No fim da noite, tu ainda tem que voltar nas conversas pra conferir o que vendeu?",
+   "start": 20.958,
+   "end": 24.905,
+   "words": [
+    {
+     "w": "No",
+     "start": 21.004,
+     "end": 21.074
+    },
+    {
+     "w": "fim",
+     "start": 21.12,
+     "end": 21.271
+    },
+    {
+     "w": "da",
+     "start": 21.294,
+     "end": 21.399
+    },
+    {
+     "w": "noite,",
+     "start": 21.434,
+     "end": 21.794
+    },
+    {
+     "w": "tu",
+     "start": 21.921,
+     "end": 21.991
+    },
+    {
+     "w": "ainda",
+     "start": 22.026,
+     "end": 22.281
+    },
+    {
+     "w": "tem",
+     "start": 22.351,
+     "end": 22.479
+    },
+    {
+     "w": "que",
+     "start": 22.513,
+     "end": 22.572
+    },
+    {
+     "w": "voltar",
+     "start": 22.618,
+     "end": 22.897
+    },
+    {
+     "w": "nas",
+     "start": 22.931,
+     "end": 23.071
+    },
+    {
+     "w": "conversas",
+     "start": 23.117,
+     "end": 23.547
+    },
+    {
+     "w": "pra",
+     "start": 23.593,
+     "end": 23.686
+    },
+    {
+     "w": "conferir",
+     "start": 23.733,
+     "end": 24.116
+    },
+    {
+     "w": "o",
+     "start": 24.174,
+     "end": 24.209
+    },
+    {
+     "w": "que",
+     "start": 24.232,
+     "end": 24.313
+    },
+    {
+     "w": "vendeu?",
+     "start": 24.348,
+     "end": 24.766
+    }
+   ]
+  },
+  {
+   "id": "monto",
+   "text": "Eu monto um site com a cara da tua adega.",
+   "start": 25.605,
+   "end": 27.869,
+   "words": [
+    {
+     "w": "Eu",
+     "start": 25.663,
+     "end": 25.756
+    },
+    {
+     "w": "monto",
+     "start": 25.803,
+     "end": 26.046
+    },
+    {
+     "w": "um",
+     "start": 26.081,
+     "end": 26.186
+    },
+    {
+     "w": "site",
+     "start": 26.232,
+     "end": 26.464
+    },
+    {
+     "w": "com",
+     "start": 26.511,
+     "end": 26.662
+    },
+    {
+     "w": "a",
+     "start": 26.696,
+     "end": 26.731
+    },
+    {
+     "w": "cara",
+     "start": 26.766,
+     "end": 26.94
+    },
+    {
+     "w": "da",
+     "start": 26.975,
+     "end": 27.056
+    },
+    {
+     "w": "tua",
+     "start": 27.114,
+     "end": 27.219
+    },
+    {
+     "w": "adega.",
+     "start": 27.254,
+     "end": 27.707
+    }
+   ]
+  },
+  {
+   "id": "cliente",
+   "text": "O cliente vê o que tem, escolhe e faz o pedido pelo link.",
+   "start": 28.169,
+   "end": 31.118,
+   "words": [
+    {
+     "w": "O",
+     "start": 28.192,
+     "end": 28.216
+    },
+    {
+     "w": "cliente",
+     "start": 28.239,
+     "end": 28.564
+    },
+    {
+     "w": "vê",
+     "start": 28.599,
+     "end": 28.715
+    },
+    {
+     "w": "o",
+     "start": 28.75,
+     "end": 28.773
+    },
+    {
+     "w": "que",
+     "start": 28.819,
+     "end": 28.877
+    },
+    {
+     "w": "tem,",
+     "start": 28.97,
+     "end": 29.191
+    },
+    {
+     "w": "escolhe",
+     "start": 29.342,
+     "end": 29.76
+    },
+    {
+     "w": "e",
+     "start": 29.853,
+     "end": 29.922
+    },
+    {
+     "w": "faz",
+     "start": 29.969,
+     "end": 30.096
+    },
+    {
+     "w": "o",
+     "start": 30.143,
+     "end": 30.166
+    },
+    {
+     "w": "pedido",
+     "start": 30.212,
+     "end": 30.468
+    },
+    {
+     "w": "pelo",
+     "start": 30.514,
+     "end": 30.688
+    },
+    {
+     "w": "link.",
+     "start": 30.723,
+     "end": 31.025
+    }
+   ]
+  },
+  {
+   "id": "chega",
+   "text": "O pedido chega na tua tela pra tu confirmar e marcar a entrega.",
+   "start": 31.418,
+   "end": 34.727,
+   "words": [
+    {
+     "w": "O",
+     "start": 31.464,
+     "end": 31.523
+    },
+    {
+     "w": "pedido",
+     "start": 31.557,
+     "end": 31.859
+    },
+    {
+     "w": "chega",
+     "start": 31.894,
+     "end": 32.126
+    },
+    {
+     "w": "na",
+     "start": 32.173,
+     "end": 32.254
+    },
+    {
+     "w": "tua",
+     "start": 32.3,
+     "end": 32.416
+    },
+    {
+     "w": "tela",
+     "start": 32.486,
+     "end": 32.684
+    },
+    {
+     "w": "pra",
+     "start": 32.707,
+     "end": 32.8
+    },
+    {
+     "w": "tu",
+     "start": 32.846,
+     "end": 32.939
+    },
+    {
+     "w": "confirmar",
+     "start": 32.985,
+     "end": 33.624
+    },
+    {
+     "w": "e",
+     "start": 33.67,
+     "end": 33.705
+    },
+    {
+     "w": "marcar",
+     "start": 33.752,
+     "end": 34.03
+    },
+    {
+     "w": "a",
+     "start": 34.053,
+     "end": 34.077
+    },
+    {
+     "w": "entrega.",
+     "start": 34.1,
+     "end": 34.576
+    }
+   ]
+  },
+  {
+   "id": "logo",
+   "text": "Quer ver como ficaria com o nome e a logo da tua adega?",
+   "start": 35.427,
+   "end": 38.12,
+   "words": [
+    {
+     "w": "Quer",
+     "start": 35.462,
+     "end": 35.589
+    },
+    {
+     "w": "ver",
+     "start": 35.624,
+     "end": 35.752
+    },
+    {
+     "w": "como",
+     "start": 35.787,
+     "end": 35.973
+    },
+    {
+     "w": "ficaria",
+     "start": 35.996,
+     "end": 36.379
+    },
+    {
+     "w": "com",
+     "start": 36.414,
+     "end": 36.53
+    },
+    {
+     "w": "o",
+     "start": 36.553,
+     "end": 36.588
+    },
+    {
+     "w": "nome",
+     "start": 36.611,
+     "end": 36.797
+    },
+    {
+     "w": "e",
+     "start": 36.843,
+     "end": 36.901
+    },
+    {
+     "w": "a",
+     "start": 36.948,
+     "end": 36.994
+    },
+    {
+     "w": "logo",
+     "start": 37.029,
+     "end": 37.226
+    },
+    {
+     "w": "da",
+     "start": 37.261,
+     "end": 37.354
+    },
+    {
+     "w": "tua",
+     "start": 37.412,
+     "end": 37.517
+    },
+    {
+     "w": "adega?",
+     "start": 37.551,
+     "end": 37.958
+    }
+   ]
+  },
+  {
+   "id": "direct",
+   "text": "Me manda adega no dairéct que eu te mostro.",
+   "start": 38.42,
+   "end": 40.638,
+   "words": [
+    {
+     "w": "Me",
+     "start": 38.455,
+     "end": 38.513
+    },
+    {
+     "w": "manda",
+     "start": 38.548,
+     "end": 38.734
+    },
+    {
+     "w": "adega",
+     "start": 38.757,
+     "end": 39.059
+    },
+    {
+     "w": "no",
+     "start": 39.105,
+     "end": 39.163
+    },
+    {
+     "w": "dairéct",
+     "start": 39.21,
+     "end": 39.547
+    },
+    {
+     "w": "que",
+     "start": 39.593,
+     "end": 39.709
+    },
+    {
+     "w": "eu",
+     "start": 39.732,
+     "end": 39.825
+    },
+    {
+     "w": "te",
+     "start": 39.86,
+     "end": 39.988
+    },
+    {
+     "w": "mostro.",
+     "start": 40.057,
+     "end": 40.487
+    }
+   ]
+  }
+ ]
+}
