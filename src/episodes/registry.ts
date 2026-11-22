@@ -6,6 +6,8 @@ import ep01Timings from "../../public/episodes/01-pedido-perdido/timings.json";
 import { Ep02AdegaTemporada } from "./ep02-adega-temporada";
 import ep02 from "../../episodes/02-adega-temporada/episode.json";
 import ep02Timings from "../../public/episodes/02-adega-temporada/timings.json";
+import ep02Dora from "../../episodes/02-adega-temporada-dora/episode.json";
+import ep02DoraTimings from "../../public/episodes/02-adega-temporada-dora/timings.json";
 
 export type EpisodeEntry = {
   component: React.FC<EpisodeProps>;
@@ -18,4 +20,6 @@ export type EpisodeEntry = {
 export const EPISODES: EpisodeEntry[] = [
   { component: Ep01PedidoPerdido, episode: ep01 as EpisodeConfig, timings: ep01Timings as Timings },
   { component: Ep02AdegaTemporada, episode: ep02 as EpisodeConfig, timings: ep02Timings as Timings },
+  // mesma animação, voz Dora
+  { component: Ep02AdegaTemporada, episode: ep02Dora as EpisodeConfig, timings: ep02DoraTimings as Timings },
 ];
