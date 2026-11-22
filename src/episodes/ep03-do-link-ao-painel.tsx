@@ -57,12 +57,12 @@ const Balcao: React.FC<{ from: number; cue: Cues; ep: EpisodeProps["episode"]; m
   const busy = Math.sin(now * 6);
   const partA = 1 - progress(now, chatAt - 0.25, chatAt + 0.05);
   const phoneIn = progress(now, chatAt, chatAt + 0.35);
-  const scroll = interpolate(now, [chatAt + 0.3, cue.word("balcao", "perdido"), cue.word("balcao", "conversa.") + 0.3, cue.start("volta") + 0.6], [0, 7 * 118 - 260, 4 * 118, 11 * 118 - 600], {
+  const scroll = interpolate(now, [chatAt + 0.3, cue.word("balcao", "perdido"), cue.word("balcao", "conversa.") + 0.3, cue.end("balcao") + 0.5], [0, 7 * 118 - 260, 4 * 118, 11 * 118 - 600], {
     extrapolateLeft: "clamp",
     extrapolateRight: "clamp",
     easing: (x) => x * x * (3 - 2 * x),
   });
-  const lost = pop(now, lostAt - 0.1, 0.4);
+  const lost = pop(now, 9999, 0.4);
   const count = msgAt.filter((t) => now >= t).length;
   return (
     <AbsoluteFill>
@@ -106,14 +106,122 @@ const Balcao: React.FC<{ from: number; cue: Cues; ep: EpisodeProps["episode"]; m
           <div style={{ position: "absolute", inset: 0, background: `rgba(0,0,0,${0.65 * lost.x})` }} />
         </PhoneFrame>
       </div>
-      <div style={{ position: "absolute", left: SAFE.left + 30, top: 720, opacity: lost.opacity, filter: `drop-shadow(0 0 40px rgba(255,77,77,${0.3 * lost.x}))` }}>
-        <Bubble text="Deixa, já pedi em outro lugar." time="21:51" scale={lost.scale} fontSize={52} />
+    </AbsoluteFill>
+  );
+};
+
+
+// ——— Conta: quanto custa demorar pra responder ———
+const MoneyRow: React.FC<{ now: number; top: number; label: string; perDay: number; labelAt: number; fillA: number; fillB: number; valueAt: number }> = ({
+  now,
+  top,
+  label,
+  perDay,
+  labelAt,
+  fillA,
+  fillB,
+  valueAt,
+}) => {
+  const l = pop(now, labelAt - 0.05, 0.4);
+  const v = pop(now, valueAt - 0.05, 0.45);
+  const filled = Math.round(interpolate(now, [fillA, fillB], [0, 30], { extrapolateLeft: "clamp", extrapolateRight: "clamp" }));
+  return (
+    <div style={{ position: "absolute", left: SAFE.left + 10, width: SAFE.right - SAFE.left - 20, top, opacity: l.opacity, transform: `scale(${l.scale})`, transformOrigin: "50% 0" }}>
+      <div style={{ background: C.card, border: `2px solid ${v.x > 0 ? "rgba(255,77,77,0.45)" : C.cardBorder}`, borderRadius: 34, padding: "30px 36px", boxShadow: v.x > 0 ? "0 0 60px rgba(255,77,77,0.12)" : undefined }}>
+        <div style={{ color: C.text, fontSize: 40, fontWeight: 700, lineHeight: 1.15 }}>{label}</div>
+        <div style={{ display: "flex", flexWrap: "wrap", gap: 7, marginTop: 20, width: 15 * 33 }}>
+          {Array.from({ length: 30 }).map((_, i) => (
+            <div key={i} style={{ width: 26, height: 26, borderRadius: 7, background: i < filled ? "#e6e6e6" : "#222", boxShadow: i < filled ? `0 0 10px ${C.glow}` : undefined }} />
+          ))}
+        </div>
+        <div style={{ display: "flex", alignItems: "baseline", gap: 18, marginTop: 18, opacity: v.opacity, transform: `scale(${v.scale})`, transformOrigin: "0 50%" }}>
+          <span style={{ color: C.red, fontSize: 112, fontWeight: 800, letterSpacing: -4, textShadow: `0 0 40px ${C.redGlow}` }}>{brl(perDay * 30).replace(",00", "")}</span>
+          <span style={{ color: C.muted, fontSize: 38, fontWeight: 600 }}>em 30 dias</span>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+const Conta: React.FC<{ from: number; cue: Cues; lostAt: number }> = ({ from, cue, lostAt }) => {
+  const { now } = useLocal(from);
+  const chatIn = pop(now, from + 0.1, 0.4);
+  const waitA = cue.word("correria", "cinco") - 0.1;
+  const mins = Math.round(interpolate(now, [waitA, cue.word("correria", "responder") + 0.3], [0, 5], { extrapolateLeft: "clamp", extrapolateRight: "clamp" }));
+  const lost = pop(now, lostAt - 0.1, 0.4);
+  const isLost = now >= lostAt;
+  const calcAt = cue.start("um") - 0.3;
+  const partA = 1 - progress(now, calcAt - 0.2, calcAt + 0.1);
+  const outAt = cue.start("imagina") - 0.2;
+  const partB = progress(now, calcAt, calcAt + 0.3) * (1 - progress(now, outAt - 0.2, outAt + 0.1));
+  const partC = progress(now, outAt, outAt + 0.35);
+  const busy = Math.sin(now * 6);
+  return (
+    <AbsoluteFill>
+      {/* conversa esperando */}
+      <div style={{ opacity: partA }}>
+        <div style={{ position: "absolute", left: SAFE.left + 10, top: 330, width: SAFE.right - SAFE.left - 20, opacity: chatIn.opacity, transform: `scale(${chatIn.scale})` }}>
+          <div style={{ background: C.card, border: `2px solid ${isLost ? "rgba(255,77,77,0.55)" : C.cardBorder}`, borderRadius: 36, padding: 36 }}>
+            <div style={{ display: "flex", alignItems: "center", gap: 18, marginBottom: 28 }}>
+              <div style={{ width: 62, height: 62, borderRadius: 31, background: "linear-gradient(180deg,#fff,#bbb)", boxShadow: `0 0 20px ${C.glow}` }} />
+              <div>
+                <div style={{ color: C.text, fontSize: 34, fontWeight: 700 }}>Cliente 3</div>
+                <div style={{ color: C.muted, fontSize: 24 }}>WhatsApp</div>
+              </div>
+            </div>
+            <div style={{ display: "flex", flexDirection: "column", gap: 22, alignItems: "flex-start" }}>
+              <Bubble text="Tem gelo? Entrega na Rua das Palmeiras?" time="21:42" fontSize={42} />
+              <div style={{ display: "flex", alignItems: "center", gap: 14, padding: "12px 24px", borderRadius: 999, background: "#1b1b1d", color: isLost ? C.red : C.text, fontSize: 32, fontWeight: 700, opacity: progress(now, waitA, waitA + 0.2), fontVariantNumeric: "tabular-nums" }}>
+                <Dot color={isLost ? C.red : "#ffffff"} size={16} />
+                {mins} {mins === 1 ? "minuto" : "minutos"} sem resposta
+              </div>
+              <div style={{ opacity: lost.opacity, filter: `drop-shadow(0 0 40px rgba(255,77,77,${0.3 * lost.x}))` }}>
+                <Bubble text="Valeu, já pedi em outro lugar." time="21:47" scale={lost.scale} fontSize={48} />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* a conta, em duas batidas */}
+      <div style={{ opacity: partB }}>
+        <MoneyRow
+          now={now}
+          top={250}
+          label="1 pedido de R$ 30 perdido por dia"
+          perDay={30}
+          labelAt={cue.word("um", "escapar")}
+          fillA={cue.word("um", "trinta")}
+          fillB={cue.word("um", "novecentos") - 0.1}
+          valueAt={cue.word("um", "novecentos")}
+        />
+        <MoneyRow
+          now={now}
+          top={700}
+          label="2 pedidos de R$ 30 perdidos por dia"
+          perDay={60}
+          labelAt={cue.word("dois", "escaparem")}
+          fillA={cue.word("dois", "escaparem") + 0.2}
+          fillB={cue.word("dois", "mil") - 0.1}
+          valueAt={cue.word("dois", "mil")}
+        />
+        <div style={{ position: "absolute", top: 1170, left: SAFE.left, width: SAFE.right - SAFE.left, textAlign: "center", color: C.muted, fontSize: 26, fontWeight: 600, opacity: progress(now, cue.word("um", "novecentos"), cue.word("um", "novecentos") + 0.4) }}>
+          Simulação com pedido médio de R$ 30
+        </div>
+      </div>
+
+      {/* "agora imagina ter um site recebendo pedido…" */}
+      <div style={{ opacity: partC }}>
+        <Person x={600 + 40 * Math.sin(now * 3)} y={1000} size={230} lean={busy * 5} bob={Math.abs(busy) * -6} />
+        <Counter x={170} y={970} width={740} />
+        <MiniPhone x={800} y={970 - 104} w={58} lit={0.6 + 0.4 * Math.abs(Math.sin(now * 3))} />
+        <Person x={330} y={1200} size={220} dim />
       </div>
     </AbsoluteFill>
   );
 };
 
-// ——— 13,5–36 s: o pedido pelo olhar do cliente ———
+// ——— o pedido pelo olhar do cliente ———
 const Cliente: React.FC<{ from: number; t: Record<string, number> }> = ({ from, t }) => {
   const { now } = useLocal(from);
   const s1 = progress(now, t.openLink + 0.1, t.openLink + 0.4); // catálogo
@@ -481,11 +589,12 @@ export const Ep03DoLinkAoPainel: React.FC<EpisodeProps> = ({ episode, timings })
 
   const msgAt = [cue.word("balcao", "gelo,") - 0.1, cue.word("balcao", "outro") - 0.05, cue.word("balcao", "valor") - 0.05];
   const chatAt = cue.word("balcao", "endereço") - 0.25;
-  const lostAt = cue.word("volta", "pediu") - 0.05;
+  const lostAt = cue.word("correria", "custar") - 0.05;
 
-  const s2 = cue.start("imagina") - 0.15;
+  const sConta = cue.start("correria") - 0.25;
+  const s2 = cue.word("imagina", "enquanto") - 0.15;
   const t = {
-    openLink: cue.word("imagina", "link") + 0.05,
+    openLink: cue.end("imagina") - 0.05,
     see: cue.word("ve", "vê"),
     tapCombos: cue.word("escolhe", "escolhe") + 0.05,
     tapAdd: cue.word("escolhe", "combo,") + 0.15,
@@ -509,8 +618,11 @@ export const Ep03DoLinkAoPainel: React.FC<EpisodeProps> = ({ episode, timings })
   return (
     <AbsoluteFill>
       <Background />
-      <Scene from={0} to={s2} fadeIn={0}>
+      <Scene from={0} to={sConta} fadeIn={0}>
         <Balcao from={0} cue={cue} ep={episode} msgAt={msgAt} chatAt={chatAt} lostAt={lostAt} />
+      </Scene>
+      <Scene from={sConta} to={s2}>
+        <Conta from={sConta} cue={cue} lostAt={lostAt} />
       </Scene>
       <Scene from={s2} to={s3}>
         <Cliente from={s2} t={t} />
@@ -530,6 +642,12 @@ export const Ep03DoLinkAoPainel: React.FC<EpisodeProps> = ({ episode, timings })
       ))}
       <Sfx name="message" at={lostAt - 0.1} volume={0.3} />
       <Sfx name="lost" at={lostAt} volume={0.2} />
+      <Sfx name="whoosh" at={sConta - 0.15} volume={0.25} />
+      <Sfx name="reveal" at={cue.word("um", "novecentos") - 0.05} volume={0.3} />
+      <Sfx name="reveal" at={cue.word("dois", "mil") - 0.05} volume={0.35} />
+      {Array.from({ length: 10 }).map((_, i) => (
+        <Sfx key={`d1${i}`} name="tick" at={cue.word("um", "trinta") + i * 0.12} volume={0.08} />
+      ))}
       {[s2, s3, s4].map((s, i) => (
         <Sfx key={`w${i}`} name="whoosh" at={s - 0.15} volume={0.25} />
       ))}

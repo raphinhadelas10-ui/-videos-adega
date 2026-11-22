@@ -1,7 +1,7 @@
 {
  "episode": "03-do-link-ao-painel",
  "source": "kokoro:pm_alex",
- "duration": 44.2,
+ "duration": 56.6,
  "lines": [
   {
    "id": "sabado",
@@ -175,477 +175,618 @@
    ]
   },
   {
-   "id": "volta",
-   "text": "Quando tu volta pra responder, um deles já pediu em outro lugar.",
-   "start": 10.025,
-   "end": 13.424,
+   "id": "correria",
+   "text": "No meio da correria, cinco minutos sem responder já podem custar um pedido.",
+   "start": 10.225,
+   "end": 14.613,
    "words": [
     {
-     "w": "Quando",
-     "start": 10.08,
-     "end": 10.28
+     "w": "No",
+     "start": 10.305,
+     "end": 10.38
     },
     {
-     "w": "tu",
-     "start": 10.33,
-     "end": 10.43
+     "w": "meio",
+     "start": 10.43,
+     "end": 10.605
     },
     {
-     "w": "volta",
-     "start": 10.48,
-     "end": 10.73
+     "w": "da",
+     "start": 10.63,
+     "end": 10.68
     },
     {
-     "w": "pra",
-     "start": 10.755,
-     "end": 10.855
+     "w": "correria,",
+     "start": 10.73,
+     "end": 11.33
     },
     {
-     "w": "responder,",
-     "start": 10.88,
-     "end": 11.58
+     "w": "cinco",
+     "start": 11.455,
+     "end": 11.68
     },
     {
-     "w": "um",
-     "start": 11.68,
-     "end": 11.755
+     "w": "minutos",
+     "start": 11.705,
+     "end": 12.105
     },
     {
-     "w": "deles",
-     "start": 11.78,
-     "end": 12.005
+     "w": "sem",
+     "start": 12.155,
+     "end": 12.355
+    },
+    {
+     "w": "responder",
+     "start": 12.38,
+     "end": 12.955
     },
     {
      "w": "já",
-     "start": 12.055,
-     "end": 12.18
+     "start": 13.005,
+     "end": 13.155
     },
     {
-     "w": "pediu",
-     "start": 12.23,
-     "end": 12.605
+     "w": "podem",
+     "start": 13.205,
+     "end": 13.505
     },
     {
-     "w": "em",
-     "start": 12.63,
-     "end": 12.755
+     "w": "custar",
+     "start": 13.555,
+     "end": 13.93
     },
     {
-     "w": "outro",
-     "start": 12.78,
-     "end": 13.03
+     "w": "um",
+     "start": 13.955,
+     "end": 14.03
     },
     {
-     "w": "lugar.",
-     "start": 13.055,
-     "end": 13.424
+     "w": "pedido.",
+     "start": 14.08,
+     "end": 14.613
+    }
+   ]
+  },
+  {
+   "id": "um",
+   "text": "Se escapar um de trinta reais por dia, são novecentos reais a menos no mês.",
+   "start": 15.213,
+   "end": 19.713,
+   "words": [
+    {
+     "w": "Se",
+     "start": 15.294,
+     "end": 15.344
+    },
+    {
+     "w": "escapar",
+     "start": 15.369,
+     "end": 15.819
+    },
+    {
+     "w": "um",
+     "start": 15.844,
+     "end": 15.919
+    },
+    {
+     "w": "de",
+     "start": 15.944,
+     "end": 16.069
+    },
+    {
+     "w": "trinta",
+     "start": 16.119,
+     "end": 16.394
+    },
+    {
+     "w": "reais",
+     "start": 16.444,
+     "end": 16.794
+    },
+    {
+     "w": "por",
+     "start": 16.844,
+     "end": 16.969
+    },
+    {
+     "w": "dia,",
+     "start": 17.019,
+     "end": 17.469
+    },
+    {
+     "w": "são",
+     "start": 17.569,
+     "end": 17.719
+    },
+    {
+     "w": "novecentos",
+     "start": 17.744,
+     "end": 18.319
+    },
+    {
+     "w": "reais",
+     "start": 18.369,
+     "end": 18.769
+    },
+    {
+     "w": "a",
+     "start": 18.819,
+     "end": 18.869
+    },
+    {
+     "w": "menos",
+     "start": 18.919,
+     "end": 19.194
+    },
+    {
+     "w": "no",
+     "start": 19.244,
+     "end": 19.294
+    },
+    {
+     "w": "mês.",
+     "start": 19.344,
+     "end": 19.713
+    }
+   ]
+  },
+  {
+   "id": "dois",
+   "text": "Se escaparem dois, são mil e oitocentos.",
+   "start": 20.213,
+   "end": 22.808,
+   "words": [
+    {
+     "w": "Se",
+     "start": 20.293,
+     "end": 20.343
+    },
+    {
+     "w": "escaparem",
+     "start": 20.368,
+     "end": 20.918
+    },
+    {
+     "w": "dois,",
+     "start": 20.968,
+     "end": 21.343
+    },
+    {
+     "w": "são",
+     "start": 21.418,
+     "end": 21.568
+    },
+    {
+     "w": "mil",
+     "start": 21.618,
+     "end": 21.818
+    },
+    {
+     "w": "e",
+     "start": 21.868,
+     "end": 21.893
+    },
+    {
+     "w": "oitocentos.",
+     "start": 21.918,
+     "end": 22.808
     }
    ]
   },
   {
    "id": "imagina",
-   "text": "Agora imagina esse mesmo cliente abrindo o link da tua loja.",
-   "start": 13.544,
-   "end": 17.116,
+   "text": "Agora imagina ter um site recebendo pedido enquanto tu tá atendendo no balcão.",
+   "start": 23.708,
+   "end": 28.719,
    "words": [
     {
      "w": "Agora",
-     "start": 13.6,
-     "end": 13.85
+     "start": 23.764,
+     "end": 24.039
     },
     {
      "w": "imagina",
-     "start": 13.875,
-     "end": 14.35
+     "start": 24.064,
+     "end": 24.564
     },
     {
-     "w": "esse",
-     "start": 14.375,
-     "end": 14.575
+     "w": "ter",
+     "start": 24.614,
+     "end": 24.739
     },
     {
-     "w": "mesmo",
-     "start": 14.625,
-     "end": 14.925
+     "w": "um",
+     "start": 24.764,
+     "end": 24.839
     },
     {
-     "w": "cliente",
-     "start": 14.975,
-     "end": 15.55
+     "w": "site",
+     "start": 24.914,
+     "end": 25.539
     },
     {
-     "w": "abrindo",
-     "start": 15.625,
-     "end": 16.025
+     "w": "recebendo",
+     "start": 25.614,
+     "end": 26.164
     },
     {
-     "w": "o",
-     "start": 16.05,
-     "end": 16.075
+     "w": "pedido",
+     "start": 26.214,
+     "end": 26.639
     },
     {
-     "w": "link",
-     "start": 16.125,
-     "end": 16.325
+     "w": "enquanto",
+     "start": 26.664,
+     "end": 27.114
     },
     {
-     "w": "da",
-     "start": 16.375,
-     "end": 16.475
+     "w": "tu",
+     "start": 27.189,
+     "end": 27.314
     },
     {
-     "w": "tua",
-     "start": 16.525,
-     "end": 16.675
+     "w": "tá",
+     "start": 27.389,
+     "end": 27.514
     },
     {
-     "w": "loja.",
-     "start": 16.725,
-     "end": 17.116
+     "w": "atendendo",
+     "start": 27.539,
+     "end": 28.139
+    },
+    {
+     "w": "no",
+     "start": 28.164,
+     "end": 28.214
+    },
+    {
+     "w": "balcão.",
+     "start": 28.264,
+     "end": 28.719
     }
    ]
   },
   {
    "id": "ve",
    "text": "Ele vê o que tem,",
-   "start": 17.236,
-   "end": 18.483,
+   "start": 29.619,
+   "end": 30.866,
    "words": [
     {
      "w": "Ele",
-     "start": 17.338,
-     "end": 17.538
+     "start": 29.721,
+     "end": 29.921
     },
     {
      "w": "vê",
-     "start": 17.613,
-     "end": 17.788
+     "start": 29.996,
+     "end": 30.171
     },
     {
      "w": "o",
-     "start": 17.838,
-     "end": 17.888
+     "start": 30.221,
+     "end": 30.271
     },
     {
      "w": "que",
-     "start": 17.938,
-     "end": 18.038
+     "start": 30.321,
+     "end": 30.421
     },
     {
      "w": "tem,",
-     "start": 18.113,
-     "end": 18.483
+     "start": 30.496,
+     "end": 30.866
     }
    ]
   },
   {
    "id": "escolhe",
    "text": "escolhe o combo,",
-   "start": 18.603,
-   "end": 19.784,
+   "start": 31.166,
+   "end": 32.347,
    "words": [
     {
      "w": "escolhe",
-     "start": 18.684,
-     "end": 19.134
+     "start": 31.247,
+     "end": 31.697
     },
     {
      "w": "o",
-     "start": 19.159,
-     "end": 19.184
+     "start": 31.722,
+     "end": 31.747
     },
     {
      "w": "combo,",
-     "start": 19.259,
-     "end": 19.759
+     "start": 31.822,
+     "end": 32.322
     }
    ]
   },
   {
    "id": "endereco",
    "text": "coloca o endereço",
-   "start": 21.2,
-   "end": 22.554,
+   "start": 33.647,
+   "end": 35.001,
    "words": [
     {
      "w": "coloca",
-     "start": 21.291,
-     "end": 21.791
+     "start": 33.738,
+     "end": 34.238
     },
     {
      "w": "o",
-     "start": 21.841,
-     "end": 21.866
+     "start": 34.288,
+     "end": 34.313
     },
     {
      "w": "endereço",
-     "start": 21.891,
-     "end": 22.554
+     "start": 34.338,
+     "end": 35.001
     }
    ]
   },
   {
    "id": "faz",
    "text": "e faz o pedido.",
-   "start": 23.7,
-   "end": 24.993,
+   "start": 36.101,
+   "end": 37.394,
    "words": [
     {
      "w": "e",
-     "start": 23.806,
-     "end": 23.881
+     "start": 36.207,
+     "end": 36.282
     },
     {
      "w": "faz",
-     "start": 23.956,
-     "end": 24.181
+     "start": 36.357,
+     "end": 36.582
     },
     {
      "w": "o",
-     "start": 24.206,
-     "end": 24.256
+     "start": 36.607,
+     "end": 36.657
     },
     {
      "w": "pedido.",
-     "start": 24.331,
-     "end": 24.981
+     "start": 36.732,
+     "end": 37.382
     }
    ]
   },
   {
    "id": "toques",
    "text": "Em poucos toques.",
-   "start": 25.493,
-   "end": 26.799,
+   "start": 37.894,
+   "end": 39.2,
    "words": [
     {
      "w": "Em",
-     "start": 25.598,
-     "end": 25.798
+     "start": 37.999,
+     "end": 38.199
     },
     {
      "w": "poucos",
-     "start": 25.873,
-     "end": 26.223
+     "start": 38.274,
+     "end": 38.624
     },
     {
      "w": "toques.",
-     "start": 26.273,
-     "end": 26.798
+     "start": 38.674,
+     "end": 39.199
     }
    ]
   },
   {
    "id": "lado",
    "text": "Do teu lado, o pedido já chega com os itens e o endereço.",
-   "start": 29.799,
-   "end": 33.256,
+   "start": 42.2,
+   "end": 45.657,
    "words": [
     {
      "w": "Do",
-     "start": 29.875,
-     "end": 29.975
+     "start": 42.276,
+     "end": 42.376
     },
     {
      "w": "teu",
-     "start": 30.025,
-     "end": 30.2
+     "start": 42.426,
+     "end": 42.601
     },
     {
      "w": "lado,",
-     "start": 30.25,
-     "end": 30.625
+     "start": 42.651,
+     "end": 43.026
     },
     {
      "w": "o",
-     "start": 30.7,
-     "end": 30.725
+     "start": 43.101,
+     "end": 43.126
     },
     {
      "w": "pedido",
-     "start": 30.775,
-     "end": 31.2
+     "start": 43.176,
+     "end": 43.601
     },
     {
      "w": "já",
-     "start": 31.25,
-     "end": 31.4
+     "start": 43.651,
+     "end": 43.801
     },
     {
      "w": "chega",
-     "start": 31.475,
-     "end": 31.725
+     "start": 43.876,
+     "end": 44.126
     },
     {
      "w": "com",
-     "start": 31.775,
-     "end": 31.9
+     "start": 44.176,
+     "end": 44.301
     },
     {
      "w": "os",
-     "start": 31.925,
-     "end": 32.025
+     "start": 44.326,
+     "end": 44.426
     },
     {
      "w": "itens",
-     "start": 32.075,
-     "end": 32.5
+     "start": 44.476,
+     "end": 44.901
     },
     {
      "w": "e",
-     "start": 32.55,
-     "end": 32.575
+     "start": 44.951,
+     "end": 44.976
     },
     {
      "w": "o",
-     "start": 32.6,
-     "end": 32.625
+     "start": 45.001,
+     "end": 45.026
     },
     {
      "w": "endereço.",
-     "start": 32.65,
-     "end": 33.256
+     "start": 45.051,
+     "end": 45.657
     }
    ]
   },
   {
    "id": "segue",
    "text": "Tu confere e segue com a entrega.",
-   "start": 33.606,
-   "end": 35.684,
+   "start": 46.007,
+   "end": 48.084,
    "words": [
     {
      "w": "Tu",
-     "start": 33.684,
-     "end": 33.784
+     "start": 46.085,
+     "end": 46.185
     },
     {
      "w": "confere",
-     "start": 33.834,
-     "end": 34.334
+     "start": 46.235,
+     "end": 46.735
     },
     {
      "w": "e",
-     "start": 34.384,
-     "end": 34.434
+     "start": 46.785,
+     "end": 46.835
     },
     {
      "w": "segue",
-     "start": 34.534,
-     "end": 34.834
+     "start": 46.935,
+     "end": 47.235
     },
     {
      "w": "com",
-     "start": 34.884,
-     "end": 35.009
+     "start": 47.285,
+     "end": 47.41
     },
     {
      "w": "a",
-     "start": 35.034,
-     "end": 35.059
+     "start": 47.435,
+     "end": 47.46
     },
     {
      "w": "entrega.",
-     "start": 35.084,
-     "end": 35.684
+     "start": 47.485,
+     "end": 48.084
     }
    ]
   },
   {
    "id": "chama",
    "text": "Se tu quiser ver como isso ficaria na tua adega ou tabacaria, me chama que eu te mostro.",
-   "start": 37.384,
-   "end": 42.246,
+   "start": 49.784,
+   "end": 54.647,
    "words": [
     {
      "w": "Se",
-     "start": 37.465,
-     "end": 37.54
+     "start": 49.866,
+     "end": 49.941
     },
     {
      "w": "tu",
-     "start": 37.59,
-     "end": 37.665
+     "start": 49.991,
+     "end": 50.066
     },
     {
      "w": "quiser",
-     "start": 37.715,
-     "end": 38.015
+     "start": 50.116,
+     "end": 50.416
     },
     {
      "w": "ver",
-     "start": 38.065,
-     "end": 38.24
+     "start": 50.466,
+     "end": 50.641
     },
     {
      "w": "como",
-     "start": 38.29,
-     "end": 38.465
+     "start": 50.691,
+     "end": 50.866
     },
     {
      "w": "isso",
-     "start": 38.515,
-     "end": 38.74
+     "start": 50.916,
+     "end": 51.141
     },
     {
      "w": "ficaria",
-     "start": 38.79,
-     "end": 39.19
+     "start": 51.191,
+     "end": 51.591
     },
     {
      "w": "na",
-     "start": 39.215,
-     "end": 39.315
+     "start": 51.616,
+     "end": 51.716
     },
     {
      "w": "tua",
-     "start": 39.365,
-     "end": 39.49
+     "start": 51.766,
+     "end": 51.891
     },
     {
      "w": "adega",
-     "start": 39.515,
-     "end": 39.89
+     "start": 51.916,
+     "end": 52.291
     },
     {
      "w": "ou",
-     "start": 39.94,
-     "end": 40.015
+     "start": 52.341,
+     "end": 52.416
     },
     {
      "w": "tabacaria,",
-     "start": 40.065,
-     "end": 40.865
+     "start": 52.466,
+     "end": 53.266
     },
     {
      "w": "me",
-     "start": 40.965,
-     "end": 41.065
+     "start": 53.366,
+     "end": 53.466
     },
     {
      "w": "chama",
-     "start": 41.14,
-     "end": 41.415
+     "start": 53.541,
+     "end": 53.816
     },
     {
      "w": "que",
-     "start": 41.465,
-     "end": 41.515
+     "start": 53.866,
+     "end": 53.916
     },
     {
      "w": "eu",
-     "start": 41.54,
-     "end": 41.615
+     "start": 53.941,
+     "end": 54.016
     },
     {
      "w": "te",
-     "start": 41.64,
-     "end": 41.765
+     "start": 54.041,
+     "end": 54.166
     },
     {
      "w": "mostro.",
-     "start": 41.815,
-     "end": 42.246
+     "start": 54.216,
+     "end": 54.647
     }
    ]
   }

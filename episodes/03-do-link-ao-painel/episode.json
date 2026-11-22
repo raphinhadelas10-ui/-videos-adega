@@ -4,13 +4,18 @@
   "series": "Adega no Digital",
   "title": "Do link ao painel",
   "output": "out/03-do-link-ao-painel.mp4",
-  "durationSec": 44.2,
+  "durationSec": 56.6,
   "voice": {
     "engine": "kokoro",
     "voice": "pm_alex",
     "speed": 1.05
   },
-  "captionReplace": {},
+  "captionReplace": {
+    "cinco minutos": "5 minutos",
+    "trinta reais": "R$ 30",
+    "novecentos reais": "R$ 900",
+    "mil e oitocentos": "R$ 1.800"
+  },
   "lines": [
     {
       "id": "sabado",
@@ -25,45 +30,54 @@
       "speed": 1.17
     },
     {
-      "id": "volta",
-      "gap": 0.3,
-      "text": "Quando tu volta pra responder, um deles já pediu em outro lugar.",
-      "speed": 1.17
+      "id": "correria",
+      "gap": 0.5,
+      "text": "No meio da correria, cinco minutos sem responder já podem custar um pedido."
+    },
+    {
+      "id": "um",
+      "gap": 0.6,
+      "text": "Se escapar um de trinta reais por dia, são novecentos reais a menos no mês."
+    },
+    {
+      "id": "dois",
+      "gap": 0.5,
+      "text": "Se escaparem dois, são mil e oitocentos."
     },
     {
       "id": "imagina",
-      "at": 12.4,
-      "text": "Agora imagina esse mesmo cliente abrindo o link da tua loja."
+      "gap": 0.9,
+      "text": "Agora imagina ter um site recebendo pedido enquanto tu tá atendendo no balcão."
     },
     {
       "id": "ve",
-      "at": 16.3,
+      "gap": 0.9,
       "text": "Ele vê o que tem,"
     },
     {
       "id": "escolhe",
-      "at": 18.3,
+      "gap": 0.3,
       "text": "escolhe o combo,"
     },
     {
       "id": "endereco",
-      "at": 21.2,
+      "gap": 1.3,
       "text": "coloca o endereço"
     },
     {
       "id": "faz",
-      "at": 23.7,
+      "gap": 1.1,
       "text": "e faz o pedido."
     },
     {
       "id": "toques",
-      "text": "Em poucos toques.",
-      "gap": 0.5
+      "gap": 0.5,
+      "text": "Em poucos toques."
     },
     {
       "id": "lado",
-      "text": "Do teu lado, o pedido já chega com os itens e o endereço.",
-      "gap": 3.0
+      "gap": 3.0,
+      "text": "Do teu lado, o pedido já chega com os itens e o endereço."
     },
     {
       "id": "segue",
@@ -72,8 +86,8 @@
     },
     {
       "id": "chama",
-      "text": "Se tu quiser ver como isso ficaria na tua adega ou tabacaria, me chama que eu te mostro.",
-      "gap": 1.7
+      "gap": 1.7,
+      "text": "Se tu quiser ver como isso ficaria na tua adega ou tabacaria, me chama que eu te mostro."
     }
   ]
 }
