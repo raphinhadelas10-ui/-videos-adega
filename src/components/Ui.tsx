@@ -71,9 +71,8 @@ export const Bubble: React.FC<{
 );
 
 /** Selo da série no topo. */
-export const SeriesTag: React.FC<{ series: string; number: number; opacity?: number; y?: number }> = ({
+export const SeriesTag: React.FC<{ series: string; number?: number; opacity?: number; y?: number }> = ({
   series,
-  number,
   opacity = 1,
   y = SAFE.top + 30,
 }) => (
@@ -91,18 +90,6 @@ export const SeriesTag: React.FC<{ series: string; number: number; opacity?: num
     }}
   >
     <div style={{ fontSize: 30, letterSpacing: 6, fontWeight: 600, color: C.muted, textTransform: "uppercase" }}>{series}</div>
-    <div
-      style={{
-        fontSize: 30,
-        fontWeight: 700,
-        color: C.text,
-        padding: "8px 22px",
-        borderRadius: 999,
-        border: `2px solid ${C.cardBorder}`,
-      }}
-    >
-      EP. {number}
-    </div>
   </div>
 );
 

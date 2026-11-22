@@ -91,6 +91,39 @@ def main():
         b = env(lowpass(rng.standard_normal(int(0.07 * SR)), 12), 0.002, 0.02)
         x[s:s + len(b)] += b
     save("steps", x, 0.3)
+    # trilha de suspense (70 s): drone grave + pulso tipo batimento + ar filtrado
+    d = 70.0
+    tt = t(d)
+    lfo = 0.6 + 0.4 * np.sin(2 * np.pi * tt / 9.0)
+    drone = (np.sin(2 * np.pi * 55 * tt) + 0.6 * np.sin(2 * np.pi * 82.4 * tt + 0.3)
+             + 0.25 * np.sin(2 * np.pi * 110.3 * tt)) * lfo
+    air = rng.standard_normal(len(tt))
+    for _ in range(3):
+        air = np.convolve(air, np.ones(60) / 60, mode="same")
+    air *= 0.8 * (0.5 + 0.5 * np.sin(2 * np.pi * tt / 13.0))
+    pulse = np.zeros(len(tt))
+    beat = env(np.sin(2 * np.pi * 50 * t(0.25)), 0.004, 0.07)
+    for k in np.arange(0.5, d, 0.92):
+        for off, g in ((0, 1.0), (0.22, 0.6)):
+            i = int((k + off) * SR)
+            pulse[i:i + len(beat)] += beat[: len(pulse) - i] * g
+    bed = 0.55 * drone + 0.25 * air / (np.abs(air).max() + 1e-9) + 0.7 * pulse
+    fade = int(2.0 * SR)
+    bed[:fade] *= np.linspace(0, 1, fade)
+    save("bed_tension", bed, 0.6)
+
+    # impacto grave (momentos de virada)
+    tt = t(1.4)
+    f = 70 * np.exp(-tt * 0.8)
+    ph = 2 * np.pi * np.cumsum(f) / SR
+    save("hit", env(np.sin(ph) + 0.4 * lowpass(rng.standard_normal(len(tt)), 30), 0.003, 0.45), 0.6)
+
+    # subida antes da pergunta final
+    tt = t(2.0)
+    n = lowpass(rng.standard_normal(len(tt)), 6)
+    rise = (tt / tt[-1]) ** 2.5
+    sw = np.sin(2 * np.pi * np.cumsum(200 + 600 * rise) / SR)
+    save("riser", (0.6 * n + 0.4 * sw) * rise, 0.4)
     print("OK →", OUT)
 
 

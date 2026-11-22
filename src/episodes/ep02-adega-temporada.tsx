@@ -397,6 +397,20 @@ export const Ep02AdegaTemporada: React.FC<EpisodeProps> = ({ episode, timings })
       <Captions timings={timings} replace={episode.captionReplace} />
 
       <Audio src={staticFile(`episodes/${episode.id}/voice.wav`)} />
+      {/* trilha de suspense: baixa, sobe um pouco nas viradas e some no final */}
+      <Audio
+        src={staticFile("sfx/bed_tension.wav")}
+        volume={(f) => {
+          const sec = f / 30;
+          const base = interpolate(sec, [0, 1.5, end - 2, end], [0, 0.22, 0.22, 0], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
+          const swell = interpolate(sec, [cue.start("lucro") - 0.5, cue.start("lucro"), cue.end("unidades"), cue.end("unidades") + 1], [1, 1.35, 1.35, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
+          return base * swell;
+        }}
+      />
+      <Sfx name="hit" at={valeuAt} volume={0.45} />
+      <Sfx name="hit" at={cue.start("lucro") - 0.1} volume={0.4} />
+      <Sfx name="riser" at={cue.start("pergunta") - 2.1} volume={0.35} />
+      <Sfx name="hit" at={cue.start("pergunta") - 0.1} volume={0.45} />
       <Sfx name="message" at={cue.word("zap", "uótsap")} volume={0.35} />
       {msgAt.map((m, i) => (
         <Sfx key={i} name="message" at={m} volume={0.5} />

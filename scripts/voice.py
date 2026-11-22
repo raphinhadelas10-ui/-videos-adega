@@ -96,6 +96,11 @@ def synth_line(voice, syn_config, text, sr):
         audio_parts.append(a)
         total += len(a)
     audio = np.concatenate(audio_parts)
+    return finish_words(audio, word_spans, text, sr)
+
+
+def finish_words(audio, word_spans, text, sr):
+    total = len(audio)
     tokens = text.split()
     if len(word_spans) != len(tokens):
         print(f"  ! alinhamento com {len(word_spans)} palavras para {len(tokens)} tokens; usando proporção")
@@ -109,33 +114,118 @@ def synth_line(voice, syn_config, text, sr):
     return audio, words
 
 
+# ——— Kokoro (voz neural mais natural; PT-BR: pm_alex, pm_santa, pf_dora) ———
+KOKORO_URL = "https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.0/{f}"
+
+
+class KokoroEngine:
+    """Kokoro com a saída de durações exposta, para ter o tempo de cada palavra."""
+
+    sr = 24000
+
+    def __init__(self, voice: str, speed: float):
+        kdir = ROOT / "voices" / "kokoro"
+        kdir.mkdir(parents=True, exist_ok=True)
+        for f in ("kokoro-v1.0.onnx", "voices-v1.0.bin"):
+            if not (kdir / f).exists():
+                print(f"Baixando {f} …")
+                urllib.request.urlretrieve(KOKORO_URL.format(f=f), kdir / f)
+        patched = kdir / "kokoro-v1.0-dur.onnx"
+        if not patched.exists():
+            import onnx
+            m = onnx.load(str(kdir / "kokoro-v1.0.onnx"))
+            m.graph.output.append(onnx.helper.make_tensor_value_info("/encoder/Round_output_0", onnx.TensorProto.FLOAT, None))
+            onnx.save(m, str(patched))
+        import onnxruntime as ort
+        from kokoro_onnx import Kokoro
+        self.k = Kokoro(str(kdir / "kokoro-v1.0.onnx"), str(kdir / "voices-v1.0.bin"))
+        self.sess = ort.InferenceSession(str(patched))
+        self.voice = voice
+        self.speed = speed
+
+    def synth_line(self, text, line):
+        ph = self.k.tokenizer.phonemize(text, lang="pt-br")
+        chars = [c for c in ph if c in self.k.tokenizer.vocab]
+        toks = [self.k.tokenizer.vocab[c] for c in chars]
+        style = np.array(self.k.get_voice_style(self.voice)[len(toks)], dtype=np.float32).reshape(1, 256)
+        speed = float(line.get("speed", self.speed))
+        audio, dur = self.sess.run(None, {
+            "tokens": np.array([[0, *toks, 0]], dtype=np.int64),
+            "style": style,
+            "speed": np.array([speed], dtype=np.float32),
+        })
+        dur = dur.ravel().astype(int) * 600  # amostras por token
+        pos = int(dur[0])
+        spans, cur = [], None
+        for c, d in zip(chars, dur[1:-1]):
+            if c == " ":
+                if cur:
+                    spans.append(cur)
+                    cur = None
+            elif c in PUNCT:
+                if cur and cur.get("end") is None:
+                    cur["end"] = pos
+            else:
+                if cur is None:
+                    cur = {"start": pos, "end": None}
+                cur["_last"] = pos + int(d)
+            pos += int(d)
+        if cur:
+            spans.append(cur)
+        for w in spans:
+            if w.get("end") is None:
+                w["end"] = w.get("_last", w["start"])
+        audio = np.asarray(audio, dtype=np.float32)
+        # corta silêncio no início e no fim (mantém 60 ms)
+        env = np.convolve(np.abs(audio), np.ones(240) / 240, mode="same")
+        voiced = np.where(env > 0.02 * env.max())[0]
+        pad = int(0.06 * self.sr)
+        a0 = max(0, voiced[0] - pad)
+        a1 = min(len(audio), voiced[-1] + pad)
+        audio = audio[a0:a1]
+        for w in spans:
+            w["start"] = max(0, w["start"] - a0)
+            w["end"] = min(a1 - a0, w["end"] - a0)
+        audio = audio / (np.abs(audio).max() + 1e-9) * 0.89
+        return finish_words((audio * 32767).astype(np.int16), spans, text, self.sr)
+
+
 def main():
     if len(sys.argv) < 2:
         sys.exit("uso: voice.py <id-do-episodio>")
     ep_id = sys.argv[1]
     ep = json.loads((ROOT / "episodes" / ep_id / "episode.json").read_text())
     vcfg = ep.get("voice", {})
-    model = vcfg.get("model", "pt_BR-faber-medium")
-    onnx = ensure_voice(model)
+    engine = vcfg.get("engine", "piper")
+    if engine == "kokoro":
+        kok = KokoroEngine(vcfg.get("voice", "pm_alex"), vcfg.get("speed", 0.92))
+        sr = kok.sr
+        source = f"kokoro:{kok.voice}"
+    else:
+        model = vcfg.get("model", "pt_BR-faber-medium")
+        onnx = ensure_voice(model)
+        from piper import PiperVoice, SynthesisConfig
 
-    from piper import PiperVoice, SynthesisConfig
-
-    voice = PiperVoice.load(onnx, config_path=str(onnx) + ".json", include_alignments=True)
-    sr = voice.config.sample_rate
-    syn = SynthesisConfig(
-        length_scale=vcfg.get("lengthScale", 1.0),
-        noise_scale=vcfg.get("noiseScale", 0.6),
-        noise_w_scale=vcfg.get("noiseW", 0.8),
-    )
+        voice = PiperVoice.load(onnx, config_path=str(onnx) + ".json", include_alignments=True)
+        sr = voice.config.sample_rate
+        syn = SynthesisConfig(
+            length_scale=vcfg.get("lengthScale", 1.0),
+            noise_scale=vcfg.get("noiseScale", 0.6),
+            noise_w_scale=vcfg.get("noiseW", 0.8),
+        )
+        source = f"piper:{model}"
 
     duration = float(ep["durationSec"])
     track = np.zeros(int(duration * sr), dtype=np.int16)
     out_lines = []
     prev_end = 0.0
     for line in ep["lines"]:
-        cfg = syn if "lengthScale" not in line else SynthesisConfig(
-            length_scale=line["lengthScale"], noise_scale=syn.noise_scale, noise_w_scale=syn.noise_w_scale)
-        audio, words = synth_line(voice, cfg, line["text"], sr)
+        if engine == "kokoro":
+            audio, words = kok.synth_line(line["text"], line)
+        else:
+            cfg = syn if "lengthScale" not in line else SynthesisConfig(
+                length_scale=line["lengthScale"], noise_scale=syn.noise_scale, noise_w_scale=syn.noise_w_scale)
+            audio, words = synth_line(voice, cfg, line["text"], sr)
         # "at" fixo (s) ou, sem "at", logo após a fala anterior + "gap" (padrão 0.35 s)
         start = max(float(line["at"]), prev_end + MIN_LINE_GAP) if "at" in line else prev_end + float(line.get("gap", 0.35))
         length = len(audio) / sr
@@ -160,7 +250,7 @@ def main():
         wf.setframerate(sr)
         wf.writeframes(track.tobytes())
     (out_dir / "timings.json").write_text(json.dumps(
-        {"episode": ep_id, "source": f"piper:{model}", "duration": duration, "lines": out_lines},
+        {"episode": ep_id, "source": source, "duration": duration, "lines": out_lines},
         ensure_ascii=False, indent=1))
     print(f"OK → {out_dir.relative_to(ROOT)}/voice.wav + timings.json")
 

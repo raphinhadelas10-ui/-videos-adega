@@ -1,7 +1,8 @@
 // Renderiza um episódio: node scripts/render.mjs 01-pedido-perdido [--stills 1,5,12]
 import { bundle } from "@remotion/bundler";
 import { renderMedia, renderStill, selectComposition } from "@remotion/renderer";
-import { existsSync, mkdirSync, readFileSync } from "node:fs";
+import { existsSync, mkdirSync, readFileSync, unlinkSync } from "node:fs";
+import { execFileSync } from "node:child_process";
 import path from "node:path";
 
 const root = path.resolve(path.dirname(new URL(import.meta.url).pathname), "..");
@@ -27,7 +28,8 @@ if (stills) {
     console.log("still →", path.relative(root, output));
   }
 } else {
-  const outputLocation = path.join(root, ep.output);
+  const finalLocation = path.join(root, ep.output);
+  const outputLocation = finalLocation.replace(/\.mp4$/, ".raw.mp4");
   mkdirSync(path.dirname(outputLocation), { recursive: true });
   let last = -1;
   await renderMedia({
@@ -47,5 +49,10 @@ if (stills) {
       if (p !== last) { last = p; console.log(`render ${p * 10}%`); }
     },
   });
-  console.log("MP4 →", path.relative(root, outputLocation));
+  // volume padrão de redes sociais (−14 LUFS, pico −1,5 dBTP), vídeo copiado sem perda
+  execFileSync("ffmpeg", ["-y", "-loglevel", "error", "-i", outputLocation, "-c:v", "copy",
+    "-af", "loudnorm=I=-14:TP=-1.5:LRA=11", "-ar", "48000", "-c:a", "aac", "-b:a", "192k",
+    "-movflags", "+faststart", finalLocation]);
+  unlinkSync(outputLocation);
+  console.log("MP4 →", path.relative(root, finalLocation));
 }
