@@ -73,12 +73,15 @@ export const Captions: React.FC<{
   replace?: Record<string, string>;
   /** trechos exibidos em verde (resultado), ex.: ["R$ 1.800"] */
   green?: string[];
+  /** fundo escuro atrás da legenda (quando passa por cima de telas) */
+  backdrop?: boolean;
   y?: number;
   size?: number;
 }> = ({
   timings,
   replace,
   green = [],
+  backdrop = false,
   y = SAFE.captionsY,
   size = 66,
 }) => {
@@ -109,6 +112,7 @@ export const Captions: React.FC<{
         lineHeight: 1.15,
       }}
     >
+      <span style={backdrop ? { display: "inline", background: "rgba(0,0,0,0.72)", padding: "6px 20px", borderRadius: 20, boxDecorationBreak: "clone", WebkitBoxDecorationBreak: "clone" } : undefined}>
       {chunk.tokens.map((tk, i) => {
         const spoken = now >= tk.start - 0.03;
         const money = green.some((g) => tk.text.startsWith(g));
@@ -125,6 +129,7 @@ export const Captions: React.FC<{
           </span>
         );
       })}
+      </span>
     </div>
   );
 };

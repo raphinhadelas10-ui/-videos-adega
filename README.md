@@ -7,6 +7,7 @@ Vídeos verticais (1080 × 1920, 30 fps) feitos em Remotion para donos de adega,
 | 1 | A mensagem que ficou sem resposta | `out/01-pedido-perdido.mp4` |
 | 2 | Sábado de temporada (voz Alex) | `out/02-adega-temporada.mp4` |
 | 2 | Sábado de temporada (voz Dora) | `out/02-adega-temporada-dora.mp4` |
+| 3 | Do link ao painel | `out/03-do-link-ao-painel.mp4` |
 
 ## Como gerar
 

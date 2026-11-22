@@ -1,0 +1,79 @@
+{
+  "id": "03-do-link-ao-painel",
+  "number": 3,
+  "series": "Adega no Digital",
+  "title": "Do link ao painel",
+  "output": "out/03-do-link-ao-painel.mp4",
+  "durationSec": 53,
+  "voice": {
+    "engine": "kokoro",
+    "voice": "pm_alex",
+    "speed": 1.05
+  },
+  "captionReplace": {},
+  "lines": [
+    {
+      "id": "sabado",
+      "at": 0.2,
+      "text": "Sábado à noite.",
+      "speed": 1.17
+    },
+    {
+      "id": "balcao",
+      "gap": 0.25,
+      "text": "Tu tá atendendo no balcão, um cliente quer saber se tem gelo, outro tá esperando o valor da entrega e o endereço do terceiro ficou perdido na conversa.",
+      "speed": 1.17
+    },
+    {
+      "id": "volta",
+      "gap": 0.3,
+      "text": "Quando tu volta pra responder, um deles já pediu em outro lugar.",
+      "speed": 1.17
+    },
+    {
+      "id": "imagina",
+      "at": 12.4,
+      "text": "Agora imagina esse mesmo cliente abrindo o link da tua loja."
+    },
+    {
+      "id": "ve",
+      "at": 16.3,
+      "text": "Ele vê o que tem,"
+    },
+    {
+      "id": "escolhe",
+      "at": 18.3,
+      "text": "escolhe o combo,"
+    },
+    {
+      "id": "endereco",
+      "at": 22.0,
+      "text": "coloca o endereço"
+    },
+    {
+      "id": "faz",
+      "at": 25.4,
+      "text": "e faz o pedido."
+    },
+    {
+      "id": "toques",
+      "at": 27.6,
+      "text": "Em poucos toques."
+    },
+    {
+      "id": "lado",
+      "at": 36.3,
+      "text": "Do teu lado, o pedido já chega com os itens e o endereço."
+    },
+    {
+      "id": "segue",
+      "gap": 0.35,
+      "text": "Tu confere e segue com a entrega."
+    },
+    {
+      "id": "chama",
+      "at": 46.4,
+      "text": "Se tu quiser ver como isso ficaria na tua adega ou tabacaria, me chama que eu te mostro."
+    }
+  ]
+}

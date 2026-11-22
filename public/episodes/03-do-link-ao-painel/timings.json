@@ -1,0 +1,653 @@
+{
+ "episode": "03-do-link-ao-painel",
+ "source": "kokoro:pm_alex",
+ "duration": 53.0,
+ "lines": [
+  {
+   "id": "sabado",
+   "text": "Sábado à noite.",
+   "start": 0.2,
+   "end": 1.309,
+   "words": [
+    {
+     "w": "Sábado",
+     "start": 0.302,
+     "end": 0.627
+    },
+    {
+     "w": "à",
+     "start": 0.652,
+     "end": 0.727
+    },
+    {
+     "w": "noite.",
+     "start": 0.777,
+     "end": 1.302
+    }
+   ]
+  },
+  {
+   "id": "balcao",
+   "text": "Tu tá atendendo no balcão, um cliente quer saber se tem gelo, outro tá esperando o valor da entrega e o endereço do terceiro ficou perdido na conversa.",
+   "start": 1.559,
+   "end": 9.725,
+   "words": [
+    {
+     "w": "Tu",
+     "start": 1.614,
+     "end": 1.714
+    },
+    {
+     "w": "tá",
+     "start": 1.764,
+     "end": 1.864
+    },
+    {
+     "w": "atendendo",
+     "start": 1.889,
+     "end": 2.414
+    },
+    {
+     "w": "no",
+     "start": 2.439,
+     "end": 2.489
+    },
+    {
+     "w": "balcão,",
+     "start": 2.514,
+     "end": 3.114
+    },
+    {
+     "w": "um",
+     "start": 3.214,
+     "end": 3.289
+    },
+    {
+     "w": "cliente",
+     "start": 3.339,
+     "end": 3.714
+    },
+    {
+     "w": "quer",
+     "start": 3.764,
+     "end": 3.914
+    },
+    {
+     "w": "saber",
+     "start": 3.964,
+     "end": 4.264
+    },
+    {
+     "w": "se",
+     "start": 4.314,
+     "end": 4.389
+    },
+    {
+     "w": "tem",
+     "start": 4.439,
+     "end": 4.639
+    },
+    {
+     "w": "gelo,",
+     "start": 4.689,
+     "end": 5.139
+    },
+    {
+     "w": "outro",
+     "start": 5.264,
+     "end": 5.539
+    },
+    {
+     "w": "tá",
+     "start": 5.589,
+     "end": 5.664
+    },
+    {
+     "w": "esperando",
+     "start": 5.689,
+     "end": 6.089
+    },
+    {
+     "w": "o",
+     "start": 6.114,
+     "end": 6.139
+    },
+    {
+     "w": "valor",
+     "start": 6.164,
+     "end": 6.439
+    },
+    {
+     "w": "da",
+     "start": 6.464,
+     "end": 6.514
+    },
+    {
+     "w": "entrega",
+     "start": 6.539,
+     "end": 7.114
+    },
+    {
+     "w": "e",
+     "start": 7.164,
+     "end": 7.189
+    },
+    {
+     "w": "o",
+     "start": 7.214,
+     "end": 7.239
+    },
+    {
+     "w": "endereço",
+     "start": 7.264,
+     "end": 7.714
+    },
+    {
+     "w": "do",
+     "start": 7.739,
+     "end": 7.789
+    },
+    {
+     "w": "terceiro",
+     "start": 7.839,
+     "end": 8.314
+    },
+    {
+     "w": "ficou",
+     "start": 8.364,
+     "end": 8.664
+    },
+    {
+     "w": "perdido",
+     "start": 8.714,
+     "end": 9.164
+    },
+    {
+     "w": "na",
+     "start": 9.189,
+     "end": 9.239
+    },
+    {
+     "w": "conversa.",
+     "start": 9.264,
+     "end": 9.725
+    }
+   ]
+  },
+  {
+   "id": "volta",
+   "text": "Quando tu volta pra responder, um deles já pediu em outro lugar.",
+   "start": 10.025,
+   "end": 13.424,
+   "words": [
+    {
+     "w": "Quando",
+     "start": 10.08,
+     "end": 10.28
+    },
+    {
+     "w": "tu",
+     "start": 10.33,
+     "end": 10.43
+    },
+    {
+     "w": "volta",
+     "start": 10.48,
+     "end": 10.73
+    },
+    {
+     "w": "pra",
+     "start": 10.755,
+     "end": 10.855
+    },
+    {
+     "w": "responder,",
+     "start": 10.88,
+     "end": 11.58
+    },
+    {
+     "w": "um",
+     "start": 11.68,
+     "end": 11.755
+    },
+    {
+     "w": "deles",
+     "start": 11.78,
+     "end": 12.005
+    },
+    {
+     "w": "já",
+     "start": 12.055,
+     "end": 12.18
+    },
+    {
+     "w": "pediu",
+     "start": 12.23,
+     "end": 12.605
+    },
+    {
+     "w": "em",
+     "start": 12.63,
+     "end": 12.755
+    },
+    {
+     "w": "outro",
+     "start": 12.78,
+     "end": 13.03
+    },
+    {
+     "w": "lugar.",
+     "start": 13.055,
+     "end": 13.424
+    }
+   ]
+  },
+  {
+   "id": "imagina",
+   "text": "Agora imagina esse mesmo cliente abrindo o link da tua loja.",
+   "start": 13.544,
+   "end": 17.116,
+   "words": [
+    {
+     "w": "Agora",
+     "start": 13.6,
+     "end": 13.85
+    },
+    {
+     "w": "imagina",
+     "start": 13.875,
+     "end": 14.35
+    },
+    {
+     "w": "esse",
+     "start": 14.375,
+     "end": 14.575
+    },
+    {
+     "w": "mesmo",
+     "start": 14.625,
+     "end": 14.925
+    },
+    {
+     "w": "cliente",
+     "start": 14.975,
+     "end": 15.55
+    },
+    {
+     "w": "abrindo",
+     "start": 15.625,
+     "end": 16.025
+    },
+    {
+     "w": "o",
+     "start": 16.05,
+     "end": 16.075
+    },
+    {
+     "w": "link",
+     "start": 16.125,
+     "end": 16.325
+    },
+    {
+     "w": "da",
+     "start": 16.375,
+     "end": 16.475
+    },
+    {
+     "w": "tua",
+     "start": 16.525,
+     "end": 16.675
+    },
+    {
+     "w": "loja.",
+     "start": 16.725,
+     "end": 17.116
+    }
+   ]
+  },
+  {
+   "id": "ve",
+   "text": "Ele vê o que tem,",
+   "start": 17.236,
+   "end": 18.483,
+   "words": [
+    {
+     "w": "Ele",
+     "start": 17.338,
+     "end": 17.538
+    },
+    {
+     "w": "vê",
+     "start": 17.613,
+     "end": 17.788
+    },
+    {
+     "w": "o",
+     "start": 17.838,
+     "end": 17.888
+    },
+    {
+     "w": "que",
+     "start": 17.938,
+     "end": 18.038
+    },
+    {
+     "w": "tem,",
+     "start": 18.113,
+     "end": 18.483
+    }
+   ]
+  },
+  {
+   "id": "escolhe",
+   "text": "escolhe o combo,",
+   "start": 18.603,
+   "end": 19.784,
+   "words": [
+    {
+     "w": "escolhe",
+     "start": 18.684,
+     "end": 19.134
+    },
+    {
+     "w": "o",
+     "start": 19.159,
+     "end": 19.184
+    },
+    {
+     "w": "combo,",
+     "start": 19.259,
+     "end": 19.759
+    }
+   ]
+  },
+  {
+   "id": "endereco",
+   "text": "coloca o endereço",
+   "start": 22.0,
+   "end": 23.354,
+   "words": [
+    {
+     "w": "coloca",
+     "start": 22.091,
+     "end": 22.591
+    },
+    {
+     "w": "o",
+     "start": 22.641,
+     "end": 22.666
+    },
+    {
+     "w": "endereço",
+     "start": 22.691,
+     "end": 23.354
+    }
+   ]
+  },
+  {
+   "id": "faz",
+   "text": "e faz o pedido.",
+   "start": 25.4,
+   "end": 26.693,
+   "words": [
+    {
+     "w": "e",
+     "start": 25.506,
+     "end": 25.581
+    },
+    {
+     "w": "faz",
+     "start": 25.656,
+     "end": 25.881
+    },
+    {
+     "w": "o",
+     "start": 25.906,
+     "end": 25.956
+    },
+    {
+     "w": "pedido.",
+     "start": 26.031,
+     "end": 26.681
+    }
+   ]
+  },
+  {
+   "id": "toques",
+   "text": "Em poucos toques.",
+   "start": 27.6,
+   "end": 28.906,
+   "words": [
+    {
+     "w": "Em",
+     "start": 27.705,
+     "end": 27.905
+    },
+    {
+     "w": "poucos",
+     "start": 27.98,
+     "end": 28.33
+    },
+    {
+     "w": "toques.",
+     "start": 28.38,
+     "end": 28.905
+    }
+   ]
+  },
+  {
+   "id": "lado",
+   "text": "Do teu lado, o pedido já chega com os itens e o endereço.",
+   "start": 36.3,
+   "end": 39.756,
+   "words": [
+    {
+     "w": "Do",
+     "start": 36.375,
+     "end": 36.475
+    },
+    {
+     "w": "teu",
+     "start": 36.525,
+     "end": 36.7
+    },
+    {
+     "w": "lado,",
+     "start": 36.75,
+     "end": 37.125
+    },
+    {
+     "w": "o",
+     "start": 37.2,
+     "end": 37.225
+    },
+    {
+     "w": "pedido",
+     "start": 37.275,
+     "end": 37.7
+    },
+    {
+     "w": "já",
+     "start": 37.75,
+     "end": 37.9
+    },
+    {
+     "w": "chega",
+     "start": 37.975,
+     "end": 38.225
+    },
+    {
+     "w": "com",
+     "start": 38.275,
+     "end": 38.4
+    },
+    {
+     "w": "os",
+     "start": 38.425,
+     "end": 38.525
+    },
+    {
+     "w": "itens",
+     "start": 38.575,
+     "end": 39.0
+    },
+    {
+     "w": "e",
+     "start": 39.05,
+     "end": 39.075
+    },
+    {
+     "w": "o",
+     "start": 39.1,
+     "end": 39.125
+    },
+    {
+     "w": "endereço.",
+     "start": 39.15,
+     "end": 39.756
+    }
+   ]
+  },
+  {
+   "id": "segue",
+   "text": "Tu confere e segue com a entrega.",
+   "start": 40.106,
+   "end": 42.184,
+   "words": [
+    {
+     "w": "Tu",
+     "start": 40.184,
+     "end": 40.284
+    },
+    {
+     "w": "confere",
+     "start": 40.334,
+     "end": 40.834
+    },
+    {
+     "w": "e",
+     "start": 40.884,
+     "end": 40.934
+    },
+    {
+     "w": "segue",
+     "start": 41.034,
+     "end": 41.334
+    },
+    {
+     "w": "com",
+     "start": 41.384,
+     "end": 41.509
+    },
+    {
+     "w": "a",
+     "start": 41.534,
+     "end": 41.559
+    },
+    {
+     "w": "entrega.",
+     "start": 41.584,
+     "end": 42.184
+    }
+   ]
+  },
+  {
+   "id": "chama",
+   "text": "Se tu quiser ver como isso ficaria na tua adega ou tabacaria, me chama que eu te mostro.",
+   "start": 46.4,
+   "end": 51.263,
+   "words": [
+    {
+     "w": "Se",
+     "start": 46.481,
+     "end": 46.556
+    },
+    {
+     "w": "tu",
+     "start": 46.606,
+     "end": 46.681
+    },
+    {
+     "w": "quiser",
+     "start": 46.731,
+     "end": 47.031
+    },
+    {
+     "w": "ver",
+     "start": 47.081,
+     "end": 47.256
+    },
+    {
+     "w": "como",
+     "start": 47.306,
+     "end": 47.481
+    },
+    {
+     "w": "isso",
+     "start": 47.531,
+     "end": 47.756
+    },
+    {
+     "w": "ficaria",
+     "start": 47.806,
+     "end": 48.206
+    },
+    {
+     "w": "na",
+     "start": 48.231,
+     "end": 48.331
+    },
+    {
+     "w": "tua",
+     "start": 48.381,
+     "end": 48.506
+    },
+    {
+     "w": "adega",
+     "start": 48.531,
+     "end": 48.906
+    },
+    {
+     "w": "ou",
+     "start": 48.956,
+     "end": 49.031
+    },
+    {
+     "w": "tabacaria,",
+     "start": 49.081,
+     "end": 49.881
+    },
+    {
+     "w": "me",
+     "start": 49.981,
+     "end": 50.081
+    },
+    {
+     "w": "chama",
+     "start": 50.156,
+     "end": 50.431
+    },
+    {
+     "w": "que",
+     "start": 50.481,
+     "end": 50.531
+    },
+    {
+     "w": "eu",
+     "start": 50.556,
+     "end": 50.631
+    },
+    {
+     "w": "te",
+     "start": 50.656,
+     "end": 50.781
+    },
+    {
+     "w": "mostro.",
+     "start": 50.831,
+     "end": 51.263
+    }
+   ]
+  }
+ ]
+}
