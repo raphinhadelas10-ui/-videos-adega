@@ -4,11 +4,11 @@
   "series": "As contas que a adega não faz",
   "title": "Sábado de temporada",
   "output": "out/02-adega-temporada.mp4",
-  "durationSec": 56.5,
+  "durationSec": 51.5,
   "voice": {
     "engine": "kokoro",
     "voice": "pm_alex",
-    "speed": 0.9
+    "speed": 1.0
   },
   "captionReplace": {
     "uótsap": "WhatsApp"
@@ -21,82 +21,82 @@
     },
     {
       "id": "sabado",
-      "gap": 0.7,
+      "gap": 0.5,
       "text": "Sábado de temporada."
     },
     {
       "id": "zap",
-      "gap": 0.4,
+      "gap": 0.3,
       "text": "Tem gente no balcão e o uótsap começa a tocar."
     },
     {
       "id": "m1",
-      "gap": 0.45,
+      "gap": 0.35,
       "text": "Tem gelada?"
     },
     {
       "id": "m2",
-      "gap": 0.35,
+      "gap": 0.25,
       "text": "Entrega aqui?"
     },
     {
       "id": "m3",
-      "gap": 0.35,
+      "gap": 0.25,
       "text": "Quanto fica?"
     },
     {
       "id": "estoque",
-      "gap": 0.8,
+      "gap": 0.6,
       "text": "Enquanto tu confere o estoque pra um, os outros ficam esperando."
     },
     {
       "id": "volta",
-      "gap": 0.45,
+      "gap": 0.35,
       "text": "Quando tu volta pra responder, já tem um valeu, pedi em outro lugar."
     },
     {
       "id": "caixa",
-      "gap": 0.9,
+      "gap": 0.7,
       "text": "Aí tu fecha o caixa. Olha o Pix, passa o olho no cartão e pensa: hoje vendeu bem."
     },
     {
       "id": "lucro",
-      "gap": 0.6,
+      "gap": 0.5,
       "text": "Mas quanto sobrou de lucro?"
     },
     {
       "id": "saiu",
-      "gap": 0.45,
+      "gap": 0.3,
       "text": "O que mais saiu?"
     },
     {
       "id": "parado",
-      "gap": 0.45,
+      "gap": 0.3,
       "text": "O que ficou parado?"
     },
     {
       "id": "unidades",
-      "gap": 0.45,
+      "gap": 0.3,
       "text": "E quantas unidades ainda tem pra vender amanhã?"
     },
     {
       "id": "amanha",
-      "gap": 0.9,
+      "gap": 0.7,
       "text": "Porque amanhã a praia enche de novo."
     },
     {
       "id": "repor",
-      "gap": 0.4,
+      "gap": 0.3,
       "text": "E tu precisa saber o que repor antes do primeiro tem gelada?"
     },
     {
       "id": "pergunta",
-      "gap": 1.0,
+      "gap": 0.8,
       "text": "Qual parte mais te pega na temporada:"
     },
     {
       "id": "opcoes",
-      "gap": 0.35,
+      "gap": 0.3,
       "text": "dar conta dos pedidos ou fechar o caixa?"
     }
   ]

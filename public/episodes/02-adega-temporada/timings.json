@@ -1,786 +1,786 @@
 {
  "episode": "02-adega-temporada",
  "source": "kokoro:pm_alex",
- "duration": 70.0,
+ "duration": 51.5,
  "lines": [
   {
    "id": "abre",
    "text": "Tua adega na praia dá conta quando todo mundo pede ao mesmo tempo?",
    "start": 0.2,
-   "end": 4.241,
+   "end": 4.015,
    "words": [
     {
      "w": "Tua",
-     "start": 0.306,
-     "end": 0.456
+     "start": 0.281,
+     "end": 0.431
     },
     {
      "w": "adega",
-     "start": 0.481,
-     "end": 0.856
+     "start": 0.456,
+     "end": 0.806
     },
     {
      "w": "na",
-     "start": 0.881,
-     "end": 0.981
+     "start": 0.831,
+     "end": 0.931
     },
     {
      "w": "praia",
-     "start": 1.031,
-     "end": 1.331
+     "start": 0.981,
+     "end": 1.256
     },
     {
      "w": "dá",
-     "start": 1.356,
-     "end": 1.481
+     "start": 1.281,
+     "end": 1.406
     },
     {
      "w": "conta",
-     "start": 1.531,
-     "end": 1.931
+     "start": 1.456,
+     "end": 1.831
     },
     {
      "w": "quando",
-     "start": 1.981,
-     "end": 2.231
+     "start": 1.881,
+     "end": 2.131
     },
     {
      "w": "todo",
-     "start": 2.331,
-     "end": 2.631
+     "start": 2.206,
+     "end": 2.456
     },
     {
      "w": "mundo",
-     "start": 2.681,
-     "end": 2.931
+     "start": 2.506,
+     "end": 2.756
     },
     {
      "w": "pede",
-     "start": 3.031,
-     "end": 3.356
+     "start": 2.831,
+     "end": 3.131
     },
     {
      "w": "ao",
-     "start": 3.381,
-     "end": 3.431
+     "start": 3.156,
+     "end": 3.206
     },
     {
      "w": "mesmo",
-     "start": 3.481,
-     "end": 3.756
+     "start": 3.256,
+     "end": 3.531
     },
     {
      "w": "tempo?",
-     "start": 3.831,
-     "end": 4.241
+     "start": 3.606,
+     "end": 4.015
     }
    ]
   },
   {
    "id": "sabado",
    "text": "Sábado de temporada.",
-   "start": 4.941,
-   "end": 6.594,
+   "start": 4.515,
+   "end": 6.072,
    "words": [
     {
      "w": "Sábado",
-     "start": 5.093,
-     "end": 5.518
+     "start": 4.645,
+     "end": 5.045
     },
     {
      "w": "de",
-     "start": 5.567,
-     "end": 5.718
+     "start": 5.095,
+     "end": 5.245
     },
     {
      "w": "temporada.",
-     "start": 5.768,
-     "end": 6.594
+     "start": 5.295,
+     "end": 6.072
     }
    ]
   },
   {
    "id": "zap",
    "text": "Tem gente no balcão e o uótsap começa a tocar.",
-   "start": 6.994,
-   "end": 10.136,
+   "start": 6.372,
+   "end": 9.368,
    "words": [
     {
      "w": "Tem",
-     "start": 7.081,
-     "end": 7.331
+     "start": 6.45,
+     "end": 6.675
     },
     {
      "w": "gente",
-     "start": 7.406,
-     "end": 7.781
+     "start": 6.725,
+     "end": 7.1
     },
     {
      "w": "no",
-     "start": 7.806,
-     "end": 7.881
+     "start": 7.125,
+     "end": 7.2
     },
     {
      "w": "balcão",
-     "start": 7.931,
-     "end": 8.456
+     "start": 7.25,
+     "end": 7.775
     },
     {
      "w": "e",
-     "start": 8.531,
-     "end": 8.581
+     "start": 7.825,
+     "end": 7.85
     },
     {
      "w": "o",
-     "start": 8.631,
-     "end": 8.681
+     "start": 7.9,
+     "end": 7.95
     },
     {
      "w": "uótsap",
-     "start": 8.731,
-     "end": 9.206
+     "start": 8.0,
+     "end": 8.45
     },
     {
      "w": "começa",
-     "start": 9.256,
-     "end": 9.581
+     "start": 8.5,
+     "end": 8.825
     },
     {
      "w": "a",
-     "start": 9.606,
-     "end": 9.631
+     "start": 8.85,
+     "end": 8.875
     },
     {
      "w": "tocar.",
-     "start": 9.681,
-     "end": 10.136
+     "start": 8.925,
+     "end": 9.368
     }
    ]
   },
   {
    "id": "m1",
    "text": "Tem gelada?",
-   "start": 10.586,
-   "end": 11.758,
+   "start": 9.718,
+   "end": 10.782,
    "words": [
     {
      "w": "Tem",
-     "start": 10.664,
-     "end": 10.964
+     "start": 9.798,
+     "end": 10.073
     },
     {
      "w": "gelada?",
-     "start": 11.039,
-     "end": 11.758
+     "start": 10.148,
+     "end": 10.782
     }
    ]
   },
   {
    "id": "m2",
    "text": "Entrega aqui?",
-   "start": 12.108,
-   "end": 13.406,
+   "start": 11.032,
+   "end": 12.255,
    "words": [
     {
      "w": "Entrega",
-     "start": 12.22,
-     "end": 12.87
+     "start": 11.134,
+     "end": 11.759
     },
     {
      "w": "aqui?",
-     "start": 12.921,
-     "end": 13.396
+     "start": 11.809,
+     "end": 12.234
     }
    ]
   },
   {
    "id": "m3",
    "text": "Quanto fica?",
-   "start": 13.756,
-   "end": 14.815,
+   "start": 12.505,
+   "end": 13.5,
    "words": [
     {
      "w": "Quanto",
-     "start": 13.887,
-     "end": 14.187
+     "start": 12.594,
+     "end": 12.894
     },
     {
      "w": "fica?",
-     "start": 14.287,
-     "end": 14.787
+     "start": 12.994,
+     "end": 13.469
     }
    ]
   },
   {
    "id": "estoque",
    "text": "Enquanto tu confere o estoque pra um, os outros ficam esperando.",
-   "start": 15.615,
-   "end": 19.355,
+   "start": 14.1,
+   "end": 17.717,
    "words": [
     {
      "w": "Enquanto",
-     "start": 15.721,
-     "end": 16.195
+     "start": 14.181,
+     "end": 14.656
     },
     {
      "w": "tu",
-     "start": 16.245,
-     "end": 16.346
+     "start": 14.706,
+     "end": 14.806
     },
     {
      "w": "confere",
-     "start": 16.396,
-     "end": 16.87
+     "start": 14.856,
+     "end": 15.306
     },
     {
      "w": "o",
-     "start": 16.896,
-     "end": 16.921
+     "start": 15.331,
+     "end": 15.356
     },
     {
      "w": "estoque",
-     "start": 16.946,
-     "end": 17.421
+     "start": 15.381,
+     "end": 15.831
     },
     {
      "w": "pra",
-     "start": 17.471,
-     "end": 17.62
+     "start": 15.881,
+     "end": 16.006
     },
     {
      "w": "um,",
-     "start": 17.646,
-     "end": 17.821
+     "start": 16.031,
+     "end": 16.206
     },
     {
      "w": "os",
-     "start": 17.921,
-     "end": 18.046
+     "start": 16.306,
+     "end": 16.431
     },
     {
      "w": "outros",
-     "start": 18.071,
-     "end": 18.421
+     "start": 16.456,
+     "end": 16.806
     },
     {
      "w": "ficam",
-     "start": 18.471,
-     "end": 18.745
+     "start": 16.856,
+     "end": 17.106
     },
     {
      "w": "esperando.",
-     "start": 18.771,
-     "end": 19.355
+     "start": 17.131,
+     "end": 17.717
     }
    ]
   },
   {
    "id": "volta",
    "text": "Quando tu volta pra responder, já tem um valeu, pedi em outro lugar.",
-   "start": 19.805,
-   "end": 23.805,
+   "start": 18.067,
+   "end": 21.885,
    "words": [
     {
      "w": "Quando",
-     "start": 19.896,
-     "end": 20.096
+     "start": 18.142,
+     "end": 18.342
     },
     {
      "w": "tu",
-     "start": 20.146,
-     "end": 20.246
+     "start": 18.392,
+     "end": 18.492
     },
     {
      "w": "volta",
-     "start": 20.296,
-     "end": 20.571
+     "start": 18.542,
+     "end": 18.792
     },
     {
      "w": "pra",
-     "start": 20.621,
-     "end": 20.746
+     "start": 18.842,
+     "end": 18.967
     },
     {
      "w": "responder,",
-     "start": 20.771,
-     "end": 21.496
+     "start": 18.992,
+     "end": 19.692
     },
     {
      "w": "já",
-     "start": 21.596,
-     "end": 21.746
+     "start": 19.792,
+     "end": 19.942
     },
     {
      "w": "tem",
-     "start": 21.796,
-     "end": 21.971
+     "start": 19.992,
+     "end": 20.142
     },
     {
      "w": "um",
-     "start": 21.996,
-     "end": 22.071
+     "start": 20.167,
+     "end": 20.242
     },
     {
      "w": "valeu,",
-     "start": 22.096,
-     "end": 22.496
+     "start": 20.267,
+     "end": 20.642
     },
     {
      "w": "pedi",
-     "start": 22.571,
-     "end": 22.921
+     "start": 20.717,
+     "end": 21.042
     },
     {
      "w": "em",
-     "start": 22.946,
-     "end": 23.071
+     "start": 21.067,
+     "end": 21.192
     },
     {
      "w": "outro",
-     "start": 23.096,
-     "end": 23.346
+     "start": 21.217,
+     "end": 21.467
     },
     {
      "w": "lugar.",
-     "start": 23.371,
-     "end": 23.805
+     "start": 21.492,
+     "end": 21.885
     }
    ]
   },
   {
    "id": "caixa",
    "text": "Aí tu fecha o caixa. Olha o Pix, passa o olho no cartão e pensa: hoje vendeu bem.",
-   "start": 24.705,
-   "end": 29.91,
+   "start": 22.585,
+   "end": 27.538,
    "words": [
     {
      "w": "Aí",
-     "start": 24.835,
-     "end": 24.985
+     "start": 22.691,
+     "end": 22.841
     },
     {
      "w": "tu",
-     "start": 25.035,
-     "end": 25.135
+     "start": 22.891,
+     "end": 22.991
     },
     {
      "w": "fecha",
-     "start": 25.21,
-     "end": 25.46
+     "start": 23.066,
+     "end": 23.316
     },
     {
      "w": "o",
-     "start": 25.485,
-     "end": 25.51
+     "start": 23.341,
+     "end": 23.366
     },
     {
      "w": "caixa.",
-     "start": 25.56,
-     "end": 26.235
+     "start": 23.416,
+     "end": 24.066
     },
     {
      "w": "Olha",
-     "start": 26.36,
-     "end": 26.56
+     "start": 24.191,
+     "end": 24.366
     },
     {
      "w": "o",
-     "start": 26.585,
-     "end": 26.61
+     "start": 24.391,
+     "end": 24.416
     },
     {
      "w": "Pix,",
-     "start": 26.66,
-     "end": 26.96
+     "start": 24.466,
+     "end": 24.741
     },
     {
      "w": "passa",
-     "start": 27.035,
-     "end": 27.335
+     "start": 24.816,
+     "end": 25.116
     },
     {
      "w": "o",
-     "start": 27.36,
-     "end": 27.385
+     "start": 25.141,
+     "end": 25.166
     },
     {
      "w": "olho",
-     "start": 27.435,
-     "end": 27.61
+     "start": 25.216,
+     "end": 25.391
     },
     {
      "w": "no",
-     "start": 27.635,
-     "end": 27.685
+     "start": 25.416,
+     "end": 25.466
     },
     {
      "w": "cartão",
-     "start": 27.735,
-     "end": 28.085
+     "start": 25.516,
+     "end": 25.841
     },
     {
      "w": "e",
-     "start": 28.135,
-     "end": 28.16
+     "start": 25.866,
+     "end": 25.891
     },
     {
      "w": "pensa:",
-     "start": 28.235,
-     "end": 28.76
+     "start": 25.941,
+     "end": 26.391
     },
     {
      "w": "hoje",
-     "start": 28.86,
-     "end": 29.085
+     "start": 26.491,
+     "end": 26.716
     },
     {
      "w": "vendeu",
-     "start": 29.135,
-     "end": 29.51
+     "start": 26.766,
+     "end": 27.141
     },
     {
      "w": "bem.",
-     "start": 29.56,
-     "end": 29.91
+     "start": 27.191,
+     "end": 27.538
     }
    ]
   },
   {
    "id": "lucro",
    "text": "Mas quanto sobrou de lucro?",
-   "start": 30.51,
-   "end": 32.465,
+   "start": 28.038,
+   "end": 29.868,
    "words": [
     {
      "w": "Mas",
-     "start": 30.616,
-     "end": 30.841
+     "start": 28.119,
+     "end": 28.319
     },
     {
      "w": "quanto",
-     "start": 30.891,
-     "end": 31.191
+     "start": 28.369,
+     "end": 28.669
     },
     {
      "w": "sobrou",
-     "start": 31.291,
-     "end": 31.741
+     "start": 28.744,
+     "end": 29.194
     },
     {
      "w": "de",
-     "start": 31.791,
-     "end": 31.941
+     "start": 29.219,
+     "end": 29.369
     },
     {
      "w": "lucro?",
-     "start": 31.991,
-     "end": 32.465
+     "start": 29.419,
+     "end": 29.868
     }
    ]
   },
   {
    "id": "saiu",
    "text": "O que mais saiu?",
-   "start": 32.915,
-   "end": 34.216,
+   "start": 30.168,
+   "end": 31.381,
    "words": [
     {
      "w": "O",
-     "start": 33.028,
-     "end": 33.078
+     "start": 30.273,
+     "end": 30.323
     },
     {
      "w": "que",
-     "start": 33.153,
-     "end": 33.253
+     "start": 30.373,
+     "end": 30.473
     },
     {
      "w": "mais",
-     "start": 33.328,
-     "end": 33.603
+     "start": 30.548,
+     "end": 30.823
     },
     {
      "w": "saiu?",
-     "start": 33.678,
-     "end": 34.216
+     "start": 30.898,
+     "end": 31.373
     }
    ]
   },
   {
    "id": "parado",
    "text": "O que ficou parado?",
-   "start": 34.666,
-   "end": 36.143,
+   "start": 31.681,
+   "end": 33.075,
    "words": [
     {
      "w": "O",
-     "start": 34.779,
-     "end": 34.829
+     "start": 31.787,
+     "end": 31.837
     },
     {
      "w": "que",
-     "start": 34.879,
-     "end": 34.979
+     "start": 31.887,
+     "end": 31.987
     },
     {
      "w": "ficou",
-     "start": 35.079,
-     "end": 35.454
+     "start": 32.062,
+     "end": 32.412
     },
     {
      "w": "parado?",
-     "start": 35.504,
-     "end": 36.143
+     "start": 32.462,
+     "end": 33.075
     }
    ]
   },
   {
    "id": "unidades",
    "text": "E quantas unidades ainda tem pra vender amanhã?",
-   "start": 36.593,
-   "end": 39.85,
+   "start": 33.375,
+   "end": 36.433,
    "words": [
     {
      "w": "E",
-     "start": 36.699,
-     "end": 36.749
+     "start": 33.456,
+     "end": 33.506
     },
     {
      "w": "quantas",
-     "start": 36.799,
-     "end": 37.124
+     "start": 33.556,
+     "end": 33.881
     },
     {
      "w": "unidades",
-     "start": 37.149,
-     "end": 37.949
+     "start": 33.906,
+     "end": 34.631
     },
     {
      "w": "ainda",
-     "start": 37.999,
-     "end": 38.349
+     "start": 34.681,
+     "end": 35.006
     },
     {
      "w": "tem",
-     "start": 38.399,
-     "end": 38.624
+     "start": 35.056,
+     "end": 35.256
     },
     {
      "w": "pra",
-     "start": 38.674,
-     "end": 38.824
+     "start": 35.306,
+     "end": 35.456
     },
     {
      "w": "vender",
-     "start": 38.874,
-     "end": 39.324
+     "start": 35.481,
+     "end": 35.906
     },
     {
      "w": "amanhã?",
-     "start": 39.349,
-     "end": 39.85
+     "start": 35.931,
+     "end": 36.433
     }
    ]
   },
   {
    "id": "amanha",
    "text": "Porque amanhã a praia enche de novo.",
-   "start": 40.75,
-   "end": 43.128,
+   "start": 37.133,
+   "end": 39.313,
    "words": [
     {
      "w": "Porque",
-     "start": 40.824,
-     "end": 41.099
+     "start": 37.207,
+     "end": 37.457
     },
     {
      "w": "amanhã",
-     "start": 41.124,
-     "end": 41.649
+     "start": 37.482,
+     "end": 37.957
     },
     {
      "w": "a",
-     "start": 41.724,
-     "end": 41.774
+     "start": 38.007,
+     "end": 38.057
     },
     {
      "w": "praia",
-     "start": 41.824,
-     "end": 42.149
+     "start": 38.107,
+     "end": 38.407
     },
     {
      "w": "enche",
-     "start": 42.199,
-     "end": 42.499
+     "start": 38.432,
+     "end": 38.732
     },
     {
      "w": "de",
-     "start": 42.524,
-     "end": 42.674
+     "start": 38.757,
+     "end": 38.882
     },
     {
      "w": "novo.",
-     "start": 42.724,
-     "end": 43.128
+     "start": 38.932,
+     "end": 39.313
     }
    ]
   },
   {
    "id": "repor",
    "text": "E tu precisa saber o que repor antes do primeiro tem gelada?",
-   "start": 43.528,
-   "end": 47.282,
+   "start": 39.613,
+   "end": 43.24,
    "words": [
     {
      "w": "E",
-     "start": 43.658,
-     "end": 43.708
+     "start": 39.719,
+     "end": 39.769
     },
     {
      "w": "tu",
-     "start": 43.758,
-     "end": 43.858
+     "start": 39.819,
+     "end": 39.919
     },
     {
      "w": "precisa",
-     "start": 43.908,
-     "end": 44.383
+     "start": 39.969,
+     "end": 40.444
     },
     {
      "w": "saber",
-     "start": 44.458,
-     "end": 44.883
+     "start": 40.494,
+     "end": 40.894
     },
     {
      "w": "o",
-     "start": 44.933,
-     "end": 44.958
+     "start": 40.944,
+     "end": 40.969
     },
     {
      "w": "que",
-     "start": 45.008,
-     "end": 45.083
+     "start": 41.019,
+     "end": 41.094
     },
     {
      "w": "repor",
-     "start": 45.133,
-     "end": 45.508
+     "start": 41.144,
+     "end": 41.519
     },
     {
      "w": "antes",
-     "start": 45.558,
-     "end": 45.883
+     "start": 41.569,
+     "end": 41.894
     },
     {
      "w": "do",
-     "start": 45.908,
-     "end": 45.958
+     "start": 41.919,
+     "end": 41.969
     },
     {
      "w": "primeiro",
-     "start": 46.008,
-     "end": 46.483
+     "start": 42.019,
+     "end": 42.494
     },
     {
      "w": "tem",
-     "start": 46.533,
-     "end": 46.708
+     "start": 42.544,
+     "end": 42.719
     },
     {
      "w": "gelada?",
-     "start": 46.758,
-     "end": 47.282
+     "start": 42.769,
+     "end": 43.24
     }
    ]
   },
   {
    "id": "pergunta",
    "text": "Qual parte mais te pega na temporada:",
-   "start": 48.282,
-   "end": 50.928,
+   "start": 44.04,
+   "end": 46.538,
    "words": [
     {
      "w": "Qual",
-     "start": 48.383,
-     "end": 48.608
+     "start": 44.117,
+     "end": 44.342
     },
     {
      "w": "parte",
-     "start": 48.658,
-     "end": 49.033
+     "start": 44.392,
+     "end": 44.742
     },
     {
      "w": "mais",
-     "start": 49.108,
-     "end": 49.433
+     "start": 44.792,
+     "end": 45.117
     },
     {
      "w": "te",
-     "start": 49.483,
-     "end": 49.633
+     "start": 45.167,
+     "end": 45.317
     },
     {
      "w": "pega",
-     "start": 49.733,
-     "end": 50.008
+     "start": 45.392,
+     "end": 45.642
     },
     {
      "w": "na",
-     "start": 50.033,
-     "end": 50.133
+     "start": 45.667,
+     "end": 45.767
     },
     {
      "w": "temporada:",
-     "start": 50.183,
-     "end": 50.928
+     "start": 45.817,
+     "end": 46.538
     }
    ]
   },
   {
    "id": "opcoes",
    "text": "dar conta dos pedidos ou fechar o caixa?",
-   "start": 51.278,
-   "end": 54.076,
+   "start": 46.838,
+   "end": 49.391,
    "words": [
     {
      "w": "dar",
-     "start": 51.384,
-     "end": 51.609
+     "start": 46.918,
+     "end": 47.118
     },
     {
      "w": "conta",
-     "start": 51.659,
-     "end": 51.934
+     "start": 47.168,
+     "end": 47.443
     },
     {
      "w": "dos",
-     "start": 51.959,
-     "end": 52.084
+     "start": 47.468,
+     "end": 47.593
     },
     {
      "w": "pedidos",
-     "start": 52.134,
-     "end": 52.834
+     "start": 47.643,
+     "end": 48.268
     },
     {
      "w": "ou",
-     "start": 52.909,
-     "end": 53.009
+     "start": 48.318,
+     "end": 48.418
     },
     {
      "w": "fechar",
-     "start": 53.059,
-     "end": 53.434
+     "start": 48.468,
+     "end": 48.793
     },
     {
      "w": "o",
-     "start": 53.459,
-     "end": 53.509
+     "start": 48.818,
+     "end": 48.868
     },
     {
      "w": "caixa?",
-     "start": 53.559,
-     "end": 54.076
+     "start": 48.918,
+     "end": 49.391
     }
    ]
   }
