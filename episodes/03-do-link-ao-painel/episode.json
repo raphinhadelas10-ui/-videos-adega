@@ -4,7 +4,7 @@
   "series": "Adega no Digital",
   "title": "Do link ao painel",
   "output": "out/03-do-link-ao-painel.mp4",
-  "durationSec": 53,
+  "durationSec": 44.2,
   "voice": {
     "engine": "kokoro",
     "voice": "pm_alex",
@@ -47,23 +47,23 @@
     },
     {
       "id": "endereco",
-      "at": 22.0,
+      "at": 21.2,
       "text": "coloca o endereço"
     },
     {
       "id": "faz",
-      "at": 25.4,
+      "at": 23.7,
       "text": "e faz o pedido."
     },
     {
       "id": "toques",
-      "at": 27.6,
-      "text": "Em poucos toques."
+      "text": "Em poucos toques.",
+      "gap": 0.5
     },
     {
       "id": "lado",
-      "at": 36.3,
-      "text": "Do teu lado, o pedido já chega com os itens e o endereço."
+      "text": "Do teu lado, o pedido já chega com os itens e o endereço.",
+      "gap": 3.0
     },
     {
       "id": "segue",
@@ -72,8 +72,8 @@
     },
     {
       "id": "chama",
-      "at": 46.4,
-      "text": "Se tu quiser ver como isso ficaria na tua adega ou tabacaria, me chama que eu te mostro."
+      "text": "Se tu quiser ver como isso ficaria na tua adega ou tabacaria, me chama que eu te mostro.",
+      "gap": 1.7
     }
   ]
 }

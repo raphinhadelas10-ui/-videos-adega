@@ -493,7 +493,7 @@ export const Ep03DoLinkAoPainel: React.FC<EpisodeProps> = ({ episode, timings })
     typeA: cue.word("endereco", "coloca"),
     typeB: cue.word("endereco", "endereço") + 1.0,
     tapFinish: cue.word("faz", "pedido."),
-    accept: cue.end("toques") + 1.4, // loja aceita → "Pedido confirmado"
+    accept: cue.end("toques") + 0.5, // loja aceita → "Pedido confirmado"
     phoneOut: cue.start("lado") - 0.6,
     arrive: cue.word("lado", "pedido") - 0.1,
     items: cue.word("lado", "itens"),
