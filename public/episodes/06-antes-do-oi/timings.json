@@ -1,0 +1,1667 @@
+{
+ "episode": "06-antes-do-oi",
+ "source": "gravação:narracao.m4a",
+ "duration": 98.4,
+ "lines": [
+  {
+   "id": "l0",
+   "text": "Essa adega perdeu um pedido antes mesmo do oi e se isso acontecer três vezes por dia na temporada",
+   "start": 0.0,
+   "end": 6.44,
+   "words": [
+    {
+     "w": "Essa",
+     "start": 0.0,
+     "end": 0.48
+    },
+    {
+     "w": "adega",
+     "start": 0.48,
+     "end": 0.76
+    },
+    {
+     "w": "perdeu",
+     "start": 0.76,
+     "end": 1.18
+    },
+    {
+     "w": "um",
+     "start": 1.18,
+     "end": 1.42
+    },
+    {
+     "w": "pedido",
+     "start": 1.42,
+     "end": 1.82
+    },
+    {
+     "w": "antes",
+     "start": 1.82,
+     "end": 2.34
+    },
+    {
+     "w": "mesmo",
+     "start": 2.34,
+     "end": 2.72
+    },
+    {
+     "w": "do",
+     "start": 2.72,
+     "end": 2.98
+    },
+    {
+     "w": "oi",
+     "start": 2.98,
+     "end": 3.54
+    },
+    {
+     "w": "e",
+     "start": 3.54,
+     "end": 3.96
+    },
+    {
+     "w": "se",
+     "start": 3.96,
+     "end": 4.1
+    },
+    {
+     "w": "isso",
+     "start": 4.1,
+     "end": 4.3
+    },
+    {
+     "w": "acontecer",
+     "start": 4.3,
+     "end": 4.74
+    },
+    {
+     "w": "três",
+     "start": 4.74,
+     "end": 5.08
+    },
+    {
+     "w": "vezes",
+     "start": 5.08,
+     "end": 5.44
+    },
+    {
+     "w": "por",
+     "start": 5.44,
+     "end": 5.7
+    },
+    {
+     "w": "dia",
+     "start": 5.7,
+     "end": 5.84
+    },
+    {
+     "w": "na",
+     "start": 5.84,
+     "end": 6.02
+    },
+    {
+     "w": "temporada",
+     "start": 6.02,
+     "end": 6.44
+    }
+   ]
+  },
+  {
+   "id": "l1",
+   "text": "podem ser 3.600 reais em vendas que o dono nem viu passar.",
+   "start": 6.44,
+   "end": 10.64,
+   "words": [
+    {
+     "w": "podem",
+     "start": 6.44,
+     "end": 6.94
+    },
+    {
+     "w": "ser",
+     "start": 6.94,
+     "end": 7.24
+    },
+    {
+     "w": "3.600",
+     "start": 7.24,
+     "end": 8.14
+    },
+    {
+     "w": "reais",
+     "start": 8.14,
+     "end": 8.52
+    },
+    {
+     "w": "em",
+     "start": 8.52,
+     "end": 8.76
+    },
+    {
+     "w": "vendas",
+     "start": 8.76,
+     "end": 9.02
+    },
+    {
+     "w": "que",
+     "start": 9.02,
+     "end": 9.16
+    },
+    {
+     "w": "o",
+     "start": 9.16,
+     "end": 9.28
+    },
+    {
+     "w": "dono",
+     "start": 9.28,
+     "end": 9.58
+    },
+    {
+     "w": "nem",
+     "start": 9.58,
+     "end": 9.88
+    },
+    {
+     "w": "viu",
+     "start": 9.88,
+     "end": 10.06
+    },
+    {
+     "w": "passar.",
+     "start": 10.06,
+     "end": 10.64
+    }
+   ]
+  },
+  {
+   "id": "l2",
+   "text": "O João foi passar o fim de ano na praia com os amigos e ficou de comprar a bebida e o gelo.",
+   "start": 11.66,
+   "end": 16.28,
+   "words": [
+    {
+     "w": "O",
+     "start": 11.66,
+     "end": 11.68
+    },
+    {
+     "w": "João",
+     "start": 11.68,
+     "end": 11.82
+    },
+    {
+     "w": "foi",
+     "start": 11.82,
+     "end": 12.02
+    },
+    {
+     "w": "passar",
+     "start": 12.02,
+     "end": 12.4
+    },
+    {
+     "w": "o",
+     "start": 12.4,
+     "end": 12.66
+    },
+    {
+     "w": "fim",
+     "start": 12.66,
+     "end": 12.8
+    },
+    {
+     "w": "de",
+     "start": 12.8,
+     "end": 12.94
+    },
+    {
+     "w": "ano",
+     "start": 12.94,
+     "end": 13.02
+    },
+    {
+     "w": "na",
+     "start": 13.02,
+     "end": 13.22
+    },
+    {
+     "w": "praia",
+     "start": 13.22,
+     "end": 13.42
+    },
+    {
+     "w": "com",
+     "start": 13.42,
+     "end": 13.58
+    },
+    {
+     "w": "os",
+     "start": 13.58,
+     "end": 13.76
+    },
+    {
+     "w": "amigos",
+     "start": 13.76,
+     "end": 14.02
+    },
+    {
+     "w": "e",
+     "start": 14.02,
+     "end": 14.48
+    },
+    {
+     "w": "ficou",
+     "start": 14.48,
+     "end": 14.6
+    },
+    {
+     "w": "de",
+     "start": 14.6,
+     "end": 14.82
+    },
+    {
+     "w": "comprar",
+     "start": 14.82,
+     "end": 15.02
+    },
+    {
+     "w": "a",
+     "start": 15.02,
+     "end": 15.2
+    },
+    {
+     "w": "bebida",
+     "start": 15.2,
+     "end": 15.52
+    },
+    {
+     "w": "e",
+     "start": 15.52,
+     "end": 15.62
+    },
+    {
+     "w": "o",
+     "start": 15.62,
+     "end": 15.74
+    },
+    {
+     "w": "gelo.",
+     "start": 15.74,
+     "end": 16.28
+    }
+   ]
+  },
+  {
+   "id": "l3",
+   "text": "Procurou a adega perto de mim, abriu a primeira e caiu no WhatsApp.",
+   "start": 16.36,
+   "end": 19.72,
+   "words": [
+    {
+     "w": "Procurou",
+     "start": 16.36,
+     "end": 16.68
+    },
+    {
+     "w": "a",
+     "start": 16.68,
+     "end": 16.8
+    },
+    {
+     "w": "adega",
+     "start": 16.8,
+     "end": 16.94
+    },
+    {
+     "w": "perto",
+     "start": 16.94,
+     "end": 17.18
+    },
+    {
+     "w": "de",
+     "start": 17.18,
+     "end": 17.38
+    },
+    {
+     "w": "mim,",
+     "start": 17.38,
+     "end": 17.68
+    },
+    {
+     "w": "abriu",
+     "start": 18.08,
+     "end": 18.28
+    },
+    {
+     "w": "a",
+     "start": 18.28,
+     "end": 18.46
+    },
+    {
+     "w": "primeira",
+     "start": 18.46,
+     "end": 18.68
+    },
+    {
+     "w": "e",
+     "start": 18.68,
+     "end": 18.94
+    },
+    {
+     "w": "caiu",
+     "start": 18.94,
+     "end": 19.22
+    },
+    {
+     "w": "no",
+     "start": 19.22,
+     "end": 19.3
+    },
+    {
+     "w": "WhatsApp.",
+     "start": 19.3,
+     "end": 19.72
+    }
+   ]
+  },
+  {
+   "id": "l4",
+   "text": "Para saber o que tinha, quanto custava e se entregavam onde ele estava,",
+   "start": 20.2,
+   "end": 23.74,
+   "words": [
+    {
+     "w": "Para",
+     "start": 20.2,
+     "end": 20.32
+    },
+    {
+     "w": "saber",
+     "start": 20.32,
+     "end": 20.54
+    },
+    {
+     "w": "o",
+     "start": 20.54,
+     "end": 20.64
+    },
+    {
+     "w": "que",
+     "start": 20.64,
+     "end": 20.86
+    },
+    {
+     "w": "tinha,",
+     "start": 20.86,
+     "end": 21.08
+    },
+    {
+     "w": "quanto",
+     "start": 21.26,
+     "end": 21.44
+    },
+    {
+     "w": "custava",
+     "start": 21.44,
+     "end": 21.92
+    },
+    {
+     "w": "e",
+     "start": 21.92,
+     "end": 22.04
+    },
+    {
+     "w": "se",
+     "start": 22.04,
+     "end": 22.3
+    },
+    {
+     "w": "entregavam",
+     "start": 22.3,
+     "end": 22.78
+    },
+    {
+     "w": "onde",
+     "start": 22.78,
+     "end": 23.12
+    },
+    {
+     "w": "ele",
+     "start": 23.12,
+     "end": 23.42
+    },
+    {
+     "w": "estava,",
+     "start": 23.42,
+     "end": 23.74
+    }
+   ]
+  },
+  {
+   "id": "l5",
+   "text": "ia ter que perguntar e esperar.",
+   "start": 24.18,
+   "end": 25.58,
+   "words": [
+    {
+     "w": "ia",
+     "start": 24.18,
+     "end": 24.22
+    },
+    {
+     "w": "ter",
+     "start": 24.22,
+     "end": 24.4
+    },
+    {
+     "w": "que",
+     "start": 24.4,
+     "end": 24.66
+    },
+    {
+     "w": "perguntar",
+     "start": 24.66,
+     "end": 24.98
+    },
+    {
+     "w": "e",
+     "start": 24.98,
+     "end": 25.18
+    },
+    {
+     "w": "esperar.",
+     "start": 25.18,
+     "end": 25.58
+    }
+   ]
+  },
+  {
+   "id": "l6",
+   "text": "Começou a escrever, aí apagou e desistiu.",
+   "start": 26.3,
+   "end": 29.28,
+   "words": [
+    {
+     "w": "Começou",
+     "start": 26.3,
+     "end": 26.58
+    },
+    {
+     "w": "a",
+     "start": 26.58,
+     "end": 26.68
+    },
+    {
+     "w": "escrever,",
+     "start": 26.68,
+     "end": 26.98
+    },
+    {
+     "w": "aí",
+     "start": 27.48,
+     "end": 27.76
+    },
+    {
+     "w": "apagou",
+     "start": 27.76,
+     "end": 28.34
+    },
+    {
+     "w": "e",
+     "start": 28.34,
+     "end": 28.66
+    },
+    {
+     "w": "desistiu.",
+     "start": 28.66,
+     "end": 29.28
+    }
+   ]
+  },
+  {
+   "id": "l7",
+   "text": "Enquanto isso, o dono estava no balcão com gente na fila e um monte de mensagem para responder.",
+   "start": 29.28,
+   "end": 33.76,
+   "words": [
+    {
+     "w": "Enquanto",
+     "start": 29.28,
+     "end": 29.82
+    },
+    {
+     "w": "isso,",
+     "start": 29.82,
+     "end": 30.12
+    },
+    {
+     "w": "o",
+     "start": 30.24,
+     "end": 30.32
+    },
+    {
+     "w": "dono",
+     "start": 30.32,
+     "end": 30.5
+    },
+    {
+     "w": "estava",
+     "start": 30.5,
+     "end": 30.7
+    },
+    {
+     "w": "no",
+     "start": 30.7,
+     "end": 30.86
+    },
+    {
+     "w": "balcão",
+     "start": 30.86,
+     "end": 31.26
+    },
+    {
+     "w": "com",
+     "start": 31.26,
+     "end": 31.46
+    },
+    {
+     "w": "gente",
+     "start": 31.46,
+     "end": 31.68
+    },
+    {
+     "w": "na",
+     "start": 31.68,
+     "end": 31.92
+    },
+    {
+     "w": "fila",
+     "start": 31.92,
+     "end": 32.04
+    },
+    {
+     "w": "e",
+     "start": 32.04,
+     "end": 32.18
+    },
+    {
+     "w": "um",
+     "start": 32.18,
+     "end": 32.28
+    },
+    {
+     "w": "monte",
+     "start": 32.28,
+     "end": 32.44
+    },
+    {
+     "w": "de",
+     "start": 32.44,
+     "end": 32.74
+    },
+    {
+     "w": "mensagem",
+     "start": 32.74,
+     "end": 33.06
+    },
+    {
+     "w": "para",
+     "start": 33.06,
+     "end": 33.28
+    },
+    {
+     "w": "responder.",
+     "start": 33.28,
+     "end": 33.76
+    }
+   ]
+  },
+  {
+   "id": "l8",
+   "text": "Quando ele finalmente abriu o WhatsApp, respondeu quem estava ali.",
+   "start": 34.24,
+   "end": 37.62,
+   "words": [
+    {
+     "w": "Quando",
+     "start": 34.24,
+     "end": 34.44
+    },
+    {
+     "w": "ele",
+     "start": 34.44,
+     "end": 34.76
+    },
+    {
+     "w": "finalmente",
+     "start": 34.76,
+     "end": 35.24
+    },
+    {
+     "w": "abriu",
+     "start": 35.24,
+     "end": 35.62
+    },
+    {
+     "w": "o",
+     "start": 35.62,
+     "end": 35.72
+    },
+    {
+     "w": "WhatsApp,",
+     "start": 35.72,
+     "end": 36.16
+    },
+    {
+     "w": "respondeu",
+     "start": 36.68,
+     "end": 36.92
+    },
+    {
+     "w": "quem",
+     "start": 36.92,
+     "end": 37.12
+    },
+    {
+     "w": "estava",
+     "start": 37.12,
+     "end": 37.3
+    },
+    {
+     "w": "ali.",
+     "start": 37.3,
+     "end": 37.62
+    }
+   ]
+  },
+  {
+   "id": "l9",
+   "text": "Só que o João já tinha pedido em outro lugar.",
+   "start": 38.12,
+   "end": 39.98,
+   "words": [
+    {
+     "w": "Só",
+     "start": 38.12,
+     "end": 38.26
+    },
+    {
+     "w": "que",
+     "start": 38.26,
+     "end": 38.4
+    },
+    {
+     "w": "o",
+     "start": 38.4,
+     "end": 38.56
+    },
+    {
+     "w": "João",
+     "start": 38.56,
+     "end": 38.6
+    },
+    {
+     "w": "já",
+     "start": 38.6,
+     "end": 38.84
+    },
+    {
+     "w": "tinha",
+     "start": 38.84,
+     "end": 38.98
+    },
+    {
+     "w": "pedido",
+     "start": 38.98,
+     "end": 39.24
+    },
+    {
+     "w": "em",
+     "start": 39.24,
+     "end": 39.42
+    },
+    {
+     "w": "outro",
+     "start": 39.42,
+     "end": 39.58
+    },
+    {
+     "w": "lugar.",
+     "start": 39.58,
+     "end": 39.98
+    }
+   ]
+  },
+  {
+   "id": "l10",
+   "text": "João foi procurar outra adega, achou uma, um pouco menor,",
+   "start": 40.4,
+   "end": 43.54,
+   "words": [
+    {
+     "w": "João",
+     "start": 40.4,
+     "end": 40.54
+    },
+    {
+     "w": "foi",
+     "start": 40.54,
+     "end": 40.72
+    },
+    {
+     "w": "procurar",
+     "start": 40.72,
+     "end": 41.08
+    },
+    {
+     "w": "outra",
+     "start": 41.08,
+     "end": 41.38
+    },
+    {
+     "w": "adega,",
+     "start": 41.38,
+     "end": 41.8
+    },
+    {
+     "w": "achou",
+     "start": 42.16,
+     "end": 42.36
+    },
+    {
+     "w": "uma,",
+     "start": 42.36,
+     "end": 42.68
+    },
+    {
+     "w": "um",
+     "start": 42.86,
+     "end": 43.0
+    },
+    {
+     "w": "pouco",
+     "start": 43.0,
+     "end": 43.2
+    },
+    {
+     "w": "menor,",
+     "start": 43.2,
+     "end": 43.54
+    }
+   ]
+  },
+  {
+   "id": "l11",
+   "text": "mas ela tinha um site próprio, organizado e com todas as informações que ele precisava.",
+   "start": 43.9,
+   "end": 48.9,
+   "words": [
+    {
+     "w": "mas",
+     "start": 43.9,
+     "end": 44.08
+    },
+    {
+     "w": "ela",
+     "start": 44.08,
+     "end": 44.32
+    },
+    {
+     "w": "tinha",
+     "start": 44.32,
+     "end": 44.44
+    },
+    {
+     "w": "um",
+     "start": 44.44,
+     "end": 44.62
+    },
+    {
+     "w": "site",
+     "start": 44.62,
+     "end": 44.9
+    },
+    {
+     "w": "próprio,",
+     "start": 44.9,
+     "end": 45.44
+    },
+    {
+     "w": "organizado",
+     "start": 46.04,
+     "end": 46.44
+    },
+    {
+     "w": "e",
+     "start": 46.44,
+     "end": 46.62
+    },
+    {
+     "w": "com",
+     "start": 46.62,
+     "end": 46.9
+    },
+    {
+     "w": "todas",
+     "start": 46.9,
+     "end": 47.16
+    },
+    {
+     "w": "as",
+     "start": 47.16,
+     "end": 47.46
+    },
+    {
+     "w": "informações",
+     "start": 47.46,
+     "end": 47.84
+    },
+    {
+     "w": "que",
+     "start": 47.84,
+     "end": 48.0
+    },
+    {
+     "w": "ele",
+     "start": 48.0,
+     "end": 48.28
+    },
+    {
+     "w": "precisava.",
+     "start": 48.28,
+     "end": 48.9
+    }
+   ]
+  },
+  {
+   "id": "l12",
+   "text": "Viu a marca, os preços e o prazo de entrega.",
+   "start": 49.36,
+   "end": 52.34,
+   "words": [
+    {
+     "w": "Viu",
+     "start": 49.36,
+     "end": 49.5
+    },
+    {
+     "w": "a",
+     "start": 49.5,
+     "end": 49.68
+    },
+    {
+     "w": "marca,",
+     "start": 49.68,
+     "end": 49.88
+    },
+    {
+     "w": "os",
+     "start": 50.06,
+     "end": 50.24
+    },
+    {
+     "w": "preços",
+     "start": 50.24,
+     "end": 50.58
+    },
+    {
+     "w": "e",
+     "start": 50.58,
+     "end": 50.8
+    },
+    {
+     "w": "o",
+     "start": 50.8,
+     "end": 50.98
+    },
+    {
+     "w": "prazo",
+     "start": 50.98,
+     "end": 51.14
+    },
+    {
+     "w": "de",
+     "start": 51.14,
+     "end": 51.4
+    },
+    {
+     "w": "entrega.",
+     "start": 51.4,
+     "end": 52.34
+    }
+   ]
+  },
+  {
+   "id": "l13",
+   "text": "Aquilo passou confiança.",
+   "start": 52.74,
+   "end": 54.36,
+   "words": [
+    {
+     "w": "Aquilo",
+     "start": 52.74,
+     "end": 53.22
+    },
+    {
+     "w": "passou",
+     "start": 53.22,
+     "end": 53.54
+    },
+    {
+     "w": "confiança.",
+     "start": 53.54,
+     "end": 54.36
+    }
+   ]
+  },
+  {
+   "id": "l14",
+   "text": "Escolheu a bebida e o gelo e, em menos de dois minutos,",
+   "start": 54.76,
+   "end": 57.98,
+   "words": [
+    {
+     "w": "Escolheu",
+     "start": 54.76,
+     "end": 55.1
+    },
+    {
+     "w": "a",
+     "start": 55.1,
+     "end": 55.22
+    },
+    {
+     "w": "bebida",
+     "start": 55.22,
+     "end": 55.56
+    },
+    {
+     "w": "e",
+     "start": 55.56,
+     "end": 55.68
+    },
+    {
+     "w": "o",
+     "start": 55.68,
+     "end": 55.86
+    },
+    {
+     "w": "gelo",
+     "start": 55.86,
+     "end": 56.44
+    },
+    {
+     "w": "e,",
+     "start": 56.44,
+     "end": 56.72
+    },
+    {
+     "w": "em",
+     "start": 56.8,
+     "end": 56.94
+    },
+    {
+     "w": "menos",
+     "start": 56.94,
+     "end": 57.12
+    },
+    {
+     "w": "de",
+     "start": 57.12,
+     "end": 57.36
+    },
+    {
+     "w": "dois",
+     "start": 57.36,
+     "end": 57.54
+    },
+    {
+     "w": "minutos,",
+     "start": 57.54,
+     "end": 57.98
+    }
+   ]
+  },
+  {
+   "id": "l15",
+   "text": "o pedido já estava no painel do dono, com os itens, o pagamento e o endereço para entrega.",
+   "start": 57.98,
+   "end": 64.86,
+   "words": [
+    {
+     "w": "o",
+     "start": 57.98,
+     "end": 58.66
+    },
+    {
+     "w": "pedido",
+     "start": 58.66,
+     "end": 59.04
+    },
+    {
+     "w": "já",
+     "start": 59.04,
+     "end": 59.32
+    },
+    {
+     "w": "estava",
+     "start": 59.32,
+     "end": 59.46
+    },
+    {
+     "w": "no",
+     "start": 59.46,
+     "end": 59.64
+    },
+    {
+     "w": "painel",
+     "start": 59.64,
+     "end": 59.96
+    },
+    {
+     "w": "do",
+     "start": 59.96,
+     "end": 60.16
+    },
+    {
+     "w": "dono,",
+     "start": 60.16,
+     "end": 60.74
+    },
+    {
+     "w": "com",
+     "start": 60.86,
+     "end": 61.08
+    },
+    {
+     "w": "os",
+     "start": 61.08,
+     "end": 61.3
+    },
+    {
+     "w": "itens,",
+     "start": 61.3,
+     "end": 61.8
+    },
+    {
+     "w": "o",
+     "start": 62.18,
+     "end": 62.34
+    },
+    {
+     "w": "pagamento",
+     "start": 62.34,
+     "end": 62.84
+    },
+    {
+     "w": "e",
+     "start": 62.84,
+     "end": 63.24
+    },
+    {
+     "w": "o",
+     "start": 63.24,
+     "end": 63.36
+    },
+    {
+     "w": "endereço",
+     "start": 63.36,
+     "end": 63.72
+    },
+    {
+     "w": "para",
+     "start": 63.72,
+     "end": 63.94
+    },
+    {
+     "w": "entrega.",
+     "start": 63.94,
+     "end": 64.86
+    }
+   ]
+  },
+  {
+   "id": "l16",
+   "text": "Agora faz a conta na tua loja.",
+   "start": 65.2,
+   "end": 66.84,
+   "words": [
+    {
+     "w": "Agora",
+     "start": 65.2,
+     "end": 65.38
+    },
+    {
+     "w": "faz",
+     "start": 65.38,
+     "end": 65.62
+    },
+    {
+     "w": "a",
+     "start": 65.62,
+     "end": 65.8
+    },
+    {
+     "w": "conta",
+     "start": 65.8,
+     "end": 65.94
+    },
+    {
+     "w": "na",
+     "start": 65.94,
+     "end": 66.14
+    },
+    {
+     "w": "tua",
+     "start": 66.14,
+     "end": 66.28
+    },
+    {
+     "w": "loja.",
+     "start": 66.28,
+     "end": 66.84
+    }
+   ]
+  },
+  {
+   "id": "l17",
+   "text": "Se tu perder dois pedidos de 60 reais por dia, são 120 reais por dia.",
+   "start": 67.24,
+   "end": 71.42,
+   "words": [
+    {
+     "w": "Se",
+     "start": 67.24,
+     "end": 67.34
+    },
+    {
+     "w": "tu",
+     "start": 67.34,
+     "end": 67.48
+    },
+    {
+     "w": "perder",
+     "start": 67.48,
+     "end": 67.78
+    },
+    {
+     "w": "dois",
+     "start": 67.78,
+     "end": 68.08
+    },
+    {
+     "w": "pedidos",
+     "start": 68.08,
+     "end": 68.48
+    },
+    {
+     "w": "de",
+     "start": 68.48,
+     "end": 68.72
+    },
+    {
+     "w": "60",
+     "start": 68.72,
+     "end": 69.04
+    },
+    {
+     "w": "reais",
+     "start": 69.04,
+     "end": 69.3
+    },
+    {
+     "w": "por",
+     "start": 69.3,
+     "end": 69.52
+    },
+    {
+     "w": "dia,",
+     "start": 69.52,
+     "end": 69.68
+    },
+    {
+     "w": "são",
+     "start": 69.92,
+     "end": 69.96
+    },
+    {
+     "w": "120",
+     "start": 69.96,
+     "end": 70.58
+    },
+    {
+     "w": "reais",
+     "start": 70.58,
+     "end": 70.92
+    },
+    {
+     "w": "por",
+     "start": 70.92,
+     "end": 71.12
+    },
+    {
+     "w": "dia.",
+     "start": 71.12,
+     "end": 71.42
+    }
+   ]
+  },
+  {
+   "id": "l18",
+   "text": "Em 15 dias de temporada, dá 1.800 reais.",
+   "start": 71.84,
+   "end": 74.58,
+   "words": [
+    {
+     "w": "Em",
+     "start": 71.84,
+     "end": 72.02
+    },
+    {
+     "w": "15",
+     "start": 72.02,
+     "end": 72.28
+    },
+    {
+     "w": "dias",
+     "start": 72.28,
+     "end": 72.54
+    },
+    {
+     "w": "de",
+     "start": 72.54,
+     "end": 72.78
+    },
+    {
+     "w": "temporada,",
+     "start": 72.78,
+     "end": 73.14
+    },
+    {
+     "w": "dá",
+     "start": 73.26,
+     "end": 73.44
+    },
+    {
+     "w": "1.800",
+     "start": 73.44,
+     "end": 74.08
+    },
+    {
+     "w": "reais.",
+     "start": 74.08,
+     "end": 74.58
+    }
+   ]
+  },
+  {
+   "id": "l19",
+   "text": "Se escaparem 3 por dia durante 20 dias, dá 3.600 reais.",
+   "start": 75.16,
+   "end": 78.58,
+   "words": [
+    {
+     "w": "Se",
+     "start": 75.16,
+     "end": 75.38
+    },
+    {
+     "w": "escaparem",
+     "start": 75.38,
+     "end": 75.72
+    },
+    {
+     "w": "3",
+     "start": 75.72,
+     "end": 75.9
+    },
+    {
+     "w": "por",
+     "start": 75.9,
+     "end": 76.1
+    },
+    {
+     "w": "dia",
+     "start": 76.1,
+     "end": 76.28
+    },
+    {
+     "w": "durante",
+     "start": 76.28,
+     "end": 76.44
+    },
+    {
+     "w": "20",
+     "start": 76.44,
+     "end": 76.72
+    },
+    {
+     "w": "dias,",
+     "start": 76.72,
+     "end": 77.02
+    },
+    {
+     "w": "dá",
+     "start": 77.02,
+     "end": 77.4
+    },
+    {
+     "w": "3.600",
+     "start": 77.54,
+     "end": 77.7
+    },
+    {
+     "w": "reais.",
+     "start": 77.7,
+     "end": 78.58
+    }
+   ]
+  },
+  {
+   "id": "l20",
+   "text": "E no fim do dia, quando tu fecha o caixa, essas vendas não aparecem em lugar nenhum.",
+   "start": 79.84,
+   "end": 84.02,
+   "words": [
+    {
+     "w": "E",
+     "start": 79.84,
+     "end": 80.06
+    },
+    {
+     "w": "no",
+     "start": 80.06,
+     "end": 80.22
+    },
+    {
+     "w": "fim",
+     "start": 80.22,
+     "end": 80.34
+    },
+    {
+     "w": "do",
+     "start": 80.34,
+     "end": 80.6
+    },
+    {
+     "w": "dia,",
+     "start": 80.6,
+     "end": 80.78
+    },
+    {
+     "w": "quando",
+     "start": 80.82,
+     "end": 80.98
+    },
+    {
+     "w": "tu",
+     "start": 80.98,
+     "end": 81.24
+    },
+    {
+     "w": "fecha",
+     "start": 81.24,
+     "end": 81.44
+    },
+    {
+     "w": "o",
+     "start": 81.44,
+     "end": 81.64
+    },
+    {
+     "w": "caixa,",
+     "start": 81.64,
+     "end": 81.96
+    },
+    {
+     "w": "essas",
+     "start": 82.38,
+     "end": 82.56
+    },
+    {
+     "w": "vendas",
+     "start": 82.56,
+     "end": 82.84
+    },
+    {
+     "w": "não",
+     "start": 82.84,
+     "end": 83.04
+    },
+    {
+     "w": "aparecem",
+     "start": 83.04,
+     "end": 83.38
+    },
+    {
+     "w": "em",
+     "start": 83.38,
+     "end": 83.46
+    },
+    {
+     "w": "lugar",
+     "start": 83.46,
+     "end": 83.7
+    },
+    {
+     "w": "nenhum.",
+     "start": 83.7,
+     "end": 84.02
+    }
+   ]
+  },
+  {
+   "id": "l21",
+   "text": "Quer que teu cliente consiga comprar enquanto tu atende no balcão?",
+   "start": 84.02,
+   "end": 88.08,
+   "words": [
+    {
+     "w": "Quer",
+     "start": 84.02,
+     "end": 84.82
+    },
+    {
+     "w": "que",
+     "start": 84.82,
+     "end": 85.06
+    },
+    {
+     "w": "teu",
+     "start": 85.06,
+     "end": 85.16
+    },
+    {
+     "w": "cliente",
+     "start": 85.16,
+     "end": 85.72
+    },
+    {
+     "w": "consiga",
+     "start": 85.72,
+     "end": 86.12
+    },
+    {
+     "w": "comprar",
+     "start": 86.12,
+     "end": 86.46
+    },
+    {
+     "w": "enquanto",
+     "start": 86.46,
+     "end": 86.82
+    },
+    {
+     "w": "tu",
+     "start": 86.82,
+     "end": 87.08
+    },
+    {
+     "w": "atende",
+     "start": 87.08,
+     "end": 87.36
+    },
+    {
+     "w": "no",
+     "start": 87.36,
+     "end": 87.52
+    },
+    {
+     "w": "balcão?",
+     "start": 87.52,
+     "end": 88.08
+    }
+   ]
+  },
+  {
+   "id": "l22",
+   "text": "Eu monto um site com a cara da tua adega ou tabacaria",
+   "start": 88.6,
+   "end": 91.72,
+   "words": [
+    {
+     "w": "Eu",
+     "start": 88.6,
+     "end": 88.8
+    },
+    {
+     "w": "monto",
+     "start": 88.8,
+     "end": 89.06
+    },
+    {
+     "w": "um",
+     "start": 89.06,
+     "end": 89.24
+    },
+    {
+     "w": "site",
+     "start": 89.24,
+     "end": 89.44
+    },
+    {
+     "w": "com",
+     "start": 89.44,
+     "end": 89.66
+    },
+    {
+     "w": "a",
+     "start": 89.66,
+     "end": 89.82
+    },
+    {
+     "w": "cara",
+     "start": 89.82,
+     "end": 90.0
+    },
+    {
+     "w": "da",
+     "start": 90.0,
+     "end": 90.34
+    },
+    {
+     "w": "tua",
+     "start": 90.34,
+     "end": 90.54
+    },
+    {
+     "w": "adega",
+     "start": 90.54,
+     "end": 90.86
+    },
+    {
+     "w": "ou",
+     "start": 90.86,
+     "end": 91.18
+    },
+    {
+     "w": "tabacaria",
+     "start": 91.18,
+     "end": 91.72
+    }
+   ]
+  },
+  {
+   "id": "l23",
+   "text": "e tu recebe cada pedido organizado no painel.",
+   "start": 91.72,
+   "end": 94.52,
+   "words": [
+    {
+     "w": "e",
+     "start": 91.72,
+     "end": 92.0
+    },
+    {
+     "w": "tu",
+     "start": 92.0,
+     "end": 92.2
+    },
+    {
+     "w": "recebe",
+     "start": 92.2,
+     "end": 92.56
+    },
+    {
+     "w": "cada",
+     "start": 92.56,
+     "end": 92.82
+    },
+    {
+     "w": "pedido",
+     "start": 92.82,
+     "end": 93.28
+    },
+    {
+     "w": "organizado",
+     "start": 93.28,
+     "end": 93.84
+    },
+    {
+     "w": "no",
+     "start": 93.84,
+     "end": 93.98
+    },
+    {
+     "w": "painel.",
+     "start": 93.98,
+     "end": 94.52
+    }
+   ]
+  },
+  {
+   "id": "l24",
+   "text": "Me chama aqui no TikTok.",
+   "start": 94.7,
+   "end": 96.0,
+   "words": [
+    {
+     "w": "Me",
+     "start": 94.7,
+     "end": 94.96
+    },
+    {
+     "w": "chama",
+     "start": 94.96,
+     "end": 95.12
+    },
+    {
+     "w": "aqui",
+     "start": 95.12,
+     "end": 95.46
+    },
+    {
+     "w": "no",
+     "start": 95.46,
+     "end": 95.62
+    },
+    {
+     "w": "TikTok.",
+     "start": 95.62,
+     "end": 96.0
+    }
+   ]
+  }
+ ]
+}

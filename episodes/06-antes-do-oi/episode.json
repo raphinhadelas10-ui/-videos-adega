@@ -1,0 +1,18 @@
+{
+  "id": "06-antes-do-oi",
+  "number": 6,
+  "series": "Adega no Digital",
+  "title": "Antes do oi",
+  "output": "out/06-antes-do-oi.mp4",
+  "durationSec": 98.4,
+  "voice": { "engine": "recording", "file": "episodes/06-antes-do-oi/narracao.m4a" },
+  "fixes": { "escapar em 3": "escaparem 3" },
+  "captionReplace": {
+    "3.600 reais": "R$ 3.600",
+    "1.800 reais": "R$ 1.800",
+    "120 reais": "R$ 120",
+    "60 reais": "R$ 60",
+    "dois minutos": "2 minutos"
+  },
+  "lines": []
+}

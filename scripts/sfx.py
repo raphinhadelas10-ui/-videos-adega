@@ -124,6 +124,27 @@ def main():
     rise = (tt / tt[-1]) ** 2.5
     sw = np.sin(2 * np.pi * np.cumsum(200 + 600 * rise) / SR)
     save("riser", (0.6 * n + 0.4 * sw) * rise, 0.4)
+
+    # tecla de teclado de celular
+    tt = t(0.045)
+    save("key", env(lowpass(rng.standard_normal(len(tt)), 3) + 0.5 * np.sin(2 * np.pi * 2400 * tt), 0.0005, 0.008), 0.3)
+    # apagar (backspace): duas teclas mais graves
+    tt = t(0.2)
+    x = np.zeros(len(tt))
+    for k in (0.0, 0.09):
+        i = int(k * SR)
+        b = env(lowpass(rng.standard_normal(int(0.04 * SR)), 5) + 0.5 * np.sin(2 * np.pi * 1300 * t(0.04)), 0.0005, 0.01)
+        x[i:i + len(b)] += b
+    save("backspace", x, 0.3)
+    # vibração de celular no balcão
+    tt = t(0.42)
+    buzz = np.sin(2 * np.pi * 170 * tt) * (0.6 + 0.4 * np.sign(np.sin(2 * np.pi * 22 * tt)))
+    buzz *= np.where(tt < 0.18, 1, np.where(tt > 0.24, 1, 0))
+    save("buzz", env(lowpass(buzz, 4), 0.01, 0.3), 0.4)
+    # ding limpo
+    tt = t(1.0)
+    ding = np.sin(2 * np.pi * 1568 * tt) + 0.35 * np.sin(2 * np.pi * 3136 * tt) + 0.15 * np.sin(2 * np.pi * 4704 * tt)
+    save("ding", env(ding, 0.002, 0.35), 0.45)
     print("OK →", OUT)
 
 

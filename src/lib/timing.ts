@@ -39,7 +39,28 @@ export const makeCues = (t: Timings) => {
     if (!hit) throw new Error(`Palavra '${word}' não encontrada na fala '${id}'`);
     return hit;
   };
+  const all = t.lines.flatMap((l) => l.words);
+  /** procura uma palavra ou sequência ("tu fecha") no texto inteiro; nth = ocorrência */
+  const find = (phrase: string, nth = 0) => {
+    const ws = phrase.split(/\s+/).map(norm);
+    let hit = -1;
+    for (let i = 0, k = 0; i <= all.length - ws.length; i++) {
+      if (ws.every((w, j) => norm(all[i + j].w) === w)) {
+        if (k === nth) {
+          hit = i;
+          break;
+        }
+        k++;
+      }
+    }
+    if (hit < 0) throw new Error(`'${phrase}' não encontrado na narração`);
+    return { start: all[hit].start, end: all[hit + ws.length - 1].end };
+  };
   return {
+    /** início de uma palavra/sequência em qualquer fala */
+    at: (phrase: string, nth = 0) => find(phrase, nth).start,
+    /** fim de uma palavra/sequência em qualquer fala */
+    atEnd: (phrase: string, nth = 0) => find(phrase, nth).end,
     line,
     /** início da fala */
     start: (id: string) => line(id).start,

@@ -35,7 +35,7 @@ const applyReplace = (words: Token[], replace: Record<string, string>): Token[] 
 const MAX_CHARS = 20;
 const MAX_WORDS = 4;
 
-export const buildChunks = (t: Timings, replace: Record<string, string> = {}): Chunk[] => {
+export const buildChunks = (t: Timings, replace: Record<string, string> = {}, maxChars = MAX_CHARS, maxWords = MAX_WORDS): Chunk[] => {
   const chunks: Chunk[] = [];
   t.lines.forEach((line, li) => {
     const toks = applyReplace(
@@ -49,7 +49,7 @@ export const buildChunks = (t: Timings, replace: Record<string, string> = {}): C
     };
     toks.forEach((tk) => {
       const len = cur.map((c) => c.text).join(" ").length + tk.text.length + 1;
-      if (cur.length && (len > MAX_CHARS || cur.length >= MAX_WORDS)) flush();
+      if (cur.length && (len > maxChars || cur.length >= maxWords)) flush();
       cur.push(tk);
       if (/[.,;:!?…]$/.test(tk.text)) flush();
     });
@@ -73,6 +73,9 @@ export const Captions: React.FC<{
   replace?: Record<string, string>;
   /** trechos exibidos em verde (resultado), ex.: ["R$ 1.800"] */
   green?: string[];
+  /** agrupamento: até N caracteres / N palavras por legenda (2 linhas ≈ 34 caracteres) */
+  maxChars?: number;
+  maxWords?: number;
   /** fundo escuro atrás da legenda (quando passa por cima de telas) */
   backdrop?: boolean;
   y?: number;
@@ -82,13 +85,15 @@ export const Captions: React.FC<{
   replace,
   green = [],
   backdrop = false,
+  maxChars,
+  maxWords,
   y = SAFE.captionsY,
   size = 66,
 }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
   const now = frame / fps;
-  const chunks = useMemo(() => buildChunks(timings, replace), [timings, replace]);
+  const chunks = useMemo(() => buildChunks(timings, replace, maxChars, maxWords), [timings, replace, maxChars, maxWords]);
   const chunk = chunks.find((c) => now >= c.start - 0.06 && now < c.end);
   if (!chunk) return null;
   const inT = interpolate(now, [chunk.start - 0.06, chunk.start + 0.08], [0, 1], {

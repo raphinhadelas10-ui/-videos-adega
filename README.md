@@ -10,6 +10,7 @@ Vídeos verticais (1080 × 1920, 30 fps) feitos em Remotion para donos de adega,
 | 3 | Do link ao painel | `out/03-do-link-ao-painel.mp4` |
 | 4 | Qual adega o João escolhe? | `out/04-joao-escolhe.mp4` |
 | 5 | Essa adega perdeu um pedido antes do “oi” | `out/05-antes-do-oi.mp4` |
+| 6 | Antes do oi (narração gravada) | `out/06-antes-do-oi.mp4` |
 
 ## Como gerar
 
@@ -68,3 +69,14 @@ Textos e personagens ficam entre x 90–940 e y 210–1480. Fora disso aparecem 
 ## Usar uma gravação própria
 
 Se preferir a sua voz no lugar do Piper, grave um único áudio lendo o roteiro e coloque em `episodes/<id>/narracao.*`. A sincronização é refeita a partir dele: o `voice.wav` e o `timings.json` são substituídos, e as cenas e legendas acompanham.
+
+## Usar uma gravação de narração
+
+Coloque o áudio em `episodes/<id>/narracao.m4a`, defina `"voice": { "engine": "recording", "file": "episodes/<id>/narracao.m4a" }` no `episode.json` e rode:
+
+```bash
+pip install faster-whisper soundfile   # uma vez (baixa o modelo do Hugging Face)
+python3 scripts/transcribe.py <id>     # gera voice.wav + timings.json com o tempo de cada palavra
+```
+
+Correções da transcrição vão em `"fixes"`. Nas cenas, use `cue.at("palavra ou frase")` para sincronizar com a fala.
