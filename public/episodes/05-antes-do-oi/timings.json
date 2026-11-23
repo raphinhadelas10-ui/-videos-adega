@@ -1,0 +1,529 @@
+{
+ "episode": "05-antes-do-oi",
+ "source": "kokoro:pm_alex",
+ "duration": 32.6,
+ "lines": [
+  {
+   "id": "joao",
+   "text": "Esse é o João.",
+   "start": 0.3,
+   "end": 1.288,
+   "words": [
+    {
+     "w": "Esse",
+     "start": 0.381,
+     "end": 0.656
+    },
+    {
+     "w": "é",
+     "start": 0.706,
+     "end": 0.731
+    },
+    {
+     "w": "o",
+     "start": 0.781,
+     "end": 0.831
+    },
+    {
+     "w": "João.",
+     "start": 0.881,
+     "end": 1.281
+    }
+   ]
+  },
+  {
+   "id": "veio",
+   "text": "Veio passar o revêion no Guarujá com os amigos e ficou de pedir a bebida e o gelo.",
+   "start": 1.488,
+   "end": 5.896,
+   "words": [
+    {
+     "w": "Veio",
+     "start": 1.544,
+     "end": 1.744
+    },
+    {
+     "w": "passar",
+     "start": 1.794,
+     "end": 2.119
+    },
+    {
+     "w": "o",
+     "start": 2.144,
+     "end": 2.169
+    },
+    {
+     "w": "revêion",
+     "start": 2.219,
+     "end": 2.644
+    },
+    {
+     "w": "no",
+     "start": 2.669,
+     "end": 2.719
+    },
+    {
+     "w": "Guarujá",
+     "start": 2.744,
+     "end": 3.144
+    },
+    {
+     "w": "com",
+     "start": 3.194,
+     "end": 3.319
+    },
+    {
+     "w": "os",
+     "start": 3.344,
+     "end": 3.419
+    },
+    {
+     "w": "amigos",
+     "start": 3.444,
+     "end": 4.019
+    },
+    {
+     "w": "e",
+     "start": 4.069,
+     "end": 4.094
+    },
+    {
+     "w": "ficou",
+     "start": 4.144,
+     "end": 4.444
+    },
+    {
+     "w": "de",
+     "start": 4.469,
+     "end": 4.544
+    },
+    {
+     "w": "pedir",
+     "start": 4.594,
+     "end": 4.969
+    },
+    {
+     "w": "a",
+     "start": 4.994,
+     "end": 5.019
+    },
+    {
+     "w": "bebida",
+     "start": 5.044,
+     "end": 5.419
+    },
+    {
+     "w": "e",
+     "start": 5.469,
+     "end": 5.494
+    },
+    {
+     "w": "o",
+     "start": 5.519,
+     "end": 5.569
+    },
+    {
+     "w": "gelo.",
+     "start": 5.619,
+     "end": 5.896
+    }
+   ]
+  },
+  {
+   "id": "primeira",
+   "text": "Na primeira adega, ele teria que mandar mensagem até pra saber o preço.",
+   "start": 6.246,
+   "end": 10.318,
+   "words": [
+    {
+     "w": "Na",
+     "start": 6.302,
+     "end": 6.402
+    },
+    {
+     "w": "primeira",
+     "start": 6.452,
+     "end": 6.802
+    },
+    {
+     "w": "adega,",
+     "start": 6.827,
+     "end": 7.327
+    },
+    {
+     "w": "ele",
+     "start": 7.402,
+     "end": 7.552
+    },
+    {
+     "w": "teria",
+     "start": 7.602,
+     "end": 7.927
+    },
+    {
+     "w": "que",
+     "start": 7.977,
+     "end": 8.027
+    },
+    {
+     "w": "mandar",
+     "start": 8.052,
+     "end": 8.377
+    },
+    {
+     "w": "mensagem",
+     "start": 8.427,
+     "end": 9.102
+    },
+    {
+     "w": "até",
+     "start": 9.152,
+     "end": 9.327
+    },
+    {
+     "w": "pra",
+     "start": 9.377,
+     "end": 9.527
+    },
+    {
+     "w": "saber",
+     "start": 9.577,
+     "end": 9.852
+    },
+    {
+     "w": "o",
+     "start": 9.877,
+     "end": 9.902
+    },
+    {
+     "w": "preço.",
+     "start": 9.952,
+     "end": 10.318
+    }
+   ]
+  },
+  {
+   "id": "fechouwa",
+   "text": "João fechou o uótsap e voltou pra busca.",
+   "start": 11.318,
+   "end": 13.556,
+   "words": [
+    {
+     "w": "João",
+     "start": 11.374,
+     "end": 11.574
+    },
+    {
+     "w": "fechou",
+     "start": 11.624,
+     "end": 11.974
+    },
+    {
+     "w": "o",
+     "start": 11.999,
+     "end": 12.049
+    },
+    {
+     "w": "uótsap",
+     "start": 12.099,
+     "end": 12.549
+    },
+    {
+     "w": "e",
+     "start": 12.599,
+     "end": 12.624
+    },
+    {
+     "w": "voltou",
+     "start": 12.674,
+     "end": 12.974
+    },
+    {
+     "w": "pra",
+     "start": 12.999,
+     "end": 13.124
+    },
+    {
+     "w": "busca.",
+     "start": 13.174,
+     "end": 13.556
+    }
+   ]
+  },
+  {
+   "id": "segunda",
+   "text": "Na segunda, o site tinha a cara da loja, os preços estavam ali e pedir era fácil.",
+   "start": 13.906,
+   "end": 18.43,
+   "words": [
+    {
+     "w": "Na",
+     "start": 13.962,
+     "end": 14.062
+    },
+    {
+     "w": "segunda,",
+     "start": 14.112,
+     "end": 14.537
+    },
+    {
+     "w": "o",
+     "start": 14.587,
+     "end": 14.637
+    },
+    {
+     "w": "site",
+     "start": 14.712,
+     "end": 15.037
+    },
+    {
+     "w": "tinha",
+     "start": 15.087,
+     "end": 15.287
+    },
+    {
+     "w": "a",
+     "start": 15.312,
+     "end": 15.337
+    },
+    {
+     "w": "cara",
+     "start": 15.387,
+     "end": 15.562
+    },
+    {
+     "w": "da",
+     "start": 15.587,
+     "end": 15.662
+    },
+    {
+     "w": "loja,",
+     "start": 15.712,
+     "end": 16.187
+    },
+    {
+     "w": "os",
+     "start": 16.287,
+     "end": 16.387
+    },
+    {
+     "w": "preços",
+     "start": 16.437,
+     "end": 16.737
+    },
+    {
+     "w": "estavam",
+     "start": 16.762,
+     "end": 17.112
+    },
+    {
+     "w": "ali",
+     "start": 17.137,
+     "end": 17.337
+    },
+    {
+     "w": "e",
+     "start": 17.387,
+     "end": 17.412
+    },
+    {
+     "w": "pedir",
+     "start": 17.462,
+     "end": 17.812
+    },
+    {
+     "w": "era",
+     "start": 17.837,
+     "end": 17.987
+    },
+    {
+     "w": "fácil.",
+     "start": 18.062,
+     "end": 18.43
+    }
+   ]
+  },
+  {
+   "id": "confianca",
+   "text": "Passou mais confiança.",
+   "start": 18.68,
+   "end": 20.208,
+   "words": [
+    {
+     "w": "Passou",
+     "start": 18.751,
+     "end": 19.101
+    },
+    {
+     "w": "mais",
+     "start": 19.151,
+     "end": 19.426
+    },
+    {
+     "w": "confiança.",
+     "start": 19.476,
+     "end": 20.208
+    }
+   ]
+  },
+  {
+   "id": "dois",
+   "text": "Em dois minutos, João fechou.",
+   "start": 20.508,
+   "end": 22.309,
+   "words": [
+    {
+     "w": "Em",
+     "start": 20.587,
+     "end": 20.762
+    },
+    {
+     "w": "dois",
+     "start": 20.812,
+     "end": 21.037
+    },
+    {
+     "w": "minutos,",
+     "start": 21.087,
+     "end": 21.537
+    },
+    {
+     "w": "João",
+     "start": 21.612,
+     "end": 21.837
+    },
+    {
+     "w": "fechou.",
+     "start": 21.887,
+     "end": 22.309
+    }
+   ]
+  },
+  {
+   "id": "quer",
+   "text": "Quer trazer mais profissionalismo pra tua adega ou tabacaria e facilitar a compra pros teus clientes?",
+   "start": 22.909,
+   "end": 28.584,
+   "words": [
+    {
+     "w": "Quer",
+     "start": 22.964,
+     "end": 23.164
+    },
+    {
+     "w": "trazer",
+     "start": 23.214,
+     "end": 23.564
+    },
+    {
+     "w": "mais",
+     "start": 23.614,
+     "end": 23.864
+    },
+    {
+     "w": "profissionalismo",
+     "start": 23.914,
+     "end": 24.739
+    },
+    {
+     "w": "pra",
+     "start": 24.789,
+     "end": 24.914
+    },
+    {
+     "w": "tua",
+     "start": 24.964,
+     "end": 25.089
+    },
+    {
+     "w": "adega",
+     "start": 25.114,
+     "end": 25.639
+    },
+    {
+     "w": "ou",
+     "start": 25.714,
+     "end": 25.789
+    },
+    {
+     "w": "tabacaria",
+     "start": 25.839,
+     "end": 26.539
+    },
+    {
+     "w": "e",
+     "start": 26.589,
+     "end": 26.614
+    },
+    {
+     "w": "facilitar",
+     "start": 26.664,
+     "end": 27.214
+    },
+    {
+     "w": "a",
+     "start": 27.239,
+     "end": 27.264
+    },
+    {
+     "w": "compra",
+     "start": 27.314,
+     "end": 27.589
+    },
+    {
+     "w": "pros",
+     "start": 27.614,
+     "end": 27.739
+    },
+    {
+     "w": "teus",
+     "start": 27.764,
+     "end": 27.964
+    },
+    {
+     "w": "clientes?",
+     "start": 28.014,
+     "end": 28.584
+    }
+   ]
+  },
+  {
+   "id": "chama",
+   "text": "Me chama aqui no tic tóc.",
+   "start": 28.884,
+   "end": 30.417,
+   "words": [
+    {
+     "w": "Me",
+     "start": 28.965,
+     "end": 29.065
+    },
+    {
+     "w": "chama",
+     "start": 29.165,
+     "end": 29.415
+    },
+    {
+     "w": "aqui",
+     "start": 29.44,
+     "end": 29.615
+    },
+    {
+     "w": "no",
+     "start": 29.64,
+     "end": 29.74
+    },
+    {
+     "w": "tic",
+     "start": 29.79,
+     "end": 30.015
+    },
+    {
+     "w": "tóc.",
+     "start": 30.09,
+     "end": 30.415
+    }
+   ]
+  }
+ ]
+}

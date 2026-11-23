@@ -1,0 +1,26 @@
+{
+  "id": "05-antes-do-oi",
+  "number": 5,
+  "series": "Adega no Digital",
+  "title": "Essa adega perdeu um pedido antes do oi",
+  "output": "out/05-antes-do-oi.mp4",
+  "durationSec": 32.6,
+  "voice": { "engine": "kokoro", "voice": "pm_alex", "speed": 1.15 },
+  "captionReplace": {
+    "revêion": "Réveillon",
+    "uótsap": "WhatsApp",
+    "tic tóc": "TikTok",
+    "dois minutos": "2 minutos"
+  },
+  "lines": [
+    { "id": "joao",      "at": 0.3, "text": "Esse é o João." },
+    { "id": "veio",      "gap": 0.2, "text": "Veio passar o revêion no Guarujá com os amigos e ficou de pedir a bebida e o gelo." },
+    { "id": "primeira",  "gap": 0.35, "text": "Na primeira adega, ele teria que mandar mensagem até pra saber o preço." },
+    { "id": "fechouwa",  "gap": 1.0, "text": "João fechou o uótsap e voltou pra busca." },
+    { "id": "segunda",   "gap": 0.35, "text": "Na segunda, o site tinha a cara da loja, os preços estavam ali e pedir era fácil." },
+    { "id": "confianca", "gap": 0.25, "text": "Passou mais confiança." },
+    { "id": "dois",      "gap": 0.3, "text": "Em dois minutos, João fechou." },
+    { "id": "quer",      "gap": 0.6, "text": "Quer trazer mais profissionalismo pra tua adega ou tabacaria e facilitar a compra pros teus clientes?" },
+    { "id": "chama",     "gap": 0.3, "text": "Me chama aqui no tic tóc." }
+  ]
+}

@@ -14,6 +14,9 @@ import ep03Timings from "../../public/episodes/03-do-link-ao-painel/timings.json
 import { Ep04JoaoEscolhe } from "./ep04-joao-escolhe";
 import ep04 from "../../episodes/04-joao-escolhe/episode.json";
 import ep04Timings from "../../public/episodes/04-joao-escolhe/timings.json";
+import { Ep05AntesDoOi } from "./ep05-antes-do-oi";
+import ep05 from "../../episodes/05-antes-do-oi/episode.json";
+import ep05Timings from "../../public/episodes/05-antes-do-oi/timings.json";
 
 export type EpisodeEntry = {
   component: React.FC<EpisodeProps>;
@@ -30,4 +33,5 @@ export const EPISODES: EpisodeEntry[] = [
   { component: Ep02AdegaTemporada, episode: ep02Dora as EpisodeConfig, timings: ep02DoraTimings as Timings },
   { component: Ep03DoLinkAoPainel, episode: ep03 as EpisodeConfig, timings: ep03Timings as Timings },
   { component: Ep04JoaoEscolhe, episode: ep04 as EpisodeConfig, timings: ep04Timings as Timings },
+  { component: Ep05AntesDoOi, episode: ep05 as EpisodeConfig, timings: ep05Timings as Timings },
 ];
