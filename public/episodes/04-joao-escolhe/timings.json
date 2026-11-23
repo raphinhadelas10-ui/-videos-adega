@@ -1,0 +1,819 @@
+{
+ "episode": "04-joao-escolhe",
+ "source": "kokoro:pm_alex",
+ "duration": 48.5,
+ "lines": [
+  {
+   "id": "joao",
+   "text": "Esse é o João.",
+   "start": 0.25,
+   "end": 1.238,
+   "words": [
+    {
+     "w": "Esse",
+     "start": 0.331,
+     "end": 0.606
+    },
+    {
+     "w": "é",
+     "start": 0.656,
+     "end": 0.681
+    },
+    {
+     "w": "o",
+     "start": 0.731,
+     "end": 0.781
+    },
+    {
+     "w": "João.",
+     "start": 0.831,
+     "end": 1.231
+    }
+   ]
+  },
+  {
+   "id": "veio",
+   "text": "Veio de São Paulo passar o revêion no Guarujá com os amigos e ficou de pedir a bebida e o gelo.",
+   "start": 1.438,
+   "end": 6.539,
+   "words": [
+    {
+     "w": "Veio",
+     "start": 1.494,
+     "end": 1.719
+    },
+    {
+     "w": "de",
+     "start": 1.744,
+     "end": 1.819
+    },
+    {
+     "w": "São",
+     "start": 1.869,
+     "end": 2.019
+    },
+    {
+     "w": "Paulo",
+     "start": 2.069,
+     "end": 2.369
+    },
+    {
+     "w": "passar",
+     "start": 2.419,
+     "end": 2.719
+    },
+    {
+     "w": "o",
+     "start": 2.744,
+     "end": 2.769
+    },
+    {
+     "w": "revêion",
+     "start": 2.819,
+     "end": 3.219
+    },
+    {
+     "w": "no",
+     "start": 3.244,
+     "end": 3.294
+    },
+    {
+     "w": "Guarujá",
+     "start": 3.319,
+     "end": 3.719
+    },
+    {
+     "w": "com",
+     "start": 3.769,
+     "end": 3.894
+    },
+    {
+     "w": "os",
+     "start": 3.919,
+     "end": 3.994
+    },
+    {
+     "w": "amigos",
+     "start": 4.019,
+     "end": 4.644
+    },
+    {
+     "w": "e",
+     "start": 4.719,
+     "end": 4.744
+    },
+    {
+     "w": "ficou",
+     "start": 4.794,
+     "end": 5.094
+    },
+    {
+     "w": "de",
+     "start": 5.119,
+     "end": 5.194
+    },
+    {
+     "w": "pedir",
+     "start": 5.244,
+     "end": 5.594
+    },
+    {
+     "w": "a",
+     "start": 5.619,
+     "end": 5.644
+    },
+    {
+     "w": "bebida",
+     "start": 5.669,
+     "end": 6.069
+    },
+    {
+     "w": "e",
+     "start": 6.119,
+     "end": 6.144
+    },
+    {
+     "w": "o",
+     "start": 6.169,
+     "end": 6.219
+    },
+    {
+     "w": "gelo.",
+     "start": 6.269,
+     "end": 6.539
+    }
+   ]
+  },
+  {
+   "id": "primeira",
+   "text": "Na primeira adega, até pra saber o preço ele precisava mandar mensagem.",
+   "start": 6.889,
+   "end": 11.002,
+   "words": [
+    {
+     "w": "Na",
+     "start": 6.946,
+     "end": 7.046
+    },
+    {
+     "w": "primeira",
+     "start": 7.096,
+     "end": 7.446
+    },
+    {
+     "w": "adega,",
+     "start": 7.471,
+     "end": 7.996
+    },
+    {
+     "w": "até",
+     "start": 8.096,
+     "end": 8.271
+    },
+    {
+     "w": "pra",
+     "start": 8.321,
+     "end": 8.471
+    },
+    {
+     "w": "saber",
+     "start": 8.521,
+     "end": 8.846
+    },
+    {
+     "w": "o",
+     "start": 8.871,
+     "end": 8.896
+    },
+    {
+     "w": "preço",
+     "start": 8.946,
+     "end": 9.296
+    },
+    {
+     "w": "ele",
+     "start": 9.321,
+     "end": 9.421
+    },
+    {
+     "w": "precisava",
+     "start": 9.471,
+     "end": 10.021
+    },
+    {
+     "w": "mandar",
+     "start": 10.071,
+     "end": 10.396
+    },
+    {
+     "w": "mensagem.",
+     "start": 10.446,
+     "end": 11.002
+    }
+   ]
+  },
+  {
+   "id": "dono",
+   "text": "E o dono já tava atendendo no balcão e respondendo um monte de gente ao mesmo tempo.",
+   "start": 11.252,
+   "end": 16.057,
+   "words": [
+    {
+     "w": "E",
+     "start": 11.308,
+     "end": 11.358
+    },
+    {
+     "w": "o",
+     "start": 11.408,
+     "end": 11.458
+    },
+    {
+     "w": "dono",
+     "start": 11.508,
+     "end": 11.783
+    },
+    {
+     "w": "já",
+     "start": 11.833,
+     "end": 11.983
+    },
+    {
+     "w": "tava",
+     "start": 12.033,
+     "end": 12.208
+    },
+    {
+     "w": "atendendo",
+     "start": 12.233,
+     "end": 12.758
+    },
+    {
+     "w": "no",
+     "start": 12.783,
+     "end": 12.833
+    },
+    {
+     "w": "balcão",
+     "start": 12.858,
+     "end": 13.458
+    },
+    {
+     "w": "e",
+     "start": 13.533,
+     "end": 13.558
+    },
+    {
+     "w": "respondendo",
+     "start": 13.608,
+     "end": 14.183
+    },
+    {
+     "w": "um",
+     "start": 14.208,
+     "end": 14.283
+    },
+    {
+     "w": "monte",
+     "start": 14.333,
+     "end": 14.708
+    },
+    {
+     "w": "de",
+     "start": 14.758,
+     "end": 14.908
+    },
+    {
+     "w": "gente",
+     "start": 14.958,
+     "end": 15.258
+    },
+    {
+     "w": "ao",
+     "start": 15.283,
+     "end": 15.333
+    },
+    {
+     "w": "mesmo",
+     "start": 15.383,
+     "end": 15.658
+    },
+    {
+     "w": "tempo.",
+     "start": 15.708,
+     "end": 16.057
+    }
+   ]
+  },
+  {
+   "id": "voltou",
+   "text": "João voltou pra busca.",
+   "start": 16.307,
+   "end": 17.753,
+   "words": [
+    {
+     "w": "João",
+     "start": 16.412,
+     "end": 16.637
+    },
+    {
+     "w": "voltou",
+     "start": 16.687,
+     "end": 17.037
+    },
+    {
+     "w": "pra",
+     "start": 17.087,
+     "end": 17.237
+    },
+    {
+     "w": "busca.",
+     "start": 17.287,
+     "end": 17.753
+    }
+   ]
+  },
+  {
+   "id": "segunda",
+   "text": "Na segunda, o catálogo demorou pra abrir.",
+   "start": 18.103,
+   "end": 20.474,
+   "words": [
+    {
+     "w": "Na",
+     "start": 18.18,
+     "end": 18.28
+    },
+    {
+     "w": "segunda,",
+     "start": 18.33,
+     "end": 18.805
+    },
+    {
+     "w": "o",
+     "start": 18.855,
+     "end": 18.88
+    },
+    {
+     "w": "catálogo",
+     "start": 18.93,
+     "end": 19.48
+    },
+    {
+     "w": "demorou",
+     "start": 19.53,
+     "end": 19.88
+    },
+    {
+     "w": "pra",
+     "start": 19.93,
+     "end": 20.055
+    },
+    {
+     "w": "abrir.",
+     "start": 20.08,
+     "end": 20.474
+    }
+   ]
+  },
+  {
+   "id": "travou",
+   "text": "Ele clicou no combo, travou e ele saiu.",
+   "start": 20.974,
+   "end": 23.132,
+   "words": [
+    {
+     "w": "Ele",
+     "start": 21.031,
+     "end": 21.181
+    },
+    {
+     "w": "clicou",
+     "start": 21.231,
+     "end": 21.556
+    },
+    {
+     "w": "no",
+     "start": 21.581,
+     "end": 21.656
+    },
+    {
+     "w": "combo,",
+     "start": 21.706,
+     "end": 22.081
+    },
+    {
+     "w": "travou",
+     "start": 22.181,
+     "end": 22.531
+    },
+    {
+     "w": "e",
+     "start": 22.556,
+     "end": 22.581
+    },
+    {
+     "w": "ele",
+     "start": 22.606,
+     "end": 22.731
+    },
+    {
+     "w": "saiu.",
+     "start": 22.781,
+     "end": 23.132
+    }
+   ]
+  },
+  {
+   "id": "terceira",
+   "text": "Na terceira, João viu um site com a cara da loja, tudo organizado e os preços na tela.",
+   "start": 23.532,
+   "end": 28.108,
+   "words": [
+    {
+     "w": "Na",
+     "start": 23.588,
+     "end": 23.688
+    },
+    {
+     "w": "terceira,",
+     "start": 23.738,
+     "end": 24.213
+    },
+    {
+     "w": "João",
+     "start": 24.288,
+     "end": 24.513
+    },
+    {
+     "w": "viu",
+     "start": 24.538,
+     "end": 24.638
+    },
+    {
+     "w": "um",
+     "start": 24.663,
+     "end": 24.738
+    },
+    {
+     "w": "site",
+     "start": 24.813,
+     "end": 25.138
+    },
+    {
+     "w": "com",
+     "start": 25.188,
+     "end": 25.263
+    },
+    {
+     "w": "a",
+     "start": 25.288,
+     "end": 25.313
+    },
+    {
+     "w": "cara",
+     "start": 25.363,
+     "end": 25.538
+    },
+    {
+     "w": "da",
+     "start": 25.563,
+     "end": 25.663
+    },
+    {
+     "w": "loja,",
+     "start": 25.713,
+     "end": 26.163
+    },
+    {
+     "w": "tudo",
+     "start": 26.263,
+     "end": 26.438
+    },
+    {
+     "w": "organizado",
+     "start": 26.463,
+     "end": 27.113
+    },
+    {
+     "w": "e",
+     "start": 27.163,
+     "end": 27.188
+    },
+    {
+     "w": "os",
+     "start": 27.213,
+     "end": 27.313
+    },
+    {
+     "w": "preços",
+     "start": 27.363,
+     "end": 27.663
+    },
+    {
+     "w": "na",
+     "start": 27.688,
+     "end": 27.788
+    },
+    {
+     "w": "tela.",
+     "start": 27.838,
+     "end": 28.108
+    }
+   ]
+  },
+  {
+   "id": "confianca",
+   "text": "Passou mais confiança.",
+   "start": 28.358,
+   "end": 29.886,
+   "words": [
+    {
+     "w": "Passou",
+     "start": 28.429,
+     "end": 28.779
+    },
+    {
+     "w": "mais",
+     "start": 28.829,
+     "end": 29.104
+    },
+    {
+     "w": "confiança.",
+     "start": 29.154,
+     "end": 29.886
+    }
+   ]
+  },
+  {
+   "id": "fechou",
+   "text": "Em dois minutos, ele fechou.",
+   "start": 30.986,
+   "end": 32.715,
+   "words": [
+    {
+     "w": "Em",
+     "start": 31.065,
+     "end": 31.265
+    },
+    {
+     "w": "dois",
+     "start": 31.315,
+     "end": 31.565
+    },
+    {
+     "w": "minutos,",
+     "start": 31.615,
+     "end": 32.04
+    },
+    {
+     "w": "ele",
+     "start": 32.09,
+     "end": 32.24
+    },
+    {
+     "w": "fechou.",
+     "start": 32.29,
+     "end": 32.715
+    }
+   ]
+  },
+  {
+   "id": "painel",
+   "text": "Pro dono, o pedido já chegou completo no painel.",
+   "start": 33.415,
+   "end": 36.142,
+   "words": [
+    {
+     "w": "Pro",
+     "start": 33.471,
+     "end": 33.621
+    },
+    {
+     "w": "dono,",
+     "start": 33.671,
+     "end": 33.996
+    },
+    {
+     "w": "o",
+     "start": 34.046,
+     "end": 34.071
+    },
+    {
+     "w": "pedido",
+     "start": 34.121,
+     "end": 34.571
+    },
+    {
+     "w": "já",
+     "start": 34.621,
+     "end": 34.771
+    },
+    {
+     "w": "chegou",
+     "start": 34.821,
+     "end": 35.121
+    },
+    {
+     "w": "completo",
+     "start": 35.146,
+     "end": 35.596
+    },
+    {
+     "w": "no",
+     "start": 35.621,
+     "end": 35.671
+    },
+    {
+     "w": "painel.",
+     "start": 35.721,
+     "end": 36.142
+    }
+   ]
+  },
+  {
+   "id": "quer",
+   "text": "Quer trazer mais profissionalismo pra tua adega ou tabacaria e facilitar a compra pros teus clientes?",
+   "start": 36.742,
+   "end": 42.417,
+   "words": [
+    {
+     "w": "Quer",
+     "start": 36.797,
+     "end": 36.997
+    },
+    {
+     "w": "trazer",
+     "start": 37.047,
+     "end": 37.397
+    },
+    {
+     "w": "mais",
+     "start": 37.447,
+     "end": 37.697
+    },
+    {
+     "w": "profissionalismo",
+     "start": 37.747,
+     "end": 38.572
+    },
+    {
+     "w": "pra",
+     "start": 38.622,
+     "end": 38.747
+    },
+    {
+     "w": "tua",
+     "start": 38.797,
+     "end": 38.922
+    },
+    {
+     "w": "adega",
+     "start": 38.947,
+     "end": 39.472
+    },
+    {
+     "w": "ou",
+     "start": 39.547,
+     "end": 39.622
+    },
+    {
+     "w": "tabacaria",
+     "start": 39.672,
+     "end": 40.372
+    },
+    {
+     "w": "e",
+     "start": 40.422,
+     "end": 40.447
+    },
+    {
+     "w": "facilitar",
+     "start": 40.497,
+     "end": 41.047
+    },
+    {
+     "w": "a",
+     "start": 41.072,
+     "end": 41.097
+    },
+    {
+     "w": "compra",
+     "start": 41.147,
+     "end": 41.422
+    },
+    {
+     "w": "pros",
+     "start": 41.447,
+     "end": 41.572
+    },
+    {
+     "w": "teus",
+     "start": 41.597,
+     "end": 41.797
+    },
+    {
+     "w": "clientes?",
+     "start": 41.847,
+     "end": 42.417
+    }
+   ]
+  },
+  {
+   "id": "chama",
+   "text": "Me chama aqui no tic tóc.",
+   "start": 42.717,
+   "end": 44.25,
+   "words": [
+    {
+     "w": "Me",
+     "start": 42.798,
+     "end": 42.898
+    },
+    {
+     "w": "chama",
+     "start": 42.998,
+     "end": 43.248
+    },
+    {
+     "w": "aqui",
+     "start": 43.273,
+     "end": 43.448
+    },
+    {
+     "w": "no",
+     "start": 43.473,
+     "end": 43.573
+    },
+    {
+     "w": "tic",
+     "start": 43.623,
+     "end": 43.848
+    },
+    {
+     "w": "tóc.",
+     "start": 43.923,
+     "end": 44.248
+    }
+   ]
+  },
+  {
+   "id": "faco",
+   "text": "Eu faço um site com a cara da tua loja.",
+   "start": 44.5,
+   "end": 46.833,
+   "words": [
+    {
+     "w": "Eu",
+     "start": 44.577,
+     "end": 44.677
+    },
+    {
+     "w": "faço",
+     "start": 44.727,
+     "end": 44.927
+    },
+    {
+     "w": "um",
+     "start": 44.952,
+     "end": 45.027
+    },
+    {
+     "w": "site",
+     "start": 45.127,
+     "end": 45.552
+    },
+    {
+     "w": "com",
+     "start": 45.602,
+     "end": 45.727
+    },
+    {
+     "w": "a",
+     "start": 45.752,
+     "end": 45.802
+    },
+    {
+     "w": "cara",
+     "start": 45.852,
+     "end": 46.102
+    },
+    {
+     "w": "da",
+     "start": 46.127,
+     "end": 46.227
+    },
+    {
+     "w": "tua",
+     "start": 46.277,
+     "end": 46.427
+    },
+    {
+     "w": "loja.",
+     "start": 46.477,
+     "end": 46.833
+    }
+   ]
+  }
+ ]
+}

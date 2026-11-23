@@ -1,0 +1,90 @@
+{
+  "id": "04-joao-escolhe",
+  "number": 4,
+  "series": "Adega no Digital",
+  "title": "Qual adega o João escolhe?",
+  "output": "out/04-joao-escolhe.mp4",
+  "durationSec": 48.5,
+  "voice": {
+    "engine": "kokoro",
+    "voice": "pm_alex",
+    "speed": 1.15
+  },
+  "captionReplace": {
+    "revêion": "Réveillon",
+    "tic tóc": "TikTok",
+    "dois minutos": "2 minutos"
+  },
+  "lines": [
+    {
+      "id": "joao",
+      "at": 0.25,
+      "text": "Esse é o João."
+    },
+    {
+      "id": "veio",
+      "gap": 0.2,
+      "text": "Veio de São Paulo passar o revêion no Guarujá com os amigos e ficou de pedir a bebida e o gelo."
+    },
+    {
+      "id": "primeira",
+      "gap": 0.35,
+      "text": "Na primeira adega, até pra saber o preço ele precisava mandar mensagem."
+    },
+    {
+      "id": "dono",
+      "gap": 0.25,
+      "text": "E o dono já tava atendendo no balcão e respondendo um monte de gente ao mesmo tempo."
+    },
+    {
+      "id": "voltou",
+      "gap": 0.25,
+      "text": "João voltou pra busca."
+    },
+    {
+      "id": "segunda",
+      "gap": 0.35,
+      "text": "Na segunda, o catálogo demorou pra abrir."
+    },
+    {
+      "id": "travou",
+      "gap": 0.5,
+      "text": "Ele clicou no combo, travou e ele saiu."
+    },
+    {
+      "id": "terceira",
+      "gap": 0.4,
+      "text": "Na terceira, João viu um site com a cara da loja, tudo organizado e os preços na tela."
+    },
+    {
+      "id": "confianca",
+      "gap": 0.25,
+      "text": "Passou mais confiança."
+    },
+    {
+      "id": "fechou",
+      "gap": 1.1,
+      "text": "Em dois minutos, ele fechou."
+    },
+    {
+      "id": "painel",
+      "gap": 0.7,
+      "text": "Pro dono, o pedido já chegou completo no painel."
+    },
+    {
+      "id": "quer",
+      "gap": 0.6,
+      "text": "Quer trazer mais profissionalismo pra tua adega ou tabacaria e facilitar a compra pros teus clientes?"
+    },
+    {
+      "id": "chama",
+      "gap": 0.3,
+      "text": "Me chama aqui no tic tóc."
+    },
+    {
+      "id": "faco",
+      "gap": 0.25,
+      "text": "Eu faço um site com a cara da tua loja."
+    }
+  ]
+}

@@ -11,6 +11,9 @@ import ep02DoraTimings from "../../public/episodes/02-adega-temporada-dora/timin
 import { Ep03DoLinkAoPainel } from "./ep03-do-link-ao-painel";
 import ep03 from "../../episodes/03-do-link-ao-painel/episode.json";
 import ep03Timings from "../../public/episodes/03-do-link-ao-painel/timings.json";
+import { Ep04JoaoEscolhe } from "./ep04-joao-escolhe";
+import ep04 from "../../episodes/04-joao-escolhe/episode.json";
+import ep04Timings from "../../public/episodes/04-joao-escolhe/timings.json";
 
 export type EpisodeEntry = {
   component: React.FC<EpisodeProps>;
@@ -26,4 +29,5 @@ export const EPISODES: EpisodeEntry[] = [
   // mesma animação, voz Dora
   { component: Ep02AdegaTemporada, episode: ep02Dora as EpisodeConfig, timings: ep02DoraTimings as Timings },
   { component: Ep03DoLinkAoPainel, episode: ep03 as EpisodeConfig, timings: ep03Timings as Timings },
+  { component: Ep04JoaoEscolhe, episode: ep04 as EpisodeConfig, timings: ep04Timings as Timings },
 ];
