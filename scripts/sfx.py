@@ -170,6 +170,39 @@ def main():
     # toque suave (chamada final)
     tt = t(0.9)
     save("soft", env(np.sin(2 * np.pi * 784 * tt) + 0.5 * np.sin(2 * np.pi * 1175 * tt), 0.02, 0.35), 0.3)
+    # vento suave de troca de aba (ruído filtrado com varredura)
+    tt = t(0.55)
+    n = rng.standard_normal(len(tt))
+    k = np.linspace(40, 6, len(tt)).astype(int)
+    c = np.cumsum(n)
+    sw = np.array([(c[i] - c[max(0, i - k[i])]) / k[i] for i in range(len(n))])
+    sw = sw - np.convolve(sw, np.ones(200) / 200, mode="same")  # tira o grave
+    shape = np.sin(np.pi * np.clip(tt / tt[-1], 0, 1)) ** 1.6
+    save("air", sw * shape, 0.28)
+    # dinheiro perdido: três notas descendentes abafadas
+    tt = t(0.9)
+    x = np.zeros(len(tt))
+    for i, fr in enumerate([523.25, 440.0, 349.23]):
+        a0 = int(i * 0.16 * SR)
+        lt = t(0.5)
+        note = (np.sin(2 * np.pi * fr * lt) + 0.3 * np.sin(2 * np.pi * fr * 1.006 * lt)) * np.exp(-lt / (0.14 + 0.08 * i))
+        x[a0:a0 + len(lt)] += note[: len(x) - a0]
+    save("money_lost", lowpass(x, 10), 0.38)
+    # dinheiro entrando: moedinhas curtas ascendentes + brilho
+    tt = t(0.7)
+    x = np.zeros(len(tt))
+    for i, fr in enumerate([2093, 2637, 3136, 4186]):
+        a0 = int(i * 0.06 * SR)
+        lt = t(0.35)
+        coin = (np.sin(2 * np.pi * fr * lt) + 0.5 * np.sin(2 * np.pi * fr * 2.76 * lt)) * np.exp(-lt / 0.07)
+        x[a0:a0 + len(lt)] += coin[: len(x) - a0] * (0.8 - 0.1 * i)
+    save("money_gain", x, 0.3)
+    # subida curta (antes de uma revelação)
+    tt = t(1.2)
+    rise = (tt / tt[-1]) ** 2
+    nz = lowpass(rng.standard_normal(len(tt)), 8)
+    tone = np.sin(2 * np.pi * np.cumsum(300 + 500 * rise) / SR)
+    save("rise_soft", (0.6 * nz + 0.4 * tone) * rise * (1 - np.clip((tt - 1.12) / 0.08, 0, 1)), 0.3)
     # trilha suave (pad) — 110 s, acordes lentos
     d = 110.0
     tt = t(d)

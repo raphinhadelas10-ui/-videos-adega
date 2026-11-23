@@ -633,9 +633,9 @@ const Fechamento: React.FC<{ now: number; at: number; p: number }> = ({ now, at,
       </div>
       {/* pedidos que escaparam: vão em direção à lista e somem antes de entrar */}
       {[0, 1, 2].map((i) => {
-        const a = at + 0.5 + i * 0.25;
-        const move = ease(now, a, a + 0.7);
-        const gone = ease(now, a + 0.45, a + 0.8);
+        const a = at + 0.25 + i * 0.12;
+        const move = ease(now, a, a + 0.5);
+        const gone = ease(now, a + 0.35, a + 0.6);
         return (
           <div key={i} style={{ position: "absolute", left: 140 + i * 280, top: lerp(260, 420, move), opacity: (1 - gone) * ease(now, at + 0.2, at + 0.45), transform: `scale(${1 - 0.3 * gone})` }}>
             <MiniOrder w={240} ghost />
@@ -758,11 +758,37 @@ export const Ep06AntesDoOi: React.FC<EpisodeProps> = ({ episode, timings, stem }
     { name: "ding_panel", at: t.snap, vol: 0.55 },
     // 5. conta: poucos tics no calendário + batida grave em cada resultado
     ...spread(fill1A, fill1B, 3).map((at) => ({ name: "tick", at, vol: 0.18 })),
-    { name: "hit", at: cue.at("1.800"), vol: 0.45 },
+    { name: "hit", at: cue.at("1.800"), vol: 0.34 },
     ...spread(fill2A, fill2B, 3).map((at) => ({ name: "tick", at, vol: 0.18 })),
-    { name: "hit", at: cue.at("3.600", 1), vol: 0.5 },
+    { name: "hit", at: cue.at("3.600", 1), vol: 0.36 },
     // 6. chamada final
     { name: "soft", at: t.cta, vol: 0.4 },
+    // ——— camada extra: transições, cliques e dinheiro (sutil) ———
+    // vento suave em cada troca de cena/aba
+    ...[s2, s3, s4, s5, s6].map((at) => ({ name: "air", at: at - 0.12, vol: 0.32 })),
+    { name: "air", at: t.openChat - 0.05, vol: 0.22 }, // resultado → conversa
+    { name: "air", at: cue.at("desistiu") - 0.05, vol: 0.22 }, // conversa → busca
+    { name: "air", at: t.openSite - 0.05, vol: 0.22 }, // resultado → site
+    { name: "air", at: t.fly, vol: 0.26 }, // cartão: celular → painel
+    { name: "air", at: cue.at("finalmente") - 0.15, vol: 0.2 }, // balcão → conversas do dono
+    { name: "air", at: cue.at("quando tu fecha") - 0.2, vol: 0.22 }, // conta → fechamento
+    { name: "air", at: t.pitchFly, vol: 0.2 }, // pitch: pedido indo pro painel
+    { name: "air", at: t.cta - 0.15, vol: 0.22 }, // abre espaço para a chamada
+    // cliques
+    { name: "tap", at: cue.at("Procurou") - 0.12, vol: 0.3 }, // toca na busca
+    { name: "click", at: cue.at("desistiu") + 0.05, vol: 0.35 }, // fecha a conversa
+    { name: "click", at: cue.at("finalmente") - 0.05, vol: 0.3 }, // dono abre o WhatsApp
+    { name: "tap", at: cue.at("achou") - 0.05, vol: 0.25 }, // destaca a 2ª adega
+    { name: "click", at: cue.at("consiga comprar"), vol: 0.3 }, // cliente compra pelo site
+    // suspense curto antes da revelação do gancho
+    { name: "rise_soft", at: cue.at("3.600") - 1.15, vol: 0.32 },
+    // dinheiro perdido
+    { name: "money_lost", at: cue.at("3.600") + 0.05, vol: 0.32 }, // R$ 3.600 que o dono não viu
+    { name: "money_lost", at: cue.at("em outro lugar") + 0.1, vol: 0.3 }, // João comprou em outra loja
+    { name: "money_lost", at: cue.at("quando tu fecha") + 0.35, vol: 0.28 }, // vendas que somem antes do caixa
+    // dinheiro entrando
+    { name: "money_gain", at: t.snap + 0.45, vol: 0.28 }, // pedido de R$ 60 no painel
+    { name: "money_gain", at: t.pitchSnap, vol: 0.26 }, // pedido organizado no painel (pitch)
   ];
   // trilha baixa: entra depois do campo vazio, abaixa sob as frases importantes,
   // quase some na confirmação e some em "essas vendas não aparecem em lugar nenhum"
@@ -810,7 +836,6 @@ export const Ep06AntesDoOi: React.FC<EpisodeProps> = ({ episode, timings, stem }
 
       {/* voz em primeiro plano; sons só nas ações que contam a história */}
       <Audio src={staticFile(`episodes/${episode.id}/voice.wav`)} volume={stem === "sfx" ? 0 : 1} />
-      {stem !== "sfx" && <Audio src={staticFile("sfx/bed_soft.wav")} volume={(f) => bedVolume(f / 30)} />}
       {sfx.map((x, i) => (
         <Sfx key={i} name={x.name} at={x.at} volume={x.vol} />
       ))}
