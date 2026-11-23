@@ -17,7 +17,19 @@ const localShell = "/opt/pw-browsers/chromium_headless_shell-1243/chrome-headles
 const browserExecutable = process.env.REMOTION_BROWSER ?? (existsSync(localShell) ? localShell : null);
 
 const serveUrl = await bundle({ entryPoint: path.join(root, "src/index.ts"), publicDir: path.join(root, "public") });
-const composition = await selectComposition({ serveUrl, id: `ep-${id}`, browserExecutable });
+const stemArg = process.argv.indexOf("--stem");
+const stem = stemArg > 0 ? process.argv[stemArg + 1] : null;
+const base = await selectComposition({ serveUrl, id: `ep-${id}`, browserExecutable });
+const inputProps = stem ? { ...base.props, stem } : base.props;
+const composition = stem ? await selectComposition({ serveUrl, id: `ep-${id}`, browserExecutable, inputProps }) : base;
+
+if (stem) {
+  // faixa de conferência: só efeitos (sem voz nem trilha)
+  const out = path.join(root, "out", `${id}-${stem}.wav`);
+  await renderMedia({ serveUrl, composition, codec: "wav", outputLocation: out, inputProps, browserExecutable, concurrency: 4 });
+  console.log("stem →", path.relative(root, out));
+  process.exit(0);
+}
 
 if (stills) {
   const dir = path.join(root, "out", "frames");

@@ -234,7 +234,7 @@ const Joao: React.FC<{ from: number; cue: Cues }> = ({ from, cue }) => {
   const thoughts = [
     { text: "O que tem?", at: cue.at("o que tinha") - 0.05, x: 330, y: 960 },
     { text: "Quanto custa?", at: cue.at("quanto custava") - 0.05, x: 420, y: 1075 },
-    { text: "Entrega aqui?", at: cue.at("se entregavam") - 0.05, x: 330, y: 1190 },
+    { text: "Entrega aqui?", at: cue.at("se entregava") - 0.05, x: 330, y: 1190 },
   ];
   const thoughtsOut = ease(now, cue.at("Começou") - 0.2, cue.at("Começou") + 0.1);
   const draft = "Oi, vocês têm gelo?";
@@ -377,6 +377,17 @@ const SiteBrisa: React.FC<{ now: number; cue: Cues; t: Record<string, number> }>
           <div style={{ color: C.text, fontSize: 44, fontWeight: 800, letterSpacing: -1 }}>{LOJA2}</div>
           <div style={{ color: BR.accent, fontSize: 22, fontWeight: 700, letterSpacing: 3 }}>ADEGA · DELIVERY</div>
         </div>
+        {/* carrinho com contador 0 → 1 → 2 */}
+        <div style={{ marginLeft: "auto", position: "relative", width: 86, height: 86, borderRadius: 24, background: G, display: "flex", alignItems: "center", justifyContent: "center" }}>
+          <svg width="52" height="52" viewBox="0 0 24 24" fill="none" stroke="#f2f2f2" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+            <path d="M3 4h2.5l2.2 10.2a1.5 1.5 0 0 0 1.5 1.2h8.6a1.5 1.5 0 0 0 1.5-1.1L21 8H6.3" />
+            <circle cx="9.5" cy="19.5" r="1.4" />
+            <circle cx="17" cy="19.5" r="1.4" />
+          </svg>
+          <div style={{ position: "absolute", right: -10, top: -10, width: 44, height: 44, borderRadius: 22, background: q[0] + q[1] ? C.text : G2, color: q[0] + q[1] ? "#0b0b0b" : C.muted, fontSize: 28, fontWeight: 800, display: "flex", alignItems: "center", justifyContent: "center", transform: `scale(${1 + 0.35 * (press(now, t.add1 + 0.1) + press(now, t.add2 + 0.1))})` }}>
+            {q[0] + q[1]}
+          </div>
+        </div>
       </div>
       {/* catálogo */}
       <div style={{ position: "absolute", left: 0, right: 0, top: 190, bottom: 0, opacity: 1 - catOut }}>
@@ -408,9 +419,24 @@ const SiteBrisa: React.FC<{ now: number; cue: Cues; t: Record<string, number> }>
           ))}
         </div>
         <TapRing x={(PW - 60 - 28) / 6} y={20 + 64 + 48} t={(now - t.pix) / 0.45} />
-        <div style={{ position: "absolute", left: 0, right: 0, bottom: 0, height: 120, borderRadius: 60, background: C.text, color: "#0b0b0b", display: "flex", alignItems: "center", justifyContent: "center", fontSize: 42, fontWeight: 800, transform: `scale(${1 - 0.05 * press(now, t.confirm)})` }}>
-          Confirmar · {brl(TOTAL)}
-        </div>
+        {(() => {
+          const m = ease(now, t.confirm + 0.08, t.confirm + 0.25); // botão → check
+          const draw = ease(now, t.confirm + 0.15, t.checkDone); // traço do check
+          return (
+            <div style={{ position: "absolute", left: 0, right: 0, bottom: 0, height: 120, borderRadius: 60, background: m > 0.5 ? C.green : C.text, boxShadow: m > 0.5 ? `0 0 ${60 * draw}px ${C.greenGlow}` : undefined, color: "#0b0b0b", display: "flex", alignItems: "center", justifyContent: "center", gap: 18, fontSize: 38, fontWeight: 800, transform: `scale(${1 - 0.05 * press(now, t.confirm)})` }}>
+              {m <= 0.5 ? (
+                <>Confirmar pedido · {brl(TOTAL)}</>
+              ) : (
+                <>
+                  <svg width="56" height="56" viewBox="0 0 24 24">
+                    <path d="M5 12.5l4.2 4.2L19 7" stroke="#062611" strokeWidth="3.2" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeDasharray="24" strokeDashoffset={24 * (1 - draw)} />
+                  </svg>
+                  <span style={{ color: "#062611" }}>Pedido confirmado</span>
+                </>
+              )}
+            </div>
+          );
+        })()}
         <TapRing x={(PW - 60) / 2} y={PH - 190 - 40 - 60} t={(now - t.confirm) / 0.45} />
       </div>
     </div>
@@ -422,7 +448,7 @@ const Menor: React.FC<{ from: number; cue: Cues; t: Record<string, number> }> = 
   const hi2 = ease(now, cue.at("achou") - 0.1, cue.at("achou") + 0.3);
   const openSite = ease(now, cue.at("site próprio") - 0.1, cue.at("site próprio") + 0.4);
   // depois do "confirmar": o resumo vira o cartão do pedido e desliza até o painel
-  const cardShow = ease(now, t.confirm + 0.1, t.confirm + 0.35);
+  const cardShow = ease(now, t.cardOut, t.cardOut + 0.25);
   const phoneOut = ease(now, t.fly - 0.15, t.fly + 0.3);
   const fly = ease(now, t.fly, t.snap);
   const panelIn = ease(now, t.fly - 0.2, t.fly + 0.3);
@@ -478,6 +504,10 @@ const Menor: React.FC<{ from: number; cue: Cues; t: Record<string, number> }> = 
             <div style={{ color: C.muted, fontSize: 26 }}>{LOJA2} · pedidos</div>
           </div>
         </div>
+        <div style={{ position: "absolute", left: 40, top: 150, display: "flex", alignItems: "center", gap: 14, color: snap > 0.5 ? C.green : C.muted, fontSize: 36, fontWeight: 800 }}>
+          <Dot color={snap > 0.5 ? C.green : "#444"} size={22} />
+          Novo pedido
+        </div>
         <div style={{ position: "absolute", left: 20, right: 20, top: 200, height: 640, borderRadius: 40, border: `3px dashed rgba(255,255,255,${0.15 * (1 - snap)})` }} />
         {["#0419 · entregue", "#0418 · entregue"].map((r, i) => (
           <div key={i} style={{ position: "absolute", left: 30, right: 30, top: 870 + i * 92, height: 76, borderRadius: 20, background: G, color: C.muted, fontSize: 30, display: "flex", alignItems: "center", padding: "0 24px" }}>
@@ -487,7 +517,7 @@ const Menor: React.FC<{ from: number; cue: Cues; t: Record<string, number> }> = 
       </div>
       {/* O MESMO cartão: celular → painel */}
       <div style={{ position: "absolute", left: cx, top: cy, opacity: cardShow }}>
-        <OrderCard w={cw} check={snap} hi={hi} />
+        <OrderCard w={cw} check={1} hi={hi} />
       </div>
     </AbsoluteFill>
   );
@@ -642,7 +672,7 @@ const Pitch: React.FC<{ from: number; cue: Cues; t: Record<string, number> }> = 
         <div style={{ position: "absolute", left: 610, top: 250, opacity: ease(now, buy - 0.3, buy) }}>
           <PhoneFrame x={0} y={0} w={330} h={580}>
             <div style={{ position: "absolute", left: 0, top: 0, width: PW, height: PH, transform: `scale(${330 / PW})`, transformOrigin: "0 0" }}>
-              <SiteBrisa now={0} cue={cue} t={{ marca: -10, precos: 9e9, prazo: 9e9, add1: -10, add2: 9e9, pix: 9e9, confirm: 9e9 }} />
+              <SiteBrisa now={0} cue={cue} t={{ marca: -10, precos: 9e9, prazo: 9e9, add1: -10, add2: 9e9, pix: 9e9, confirm: 9e9, checkDone: 9.1e9 }} />
             </div>
           </PhoneFrame>
           <Person x={420} y={760} size={200} />
@@ -663,7 +693,7 @@ const Pitch: React.FC<{ from: number; cue: Cues; t: Record<string, number> }> = 
   );
 };
 
-export const Ep06AntesDoOi: React.FC<EpisodeProps> = ({ episode, timings }) => {
+export const Ep06AntesDoOi: React.FC<EpisodeProps> = ({ episode, timings, stem }) => {
   const cue = makeCues(timings);
   const end = episode.durationSec;
 
@@ -674,9 +704,13 @@ export const Ep06AntesDoOi: React.FC<EpisodeProps> = ({ episode, timings }) => {
     add1: cue.at("a bebida", 1),
     add2: cue.at("gelo", 1),
     pix: cue.atEnd("gelo", 1) + 0.25,
-    confirm: cue.at("dois minutos") + 0.1,
-    fly: cue.at("o pedido já") + 0.1,
-    snap: cue.at("painel do dono"),
+    confirm: cue.at("dois minutos"),
+    checkDone: cue.at("dois minutos") + 0.45, // check verde completo no celular → "tim-tim"
+    cardOut: cue.at("dois minutos") + 0.75,
+    fly: Math.max(cue.at("dois minutos") + 1.1, cue.at("o pedido já")),
+    snap: cue.at("painel do dono"), // encaixa sob "Novo pedido" → "ding"
+    openSite: cue.at("site próprio") - 0.1,
+    openChat: cue.at("abriu a primeira") + 0.2,
     pitchFly: cue.at("cada pedido") - 0.1,
     pitchSnap: cue.at("organizado no painel") + 0.6,
     cta: cue.at("Me chama"),
@@ -686,7 +720,69 @@ export const Ep06AntesDoOi: React.FC<EpisodeProps> = ({ episode, timings }) => {
   const s4 = cue.at("João foi procurar") - 0.2;
   const s5 = cue.at("Agora faz") - 0.25;
   const s6 = cue.at("Quer que") - 0.1;
-  const buzz = [cue.at("gente na fila") + 0.1, cue.at("mensagem para") - 0.2];
+  const buzz = [cue.at("gente na fila") + 0.1, cue.at("mensagem pra") - 0.2];
+
+  // ——— efeitos sonoros (cada um preso a uma ação visível) ———
+  const oi = cue.at("oi");
+  const spread = (a: number, b: number, n: number) => Array.from({ length: n }, (_, i) => a + ((b - a) * i) / Math.max(1, n - 1));
+  const typeSearchA = cue.at("Procurou");
+  const typeSearchB = cue.atEnd("mim,") - 0.1;
+  const draftA = cue.at("Começou") + 0.15;
+  const draftB = cue.at("aí apagou") - 0.05;
+  const delA = cue.at("apagou");
+  const fill1A = cue.at("15 dias");
+  const fill1B = cue.at("1.800") - 0.15;
+  const fill2A = cue.at("durante") + 0.05;
+  const fill2B = cue.at("3.600", 1) - 0.15;
+  const sfx: { name: string; at: number; vol: number }[] = [
+    // 1. abertura: "O", "Oi" → apaga na palavra "oi" (depois, silêncio)
+    { name: "key", at: 0.22, vol: 0.55 },
+    { name: "key", at: 0.47, vol: 0.55 },
+    { name: "backspace", at: oi, vol: 0.5 },
+    // busca: digitação rápida + clique seco ao abrir o 1º resultado (abre a conversa)
+    ...spread(typeSearchA, typeSearchB, 18).map((at) => ({ name: "key", at, vol: 0.22 })),
+    { name: "click", at: t.openChat, vol: 0.55 },
+    // 2. WhatsApp: teclado leve escrevendo; apagar junto com as letras sumindo
+    ...spread(draftA, draftB, 12).map((at) => ({ name: "key", at, vol: 0.16 })),
+    ...spread(delA, delA + 0.4, 6).map((at) => ({ name: "backspace", at, vol: 0.22 })),
+    // balcão: duas vibrações curtas (outras conversas)
+    ...buzz.map((at) => ({ name: "buzz", at, vol: 0.32 })),
+    // 3. site e carrinho
+    { name: "click", at: t.openSite, vol: 0.5 },
+    { name: "pop", at: t.add1 + 0.05, vol: 0.5 }, // contador 0 → 1
+    { name: "pop", at: t.add2 + 0.05, vol: 0.5 }, // contador 1 → 2
+    { name: "tap", at: t.pix, vol: 0.18 },
+    { name: "click_firm", at: t.confirm, vol: 0.55 },
+    // 4. confirmação: tim-tim no celular; ding (outro timbre) no painel
+    { name: "timtim", at: t.checkDone, vol: 0.55 },
+    { name: "ding_panel", at: t.snap, vol: 0.55 },
+    // 5. conta: poucos tics no calendário + batida grave em cada resultado
+    ...spread(fill1A, fill1B, 3).map((at) => ({ name: "tick", at, vol: 0.18 })),
+    { name: "hit", at: cue.at("1.800"), vol: 0.45 },
+    ...spread(fill2A, fill2B, 3).map((at) => ({ name: "tick", at, vol: 0.18 })),
+    { name: "hit", at: cue.at("3.600", 1), vol: 0.5 },
+    // 6. chamada final
+    { name: "soft", at: t.cta, vol: 0.4 },
+  ];
+  // trilha baixa: entra depois do campo vazio, abaixa sob as frases importantes,
+  // quase some na confirmação e some em "essas vendas não aparecem em lugar nenhum"
+  const silentA = cue.at("essas vendas") - 0.2;
+  const silentB = cue.atEnd("nenhum.") + 0.3;
+  const bedVolume = (sec: number) => {
+    const clamp = { extrapolateLeft: "clamp" as const, extrapolateRight: "clamp" as const };
+    const base = interpolate(sec, [oi + 0.7, oi + 1.8, end - 1.5, end], [0, 0.09, 0.09, 0], clamp);
+    const dip = (a: number, b: number, to: number) => {
+      const x = interpolate(sec, [a - 0.4, a, b, b + 0.4], [0, 1, 1, 0], clamp);
+      return 1 - (1 - to) * x;
+    };
+    return (
+      base *
+      dip(cue.at("R$"), cue.atEnd("3.600"), 0.5) *
+      dip(t.confirm - 0.4, t.snap + 1.0, 0.25) *
+      dip(cue.at("Se tu perder"), cue.atEnd("3.600", 1), 0.55) *
+      dip(silentA, silentB, 0)
+    );
+  };
 
   return (
     <AbsoluteFill>
@@ -713,27 +809,11 @@ export const Ep06AntesDoOi: React.FC<EpisodeProps> = ({ episode, timings }) => {
       <Captions timings={timings} replace={episode.captionReplace} backdrop y={1395} size={56} maxChars={34} maxWords={7} />
 
       {/* voz em primeiro plano; sons só nas ações que contam a história */}
-      <Audio src={staticFile(`episodes/${episode.id}/voice.wav`)} />
-      <Sfx name="key" at={0.22} volume={0.5} />
-      <Sfx name="key" at={0.47} volume={0.5} />
-      <Sfx name="backspace" at={cue.at("oi")} volume={0.45} />
-      {Array.from({ length: 8 }).map((_, i) => (
-        <Sfx key={`s${i}`} name="key" at={cue.at("Procurou") + i * 0.13} volume={0.3} />
+      <Audio src={staticFile(`episodes/${episode.id}/voice.wav`)} volume={stem === "sfx" ? 0 : 1} />
+      {stem !== "sfx" && <Audio src={staticFile("sfx/bed_soft.wav")} volume={(f) => bedVolume(f / 30)} />}
+      {sfx.map((x, i) => (
+        <Sfx key={i} name={x.name} at={x.at} volume={x.vol} />
       ))}
-      {Array.from({ length: 7 }).map((_, i) => (
-        <Sfx key={`d${i}`} name="key" at={cue.at("Começou") + 0.15 + i * 0.14} volume={0.3} />
-      ))}
-      <Sfx name="backspace" at={cue.at("apagou")} volume={0.4} />
-      {buzz.map((b, i) => (
-        <Sfx key={`b${i}`} name="buzz" at={b} volume={0.35} />
-      ))}
-      <Sfx name="tap" at={t.add1} volume={0.25} />
-      <Sfx name="tap" at={t.add2} volume={0.25} />
-      <Sfx name="tap" at={t.pix} volume={0.25} />
-      <Sfx name="tap" at={t.confirm} volume={0.25} />
-      <Sfx name="ding" at={t.snap} volume={0.5} />
-      <Sfx name="hit" at={cue.at("1.800")} volume={0.35} />
-      <Sfx name="hit" at={cue.at("3.600", 1)} volume={0.4} />
     </AbsoluteFill>
   );
 };

@@ -16,7 +16,7 @@ export type EpisodeConfig = {
   lines: { id: string; at?: number; gap?: number; text: string }[];
 };
 
-export type EpisodeProps = { episode: EpisodeConfig; timings: Timings };
+export type EpisodeProps = { episode: EpisodeConfig; timings: Timings; stem?: "sfx" };
 
 const norm = (s: string) =>
   s

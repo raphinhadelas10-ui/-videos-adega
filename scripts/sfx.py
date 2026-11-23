@@ -145,6 +145,49 @@ def main():
     tt = t(1.0)
     ding = np.sin(2 * np.pi * 1568 * tt) + 0.35 * np.sin(2 * np.pi * 3136 * tt) + 0.15 * np.sin(2 * np.pi * 4704 * tt)
     save("ding", env(ding, 0.002, 0.35), 0.45)
+
+    # clique seco (abrir resultado/site)
+    tt = t(0.03)
+    save("click", env(lowpass(rng.standard_normal(len(tt)), 2) + 0.6 * np.sin(2 * np.pi * 3200 * tt), 0.0003, 0.004), 0.4)
+    # clique firme (Confirmar pedido)
+    tt = t(0.07)
+    save("click_firm", env(lowpass(rng.standard_normal(len(tt)), 3) + np.sin(2 * np.pi * 900 * tt) + 0.5 * np.sin(2 * np.pi * 2200 * tt), 0.0005, 0.018), 0.5)
+    # pop (item entra no carrinho)
+    tt = t(0.12)
+    f = 500 + 900 * (tt / tt[-1])
+    save("pop", env(np.sin(2 * np.pi * np.cumsum(f) / SR), 0.002, 0.035), 0.45)
+    # "tim-tim": duas notas ascendentes curtas (confirmação no celular do cliente)
+    tt = t(0.45)
+    n1 = np.sin(2 * np.pi * 1046.5 * tt) * (tt < 0.16)
+    n2 = np.sin(2 * np.pi * 1568.0 * tt) * (tt >= 0.13)
+    tone = (n1 + n2) + 0.2 * (np.sin(2 * np.pi * 2093 * tt) * (tt < 0.16) + np.sin(2 * np.pi * 3136 * tt) * (tt >= 0.13))
+    e = np.where(tt < 0.13, np.exp(-tt / 0.07), np.exp(-(tt - 0.13) / 0.12))
+    save("timtim", tone * e, 0.45)
+    # ding do painel: sino com timbre diferente (parciais inarmônicos, mais longo)
+    tt = t(1.4)
+    bell = sum(a * np.sin(2 * np.pi * fr * tt) * np.exp(-tt / d) for fr, a, d in [(1318.5, 1, 0.6), (3360, 0.35, 0.25), (5270, 0.15, 0.12), (659, 0.25, 0.8)])
+    save("ding_panel", env(bell, 0.002, 2.0), 0.45)
+    # toque suave (chamada final)
+    tt = t(0.9)
+    save("soft", env(np.sin(2 * np.pi * 784 * tt) + 0.5 * np.sin(2 * np.pi * 1175 * tt), 0.02, 0.35), 0.3)
+    # trilha suave (pad) — 110 s, acordes lentos
+    d = 110.0
+    tt = t(d)
+    chords = [(220.0, 261.63, 329.63), (174.61, 220.0, 261.63), (130.81, 196.0, 261.63), (196.0, 246.94, 293.66)]
+    pad = np.zeros(len(tt))
+    seg = 4.0
+    for k in range(int(d / seg) + 1):
+        a, b = int(k * seg * SR), int(min(d, (k + 1) * seg + 1.0) * SR)
+        if a >= len(tt):
+            break
+        lt = np.arange(b - a) / SR
+        shape = np.minimum(1, lt / 1.2) * np.minimum(1, (lt[-1] - lt) / 1.2 + 1e-3)
+        for fr in chords[k % 4]:
+            pad[a:b] += shape * (np.sin(2 * np.pi * fr * lt) + 0.3 * np.sin(2 * np.pi * 2 * fr * lt + 0.4))
+    pad = lowpass(lowpass(pad, 20), 20)
+    fade = int(2 * SR)
+    pad[:fade] *= np.linspace(0, 1, fade)
+    save("bed_soft", pad, 0.5)
     print("OK →", OUT)
 
 

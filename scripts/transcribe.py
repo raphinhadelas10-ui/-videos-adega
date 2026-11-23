@@ -45,27 +45,27 @@ def main():
         for w in s.words:
             tok = w.word.strip()
             # junta "3" + ".600" → "3.600"
-            if words and tok[:1] in ".," and tok[1:2].isdigit():
-                words[-1]["w"] += tok
+            if words and ((tok[:1] in ".," and tok[1:2].isdigit()) or (tok == "$" and words[-1]["w"] == "R")):
+                words[-1]["w"] += tok.strip()
                 words[-1]["end"] = round(w.end, 3)
                 continue
             words.append({"w": tok, "start": round(w.start, 3), "end": round(w.end, 3)})
-        text = " ".join(x["w"] for x in words)
+        # correções: troca sequências de palavras mantendo os tempos
         for wrong, right in fixes.items():
-            if wrong in text:
-                text = text.replace(wrong, right)
-                # refaz os tokens mantendo os tempos (mesma quantidade de palavras quando possível)
-                nw = text.split()
-                if len(nw) == len(words):
-                    for x, t in zip(words, nw):
-                        x["w"] = t
+            wt, rt = wrong.split(), right.split()
+            i = 0
+            while i <= len(words) - len(wt):
+                if [x["w"] for x in words[i:i + len(wt)]] == wt:
+                    st, en = words[i]["start"], words[i + len(wt) - 1]["end"]
+                    step = (en - st) / len(rt)
+                    rep = [{"w": r, "start": round(st + k * step, 3), "end": round(st + (k + 1) * step, 3)} for k, r in enumerate(rt)]
+                    if len(rt) == len(wt):
+                        rep = [{**words[i + k], "w": r} for k, r in enumerate(rt)]
+                    words[i:i + len(wt)] = rep
+                    i += len(rt)
                 else:
-                    merged = []
-                    j = 0
-                    for t in nw:
-                        merged.append({"w": t, "start": words[min(j, len(words) - 1)]["start"], "end": words[min(j, len(words) - 1)]["end"]})
-                        j += 1
-                    words = merged
+                    i += 1
+        text = " ".join(x["w"] for x in words)
         lines.append({"id": f"l{i}", "text": text, "start": words[0]["start"], "end": words[-1]["end"], "words": words})
         print(f"  l{i:<3} {words[0]['start']:6.2f}–{words[-1]['end']:6.2f}  {text}")
     (out / "timings.json").write_text(json.dumps({"episode": ep_id, "source": f"gravação:{src.name}", "duration": ep["durationSec"], "lines": lines}, ensure_ascii=False, indent=1))
